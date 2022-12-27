@@ -1,0 +1,19 @@
+[project]
+name = "fin_api_docs"
+version = "0"
+
+[project.optional-dependencies]
+dev = ["mypy"]
+
+[project.scripts]
+fin-api-docs = "fin_api_docs:entry_point"
+
+[tool.mypy]
+files = ["src"]
+namespace_packages = true
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unreachable = true
+strict_concatenate = true
+strict_equality = true
