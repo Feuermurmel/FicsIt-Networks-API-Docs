@@ -8,7 +8,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - Factory: <a href="Factory.md#cycleTime">cycleTime</a>, <a href="Factory.md#maxPotential">maxPotential</a>, <a href="Factory.md#minPotential">minPotential</a>, <a href="Factory.md#potential">potential</a>, <a href="Factory.md#powerConsumProducing">powerConsumProducing</a>, <a href="Factory.md#productivity">productivity</a>, <a href="Factory.md#progress">progress</a>, <a href="Factory.md#standby">standby</a>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getThresholdFillMode() -> thresholdFill</code>
+### Method <code>getThresholdFillMode</code> () → thresholdFill
 
 
 <b>Return Values:</b>
@@ -16,7 +16,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>thresholdFill</b></code> boolean
 
   
-### Method <code>setThresholdFillMode(thresholdFill) -> </code>
+### Method <code>setThresholdFillMode</code> (thresholdFill) → 
 
 
 <b>Parameters:</b>
@@ -24,7 +24,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>thresholdFill</b></code> boolean
 
   
-### Method <code>getTopOffPartial() -> topOffPartial</code>
+### Method <code>getTopOffPartial</code> () → topOffPartial
 
 
 <b>Return Values:</b>
@@ -32,7 +32,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>topOffPartial</b></code> boolean
 
   
-### Method <code>setTopOffPartial(topOff) -> </code>
+### Method <code>setTopOffPartial</code> (topOff) → 
 
 
 <b>Parameters:</b>
@@ -40,7 +40,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>topOff</b></code> boolean
 
   
-### Method <code>getStacksToDispense() -> stacksToDispense</code>
+### Method <code>getStacksToDispense</code> () → stacksToDispense
 
 
 <b>Return Values:</b>
@@ -48,7 +48,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>stacksToDispense</b></code> integer
 
   
-### Method <code>setStacksToDispense(stacks) -> </code>
+### Method <code>setStacksToDispense</code> (stacks) → 
 
 
 <b>Parameters:</b>

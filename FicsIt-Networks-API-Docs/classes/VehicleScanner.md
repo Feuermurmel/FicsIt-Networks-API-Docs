@@ -7,7 +7,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>setColor(r, g, b, e) -> </code>
+### Method <code>setColor</code> (r, g, b, e) → 
 Allows to change the color and light intensity of the scanner.
 
 <b>Parameters:</b>
@@ -24,7 +24,7 @@ Allows to change the color and light intensity of the scanner.
 - <code><b>e</b></code> float
 
   The light intensity of the scanner. (0.0 - 5.0)
-### Method <code>getLastVehicle() -> vehicle</code>
+### Method <code>getLastVehicle</code> () → vehicle
 Returns the last vehicle that entered the scanner.
 
 <b>Return Values:</b>
@@ -32,7 +32,7 @@ Returns the last vehicle that entered the scanner.
 - <code><b>vehicle</b></code> <a href="Vehicle.md">Vehicle</a>
 
   The vehicle that entered the scanner. null if it has already left the scanner.
-### Method <code>getColor() -> r, g, b, e</code>
+### Method <code>getColor</code> () → r, g, b, e
 Allows to get the color and light intensity of the scanner.
 
 <b>Return Values:</b>
@@ -49,7 +49,7 @@ Allows to get the color and light intensity of the scanner.
 - <code><b>e</b></code> float
 
   The light intensity of the scanner. (0.0 - 5.0)
-### Signal <code>OnVehicleExit -> vehicle</code>
+### Signal <code>OnVehicleExit</code> → vehicle
 Triggers when a vehicle leaves the scanner.
 
 <b>Parameters:</b>
@@ -57,7 +57,7 @@ Triggers when a vehicle leaves the scanner.
 - <code><b>vehicle</b></code> <a href="Vehicle.md">Vehicle</a>
 
   The vehicle that left the scanner.
-### Signal <code>OnVehicleEnter -> vehicle</code>
+### Signal <code>OnVehicleEnter</code> → vehicle
 Triggers when a vehicle enters the scanner.
 
 <b>Parameters:</b>

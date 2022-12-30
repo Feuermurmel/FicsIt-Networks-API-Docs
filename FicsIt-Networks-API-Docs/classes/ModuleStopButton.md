@@ -7,10 +7,10 @@ This Stop Button Module for the modular I/O Panel is used to trigger important p
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>trigger() -> </code>
+### Method <code>trigger</code> () → 
 Triggers a button press by code.
 
-### Signal <code>Trigger -> </code>
+### Signal <code>Trigger</code> → 
 Triggers when the button gets pressed.
 
 ## Static Members

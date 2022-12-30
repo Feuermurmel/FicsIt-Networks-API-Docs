@@ -35,7 +35,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
 - <code><b>networkID</b></code> integer
 
   Returns the network ID of the pipe network this connection is associated with
-### Method <code>getFluidDescriptor() -> fluidDescriptor</code>
+### Method <code>getFluidDescriptor</code> () → fluidDescriptor
 ?
 
 <b>Return Values:</b>
@@ -43,7 +43,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
 - <code><b>fluidDescriptor</b></code> <a href="ItemType.md">ItemType</a>
 
   ?
-### Method <code>flushPipeNetwork() -> </code>
+### Method <code>flushPipeNetwork</code> () → 
 Flush the associated pipe network
 
 ## Static Members

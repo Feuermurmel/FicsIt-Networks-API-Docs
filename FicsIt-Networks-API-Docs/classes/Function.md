@@ -21,7 +21,7 @@ Is this function a member function.
 The function is a class function.
 The function is a static function.
 The function has a variable amount of return values.
-### Method <code>getParameters() -> parameters</code>
+### Method <code>getParameters</code> () → parameters
 Returns all the parameters of this function.
 
 <b>Return Values:</b>

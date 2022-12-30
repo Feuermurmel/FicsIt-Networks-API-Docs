@@ -14,7 +14,7 @@ A small analogue Gauge for use on Micro Enclosures. The red portion and needle p
 - <code><b>percent</b></code> float
 
   
-### Method <code>setColor(red, green, blue, Emit) -> </code>
+### Method <code>setColor</code> (red, green, blue, Emit) → 
 
 
 <b>Parameters:</b>
@@ -31,7 +31,7 @@ A small analogue Gauge for use on Micro Enclosures. The red portion and needle p
 - <code><b>Emit</b></code> float
 
   
-### Method <code>setBackgroundColor(red, green, blue) -> </code>
+### Method <code>setBackgroundColor</code> (red, green, blue) → 
 
 
 <b>Parameters:</b>

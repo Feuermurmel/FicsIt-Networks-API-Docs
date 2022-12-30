@@ -14,7 +14,7 @@ A piece of railroad track over which trains can drive.
 - <code><b>isOwnedByPlatform</b></code> boolean
 
   True if the track is part of/owned by a railroad platform.
-### Method <code>getClosestTrackPosition(worldPos) -> track, offset, forward</code>
+### Method <code>getClosestTrackPosition</code> (worldPos) → track, offset, forward
 Returns the closes track position from the given world position
 
 <b>Parameters:</b>
@@ -33,7 +33,7 @@ Returns the closes track position from the given world position
 - <code><b>forward</b></code> float
 
   The forward direction of the track pos. 1 = with the track direction, -1 = against the track direction
-### Method <code>getWorldLocAndRotAtPos(track, offset, forward) -> location, rotation</code>
+### Method <code>getWorldLocAndRotAtPos</code> (track, offset, forward) → location, rotation
 Returns the world location and world rotation of the track position from the given track position.
 
 <b>Parameters:</b>
@@ -55,7 +55,7 @@ Returns the world location and world rotation of the track position from the giv
 - <code><b>rotation</b></code> <a href="../structs/Vector.md">Vector</a>
 
   The rotation at the given track position (forward vector)
-### Method <code>getConnection(direction) -> connection</code>
+### Method <code>getConnection</code> (direction) → connection
 Returns the railroad track connection at the given direction.
 
 <b>Parameters:</b>
@@ -68,7 +68,7 @@ Returns the railroad track connection at the given direction.
 - <code><b>connection</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
 
   The connection component in the given direction.
-### Method <code>getTrackGraph() -> track</code>
+### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this track is part of.
 
 <b>Return Values:</b>

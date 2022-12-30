@@ -17,7 +17,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
 - <code><b>isConnected</b></code> boolean
 
   True if something is connected to this connection.
-### Method <code>getInventory() -> inventory</code>
+### Method <code>getInventory</code> () → inventory
 Returns the internal inventory of the connection component.
 
 <b>Return Values:</b>
@@ -25,7 +25,7 @@ Returns the internal inventory of the connection component.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The internal inventory of the connection component.
-### Method <code>getConnected() -> connected</code>
+### Method <code>getConnected</code> () → connected
 Returns the connected factory connection component.
 
 <b>Return Values:</b>
@@ -33,7 +33,7 @@ Returns the connected factory connection component.
 - <code><b>connected</b></code> <a href="Inventory.md">Inventory</a>
 
   The connected factory connection component.
-### Signal <code>ItemTransfer -> item</code>
+### Signal <code>ItemTransfer</code> → item
 Triggers when the factory connection component transfers an item.
 
 <b>Parameters:</b>

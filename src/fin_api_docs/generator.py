@@ -185,7 +185,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
                 params_str = ', '.join(i.name for i in mm.parameters)
                 return_values_str = ', '.join(i.name for i in mm.return_values)
 
-                yield f'### Method <code>{mm.name}({params_str}) -> {return_values_str}</code>'
+                yield f'### Method <code>{mm.name}</code> ({params_str}) → {return_values_str}'
                 yield f'{mm.description}'
                 yield f''
                 yield from iter_parameter_descriptions('Parameters', mm.parameters)
@@ -194,7 +194,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
             for s in signals:
                 params_str = ', '.join(i.name for i in s.parameters)
 
-                yield f'### Signal <code>{s.name} -> {params_str}</code>'
+                yield f'### Signal <code>{s.name}</code> → {params_str}'
                 yield f'{s.description}'
                 yield f''
                 yield from iter_parameter_descriptions('Parameters', s.parameters)

@@ -16,7 +16,7 @@ This is the base class of all things that can exist within the world by them sel
 - <code><b>rotation</b></code> <a href="../structs/Rotator.md">Rotator</a>
 
   The rotation of the actor in the world.
-### Method <code>getPowerConnectors() -> connectors</code>
+### Method <code>getPowerConnectors</code> () → connectors
 Returns a list of power connectors this actor might have.
 
 <b>Return Values:</b>
@@ -24,7 +24,7 @@ Returns a list of power connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="PowerConnection.md">PowerConnection</a>
 
   The power connectors this actor has.
-### Method <code>getFactoryConnectors() -> connectors</code>
+### Method <code>getFactoryConnectors</code> () → connectors
 Returns a list of factory connectors this actor might have.
 
 <b>Return Values:</b>
@@ -32,7 +32,7 @@ Returns a list of factory connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="FactoryConnection.md">FactoryConnection</a>
 
   The factory connectors this actor has.
-### Method <code>getPipeConnectors() -> connectors</code>
+### Method <code>getPipeConnectors</code> () → connectors
 Returns a list of pipe connectors this actor might have.
 
 <b>Return Values:</b>
@@ -40,7 +40,7 @@ Returns a list of pipe connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="PipeConnection.md">PipeConnection</a>
 
   The factory connectors this actor has.
-### Method <code>getInventories() -> inventories</code>
+### Method <code>getInventories</code> () → inventories
 Returns a list of inventories this actor might have.
 
 <b>Return Values:</b>
@@ -48,7 +48,7 @@ Returns a list of inventories this actor might have.
 - <code><b>inventories</b></code> list of <a href="Inventory.md">Inventory</a>
 
   The inventories this actor has.
-### Method <code>getNetworkConnectors() -> connectors</code>
+### Method <code>getNetworkConnectors</code> () → connectors
 Returns the name of network connectors this actor might have.
 
 <b>Return Values:</b>

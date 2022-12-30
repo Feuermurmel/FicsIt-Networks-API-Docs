@@ -49,7 +49,7 @@ A Object that represents a whole power circuit.
 - <code><b>batteryOut</b></code> float
 
   The amount of energy that currently discharges from every battery in the whole network.
-### Signal <code>PowerFuseChanged -> </code>
+### Signal <code>PowerFuseChanged</code> → 
 Get Triggered when the fuse state of the power circuit changes.
 
 ## Static Members

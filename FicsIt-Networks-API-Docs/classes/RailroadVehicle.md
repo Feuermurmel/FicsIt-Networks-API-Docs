@@ -18,7 +18,7 @@ The base class for any vehicle that drives on train tracks.
 - <code><b>isReversed</b></code> boolean
 
   True if the vehicle is placed reversed on the track.
-### Method <code>getTrain() -> train</code>
+### Method <code>getTrain</code> () → train
 Returns the train of which this vehicle is part of.
 
 <b>Return Values:</b>
@@ -26,7 +26,7 @@ Returns the train of which this vehicle is part of.
 - <code><b>train</b></code> <a href="Train.md">Train</a>
 
   The train of which this vehicle is part of
-### Method <code>isCoupled(coupler) -> coupled</code>
+### Method <code>isCoupled</code> (coupler) → coupled
 Allows to check if the given coupler is coupled to another car.
 
 <b>Parameters:</b>
@@ -39,7 +39,7 @@ Allows to check if the given coupler is coupled to another car.
 - <code><b>coupled</b></code> boolean
 
   True of the give coupler is coupled to another car.
-### Method <code>getCoupled(coupler) -> coupled</code>
+### Method <code>getCoupled</code> (coupler) → coupled
 Allows to get the coupled vehicle at the given coupler.
 
 <b>Parameters:</b>
@@ -52,7 +52,7 @@ Allows to get the coupled vehicle at the given coupler.
 - <code><b>coupled</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The coupled car of the given coupler is coupled to another car.
-### Method <code>getTrackGraph() -> track</code>
+### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this vehicle is part of.
 
 <b>Return Values:</b>
@@ -60,7 +60,7 @@ Returns the track graph of which this vehicle is part of.
 - <code><b>track</b></code> <a href="../structs/TrackGraph.md">TrackGraph</a>
 
   The track graph of which this vehicle is part of.
-### Method <code>getTrackPos() -> track, offset, forward</code>
+### Method <code>getTrackPos</code> () → track, offset, forward
 Returns the track pos at which this vehicle is.
 
 <b>Return Values:</b>
@@ -74,7 +74,7 @@ Returns the track pos at which this vehicle is.
 - <code><b>forward</b></code> float
 
   The forward direction of the track pos. 1 = with the track direction, -1 = against the track direction
-### Method <code>getMovement() -> movement</code>
+### Method <code>getMovement</code> () → movement
 Returns the vehicle movement of this vehicle.
 
 <b>Return Values:</b>

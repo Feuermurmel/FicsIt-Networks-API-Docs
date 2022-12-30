@@ -26,7 +26,7 @@ A actor component that provides information and mainly statistics about the powe
 - <code><b>hasPower</b></code> boolean
 
   True if the connection has satisfied power values and counts as being powered. (True if it has power)
-### Method <code>getCircuit() -> circuit</code>
+### Method <code>getCircuit</code> () → circuit
 Returns the power circuit this info component is part of.
 
 <b>Return Values:</b>

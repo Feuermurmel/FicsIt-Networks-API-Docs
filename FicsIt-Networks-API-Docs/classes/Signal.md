@@ -11,7 +11,7 @@ A reflection object representing a signal.
 - <code><b>isVarArgs</b></code> boolean
 
   True if this signal has a variable amount of arguments.
-### Method <code>getParameters() -> parameters</code>
+### Method <code>getParameters</code> () → parameters
 Returns all the parameters of this signal.
 
 <b>Return Values:</b>

@@ -21,7 +21,7 @@ A control panel to configure multiple lights at once.
 - <code><b>colorSlot</b></code> integer
 
   The color slot the lights should use.
-### Method <code>setColorFromSlot(slot, color) -> </code>
+### Method <code>setColorFromSlot</code> (slot, color) → 
 Allows to update the light color that is referenced by the given slot.
 
 <b>Parameters:</b>

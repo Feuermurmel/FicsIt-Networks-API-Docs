@@ -14,7 +14,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 - <code><b>isAddrWhitelist</b></code> boolean
 
   True if the address filter list is used as whitelist.
-### Method <code>setPortList() -> ports</code>
+### Method <code>setPortList</code> () → ports
 Overrides the port filter list with the given array.
 
 <b>Return Values:</b>
@@ -22,7 +22,7 @@ Overrides the port filter list with the given array.
 - <code><b>ports</b></code> list of integer
 
   The port array you want to override the filter list with.
-### Method <code>setAddrList() -> addresses</code>
+### Method <code>setAddrList</code> () → addresses
 Overrides the address filter list with the given array.
 
 <b>Return Values:</b>
@@ -30,7 +30,7 @@ Overrides the address filter list with the given array.
 - <code><b>addresses</b></code> list of string
 
   The address array you want to override the filter list with.
-### Method <code>removePortList(port) -> </code>
+### Method <code>removePortList</code> (port) → 
 Removes the given port from the port filter list.
 
 <b>Parameters:</b>
@@ -38,7 +38,7 @@ Removes the given port from the port filter list.
 - <code><b>port</b></code> integer
 
   The port you want to remove from the list.
-### Method <code>removeAddrList(addr) -> </code>
+### Method <code>removeAddrList</code> (addr) → 
 Removes the given address from the address filter list.
 
 <b>Parameters:</b>
@@ -46,7 +46,7 @@ Removes the given address from the address filter list.
 - <code><b>addr</b></code> string
 
   The address you want to remove from the list.
-### Method <code>getPortList() -> ports</code>
+### Method <code>getPortList</code> () → ports
 Allows to get all the ports of the port filter list as array.
 
 <b>Return Values:</b>
@@ -54,7 +54,7 @@ Allows to get all the ports of the port filter list as array.
 - <code><b>ports</b></code> list of integer
 
   The port array of the filter list.
-### Method <code>getAddrList() -> addresses</code>
+### Method <code>getAddrList</code> () → addresses
 Allows to get all the addresses of the address filter list as array.
 
 <b>Return Values:</b>
@@ -62,7 +62,7 @@ Allows to get all the addresses of the address filter list as array.
 - <code><b>addresses</b></code> list of string
 
   The address array of the filter list.
-### Method <code>addPortList(port) -> </code>
+### Method <code>addPortList</code> (port) → 
 Adds a given port to the port filter list.
 
 <b>Parameters:</b>
@@ -70,7 +70,7 @@ Adds a given port to the port filter list.
 - <code><b>port</b></code> integer
 
   The port you want to add to the list.
-### Method <code>addAddrList(addr) -> </code>
+### Method <code>addAddrList</code> (addr) → 
 
 
 <b>Parameters:</b>

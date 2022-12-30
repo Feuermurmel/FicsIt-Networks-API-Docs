@@ -8,7 +8,7 @@ A reflection object representing a array property.
 - Property: <a href="Property.md#dataType">dataType</a>, <a href="Property.md#flags">flags</a>
 - ReflectionBase: <a href="ReflectionBase.md#description">description</a>, <a href="ReflectionBase.md#displayName">displayName</a>, <a href="ReflectionBase.md#name">name</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getInner() -> inner</code>
+### Method <code>getInner</code> () → inner
 Returns the inner type of this array.
 
 <b>Return Values:</b>

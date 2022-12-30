@@ -16,7 +16,7 @@ A struct that holds information about a recipe in its class. Means don't use it 
 - <code><b>duration</b></code> float
 
   The duration how much time it takes to cycle the recipe once.
-### Method <code>getProducts() -> products</code>
+### Method <code>getProducts</code> () → products
 Returns a array of item amounts, this recipe returns (outputs) when the recipe is processed once.
 
 <b>Return Values:</b>
@@ -24,7 +24,7 @@ Returns a array of item amounts, this recipe returns (outputs) when the recipe i
 - <code><b>products</b></code> list of <a href="../structs/ItemAmount.md">ItemAmount</a>
 
   The products of this recipe.
-### Method <code>getIngredients() -> ingredients</code>
+### Method <code>getIngredients</code> () → ingredients
 Returns a array of item amounts, this recipe needs (input) so the recipe can be processed.
 
 <b>Return Values:</b>

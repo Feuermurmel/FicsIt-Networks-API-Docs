@@ -18,7 +18,7 @@ A track section that combines the area between multiple signals.
 - <code><b>blockValidation</b></code> integer
 
   Returns the blocks validation status.
-### Method <code>isOccupiedBy(train) -> isOccupied</code>
+### Method <code>isOccupiedBy</code> (train) → isOccupied
 Allows you to check if this block is occupied by a given train.
 
 <b>Parameters:</b>

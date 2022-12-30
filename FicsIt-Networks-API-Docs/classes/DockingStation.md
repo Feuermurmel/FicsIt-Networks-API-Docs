@@ -15,7 +15,7 @@ A docking station for wheeled vehicles to transfer cargo.
 - <code><b>isLoadUnloading</b></code> boolean
 
   True if the docking station is currently loading or unloading a docked vehicle.
-### Method <code>getFuelInv() -> inventory</code>
+### Method <code>getFuelInv</code> () → inventory
 Returns the fuel inventory of the docking station.
 
 <b>Return Values:</b>
@@ -23,7 +23,7 @@ Returns the fuel inventory of the docking station.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The fuel inventory of the docking station.
-### Method <code>getInv() -> inventory</code>
+### Method <code>getInv</code> () → inventory
 Returns the cargo inventory of the docking station.
 
 <b>Return Values:</b>
@@ -31,7 +31,7 @@ Returns the cargo inventory of the docking station.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The cargo inventory of this docking station.
-### Method <code>getDocked() -> docked</code>
+### Method <code>getDocked</code> () → docked
 Returns the currently docked actor.
 
 <b>Return Values:</b>
@@ -39,7 +39,7 @@ Returns the currently docked actor.
 - <code><b>docked</b></code> <a href="Actor.md">Actor</a>
 
   The currently docked actor.
-### Method <code>undock() -> </code>
+### Method <code>undock</code> () → 
 Undocked the currently docked vehicle from this docking station.
 
 ## Static Members

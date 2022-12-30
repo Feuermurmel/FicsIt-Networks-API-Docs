@@ -9,7 +9,7 @@ You can rotate it indefinitely into any direction where every rotation triggers 
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>rotate(AntiClockwise) -> </code>
+### Method <code>rotate</code> (AntiClockwise) → 
 
 
 <b>Parameters:</b>
@@ -17,7 +17,7 @@ You can rotate it indefinitely into any direction where every rotation triggers 
 - <code><b>AntiClockwise</b></code> boolean
 
   
-### Signal <code>PotRotate -> AntiClockwise</code>
+### Signal <code>PotRotate</code> → AntiClockwise
 
 
 <b>Parameters:</b>

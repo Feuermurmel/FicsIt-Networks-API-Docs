@@ -11,7 +11,7 @@ Contains the time table information of train.
 - <code><b>numStops</b></code> integer
 
   The current number of stops in the time table.
-### Method <code>addStop(index, station, ruleSet) -> added</code>
+### Method <code>addStop</code> (index, station, ruleSet) → added
 Adds a stop to the time table.
 
 <b>Parameters:</b>
@@ -30,7 +30,7 @@ Adds a stop to the time table.
 - <code><b>added</b></code> boolean
 
   True if the stop got successfully added to the time table.
-### Method <code>removeStop(index) -> </code>
+### Method <code>removeStop</code> (index) → 
 Removes the stop with the given index from the time table.
 
 <b>Parameters:</b>
@@ -38,7 +38,7 @@ Removes the stop with the given index from the time table.
 - <code><b>index</b></code> integer
 
   The index at which the stop should get added.
-### Method <code>getStops() -> stops</code>
+### Method <code>getStops</code> () → stops
 Returns a list of all the stops this time table has
 
 <b>Return Values:</b>
@@ -46,7 +46,7 @@ Returns a list of all the stops this time table has
 - <code><b>stops</b></code> list of <a href="../structs/TimeTableStop.md">TimeTableStop</a>
 
   A list of time table stops this time table has.
-### Method <code>setStops() -> gotSet</code>
+### Method <code>setStops</code> () → gotSet
 Allows to empty and fill the stops of this time table with the given list of new stops.
 
 <b>Return Values:</b>
@@ -54,7 +54,7 @@ Allows to empty and fill the stops of this time table with the given list of new
 - <code><b>gotSet</b></code> boolean
 
   True if the stops got successfully set.
-### Method <code>isValidStop(index) -> valid</code>
+### Method <code>isValidStop</code> (index) → valid
 Allows to check if the given stop index is valid.
 
 <b>Parameters:</b>
@@ -67,7 +67,7 @@ Allows to check if the given stop index is valid.
 - <code><b>valid</b></code> boolean
 
   True if the stop index is valid.
-### Method <code>getStop(index) -> stop</code>
+### Method <code>getStop</code> (index) → stop
 Returns the stop at the given index.
 
 <b>Parameters:</b>
@@ -80,7 +80,7 @@ Returns the stop at the given index.
 - <code><b>stop</b></code> <a href="../structs/TimeTableStop.md">TimeTableStop</a>
 
   The time table stop at the given index.
-### Method <code>setCurrentStop(index) -> </code>
+### Method <code>setCurrentStop</code> (index) → 
 Sets the stop, to which the train trys to drive to right now.
 
 <b>Parameters:</b>
@@ -88,10 +88,10 @@ Sets the stop, to which the train trys to drive to right now.
 - <code><b>index</b></code> integer
 
   The index of the stop the train should drive to right now.
-### Method <code>incrementCurrentStop() -> </code>
+### Method <code>incrementCurrentStop</code> () → 
 Sets the current stop to the next stop in the time table.
 
-### Method <code>getCurrentStop() -> index</code>
+### Method <code>getCurrentStop</code> () → index
 Returns the index of the stop the train drives to right now.
 
 <b>Return Values:</b>

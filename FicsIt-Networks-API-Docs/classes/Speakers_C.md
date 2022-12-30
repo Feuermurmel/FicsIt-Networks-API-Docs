@@ -10,7 +10,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - SpeakerPole: <a href="SpeakerPole.md#SpeakerSound">SpeakerSound</a>, <a href="SpeakerPole.md#playSound">playSound()</a>, <a href="SpeakerPole.md#stopSound">stopSound()</a>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>setVolume(Volume) -> </code>
+### Method <code>setVolume</code> (Volume) → 
 
 
 <b>Parameters:</b>
@@ -18,7 +18,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Volume</b></code> float
 
   
-### Method <code>setRange(Range) -> </code>
+### Method <code>setRange</code> (Range) → 
 
 
 <b>Parameters:</b>
@@ -26,7 +26,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Range</b></code> float
 
   
-### Method <code>getVolume() -> Volume</code>
+### Method <code>getVolume</code> () → Volume
 
 
 <b>Return Values:</b>
@@ -34,7 +34,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Volume</b></code> float
 
   
-### Method <code>getRange() -> Range</code>
+### Method <code>getRange</code> () → Range
 
 
 <b>Return Values:</b>
@@ -42,7 +42,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Range</b></code> float
 
   
-### Signal <code>SpeakerSetting -> setting, New, OLD</code>
+### Signal <code>SpeakerSetting</code> → setting, New, OLD
 
 
 <b>Parameters:</b>

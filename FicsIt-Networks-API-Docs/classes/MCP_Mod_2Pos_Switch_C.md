@@ -11,7 +11,7 @@ This Switch Module for modular I/O Panels is used to toggle between a true and f
 - <code><b>state</b></code> boolean
 
   
-### Method <code>setColor(red, green, blue, Emit) -> </code>
+### Method <code>setColor</code> (red, green, blue, Emit) → 
 
 
 <b>Parameters:</b>
@@ -28,7 +28,7 @@ This Switch Module for modular I/O Panels is used to toggle between a true and f
 - <code><b>Emit</b></code> float
 
   
-### Signal <code>ChangeState -> State2</code>
+### Signal <code>ChangeState</code> → State2
 
 
 <b>Parameters:</b>

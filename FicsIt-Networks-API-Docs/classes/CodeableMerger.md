@@ -11,7 +11,7 @@ Superclasses: <a href="FGBuildableConveyorAttachment.md">FGBuildableConveyorAtta
 - <code><b>canOutput</b></code> boolean
 
   Is true if the output queue has a slot available for an item from one of the input queues.
-### Method <code>transferItem(input) -> transferred</code>
+### Method <code>transferItem</code> (input) → transferred
 Allows to transfer an item from the given input queue to the output queue if possible.
 
 <b>Parameters:</b>
@@ -24,7 +24,7 @@ Allows to transfer an item from the given input queue to the output queue if pos
 - <code><b>transferred</b></code> boolean
 
   true if it was able to transfer the item.
-### Method <code>getInput(input) -> item</code>
+### Method <code>getInput</code> (input) → item
 Returns the next item in the given input queue.
 
 <b>Parameters:</b>
@@ -37,7 +37,7 @@ Returns the next item in the given input queue.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The next item in the input queue.
-### Signal <code>ItemRequest -> input, item</code>
+### Signal <code>ItemRequest</code> → input, item
 Triggers when a new item is ready in one of the input queues.
 
 <b>Parameters:</b>
@@ -48,7 +48,7 @@ Triggers when a new item is ready in one of the input queues.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The new item in the input queue.
-### Signal <code>ItemOutputted -> item</code>
+### Signal <code>ItemOutputted</code> → item
 Triggers when an item is popped from the output queue (aka it got transferred to a conveyor).
 
 <b>Parameters:</b>

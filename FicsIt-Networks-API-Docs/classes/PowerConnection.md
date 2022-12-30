@@ -14,7 +14,7 @@ A actor component that allows for a connection point to the power network. Basic
 - <code><b>maxConnections</b></code> integer
 
   The maximum amount of connections this power connection can handle.
-### Method <code>getPower() -> power</code>
+### Method <code>getPower</code> () → power
 Returns the power info component of this power connection.
 
 <b>Return Values:</b>
@@ -22,7 +22,7 @@ Returns the power info component of this power connection.
 - <code><b>power</b></code> <a href="PowerInfo.md">PowerInfo</a>
 
   The power info component this power connection uses.
-### Method <code>getCircuit() -> circuit</code>
+### Method <code>getCircuit</code> () → circuit
 Returns the power circuit to which this connection component is attached to.
 
 <b>Return Values:</b>

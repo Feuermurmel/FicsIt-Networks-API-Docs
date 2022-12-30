@@ -11,7 +11,7 @@ Important to note is that every module is it's own component, that means if you 
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getModules() -> modules</code>
+### Method <code>getModules</code> () → modules
 
 
 <b>Return Values:</b>
@@ -19,7 +19,7 @@ Important to note is that every module is it's own component, that means if you 
 - <code><b>modules</b></code> list of <a href="Object.md">Object</a>
 
   
-### Method <code>getModule(X, Y) -> Module</code>
+### Method <code>getModule</code> (X, Y) → Module
 
 
 <b>Parameters:</b>

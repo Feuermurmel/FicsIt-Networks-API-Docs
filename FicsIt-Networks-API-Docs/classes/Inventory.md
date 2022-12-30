@@ -17,7 +17,7 @@ A actor component that can hold multiple item stacks.
 - <code><b>size</b></code> integer
 
   The count of available item stack slots this inventory has.
-### Method <code>getStack(args) -> </code>
+### Method <code>getStack</code> (args) → 
 Returns the item stack at the given index.
 Takes integers as input and returns the corresponding stacks.
 
@@ -26,13 +26,13 @@ Takes integers as input and returns the corresponding stacks.
 - <code><b>args</b></code> unknown
 
   
-### Method <code>sort() -> </code>
+### Method <code>sort</code> () → 
 Sorts the whole inventory. (like the middle mouse click into a inventory)
 
-### Method <code>flush() -> </code>
+### Method <code>flush</code> () → 
 Removes all discardable items from the inventory completely. They will be gone! No way to get them back!
 
-### Method <code>canSplitStackAtIndex(index) -> canSplit</code>
+### Method <code>canSplitStackAtIndex</code> (index) → canSplit
 Returns true of the stack at the given index can be split.
 
 <b>Parameters:</b>
@@ -45,7 +45,7 @@ Returns true of the stack at the given index can be split.
 - <code><b>canSplit</b></code> boolean
 
   True if the item stack can be split.
-### Method <code>splitStackAtIndex(index, itemCount) -> </code>
+### Method <code>splitStackAtIndex</code> (index, itemCount) → 
 Splits the stack at the given index into two. The passed amount of items gets transferred to the next available slot.
 
 <b>Parameters:</b>
@@ -56,7 +56,7 @@ Splits the stack at the given index into two. The passed amount of items gets tr
 - <code><b>itemCount</b></code> integer
 
   The count of items that should get transferred to the next available slot.
-### Method <code>moveItemStack(fromIndex, toIndex, allowPartial) -> count</code>
+### Method <code>moveItemStack</code> (fromIndex, toIndex, allowPartial) → count
 Moves the stack of the given slot to another given slot. If partial is allowed, only moves as much items as possible, if not allowed, and the full stack doesnt fit onto the new slot, skips the move.
 
 <b>Parameters:</b>

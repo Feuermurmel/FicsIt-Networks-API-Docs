@@ -32,7 +32,7 @@ This class holds information and references about a trains (a collection of mult
 - <code><b>isDocked</b></code> boolean
 
   True if the train is currently docked.
-### Method <code>getName() -> name</code>
+### Method <code>getName</code> () → name
 Returns the name of this train.
 
 <b>Return Values:</b>
@@ -40,7 +40,7 @@ Returns the name of this train.
 - <code><b>name</b></code> string
 
   The name of this train.
-### Method <code>setName(name) -> </code>
+### Method <code>setName</code> (name) → 
 Allows to set the name of this train.
 
 <b>Parameters:</b>
@@ -48,7 +48,7 @@ Allows to set the name of this train.
 - <code><b>name</b></code> string
 
   The new name of this train.
-### Method <code>getTrackGraph() -> track</code>
+### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this train is part of.
 
 <b>Return Values:</b>
@@ -56,7 +56,7 @@ Returns the track graph of which this train is part of.
 - <code><b>track</b></code> <a href="../structs/TrackGraph.md">TrackGraph</a>
 
   The track graph of which this train is part of.
-### Method <code>setSelfDriving(selfDriving) -> </code>
+### Method <code>setSelfDriving</code> (selfDriving) → 
 Allows to set if the train should be self driving or not.
 
 <b>Parameters:</b>
@@ -64,7 +64,7 @@ Allows to set if the train should be self driving or not.
 - <code><b>selfDriving</b></code> boolean
 
   True if the train should be self driving.
-### Method <code>getMaster() -> master</code>
+### Method <code>getMaster</code> () → master
 Returns the master locomotive that is part of this train.
 
 <b>Return Values:</b>
@@ -72,7 +72,7 @@ Returns the master locomotive that is part of this train.
 - <code><b>master</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The master locomotive of this train.
-### Method <code>getTimeTable() -> timeTable</code>
+### Method <code>getTimeTable</code> () → timeTable
 Returns the timetable of this train.
 
 <b>Return Values:</b>
@@ -80,7 +80,7 @@ Returns the timetable of this train.
 - <code><b>timeTable</b></code> <a href="TimeTable.md">TimeTable</a>
 
   The timetable of this train.
-### Method <code>newTimeTable() -> timeTable</code>
+### Method <code>newTimeTable</code> () → timeTable
 Creates and returns a new timetable for this train.
 
 <b>Return Values:</b>
@@ -88,7 +88,7 @@ Creates and returns a new timetable for this train.
 - <code><b>timeTable</b></code> <a href="TimeTable.md">TimeTable</a>
 
   The new timetable for this train.
-### Method <code>getFirst() -> first</code>
+### Method <code>getFirst</code> () → first
 Returns the first railroad vehicle that is part of this train.
 
 <b>Return Values:</b>
@@ -96,7 +96,7 @@ Returns the first railroad vehicle that is part of this train.
 - <code><b>first</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The first railroad vehicle that is part of this train.
-### Method <code>getLast() -> last</code>
+### Method <code>getLast</code> () → last
 Returns the last railroad vehicle that is part of this train.
 
 <b>Return Values:</b>
@@ -104,10 +104,10 @@ Returns the last railroad vehicle that is part of this train.
 - <code><b>last</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The last railroad vehicle that is part of this train.
-### Method <code>dock() -> </code>
+### Method <code>dock</code> () → 
 Trys to dock the train to the station it is currently at.
 
-### Method <code>getVehicles() -> vehicles</code>
+### Method <code>getVehicles</code> () → vehicles
 Returns a list of all the vehicles this train has.
 
 <b>Return Values:</b>
@@ -115,7 +115,7 @@ Returns a list of all the vehicles this train has.
 - <code><b>vehicles</b></code> list of <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   A list of all the vehicles this train has.
-### Signal <code>SelfDrivingUpdate -> enabled</code>
+### Signal <code>SelfDrivingUpdate</code> → enabled
 Triggers when the self driving mode of the train changes
 
 <b>Parameters:</b>

@@ -2,7 +2,7 @@
 
 A structure that can hold a buffer of characters and colors that can be displayed with a gpu
 ## Instance Members
-### Method <code>getSize() -> width, height</code>
+### Method <code>getSize</code> () → width, height
 Allows to get the dimensions of the buffer.
 
 <b>Return Values:</b>
@@ -13,7 +13,7 @@ Allows to get the dimensions of the buffer.
 - <code><b>height</b></code> float
 
   The height of this buffer
-### Method <code>setSize(width, height) -> </code>
+### Method <code>setSize</code> (width, height) → 
 Allows to set the dimensions of the buffer.
 
 <b>Parameters:</b>
@@ -24,7 +24,7 @@ Allows to set the dimensions of the buffer.
 - <code><b>height</b></code> float
 
   The height this buffer now have
-### Method <code>get(x, y) -> c, foreground, background</code>
+### Method <code>get</code> (x, y) → c, foreground, background
 Allows to get a single pixel from the buffer at the given position
 
 <b>Parameters:</b>
@@ -46,7 +46,7 @@ Allows to get a single pixel from the buffer at the given position
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color of the pixel at the given position
-### Method <code>set(x, y, c, foreground, background) -> done</code>
+### Method <code>set</code> (x, y, c, foreground, background) → done
 Allows to set a single pixel of the buffer at the given position
 
 <b>Parameters:</b>
@@ -71,7 +71,7 @@ Allows to set a single pixel of the buffer at the given position
 - <code><b>done</b></code> boolean
 
   True if the pixel got set successfully
-### Method <code>copy(x, y, buffer, textBlendMode, foregroundBlendMode, backgroundBlendMode) -> </code>
+### Method <code>copy</code> (x, y, buffer, textBlendMode, foregroundBlendMode, backgroundBlendMode) → 
 Copies the given buffer at the given offset of the upper left corner into this buffer.
 
 <b>Parameters:</b>
@@ -118,7 +118,7 @@ Copies the given buffer at the given offset of the upper left corner into this b
 7 = Darken Only
 8 = Lighten Only
 9 = None
-### Method <code>setText(x, y, text, foreground, background) -> </code>
+### Method <code>setText</code> (x, y, text, foreground, background) → 
 Allows to write the given text onto the buffer and with the given offset.
 
 <b>Parameters:</b>
@@ -138,7 +138,7 @@ Allows to write the given text onto the buffer and with the given offset.
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color which will be used to write the text.
-### Method <code>fill(x, y, width, height, character, foreground, background) -> </code>
+### Method <code>fill</code> (x, y, width, height, character, foreground, background) → 
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -164,7 +164,7 @@ Draws the given character at all given positions in the given rectangle on-to th
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color which will be used to fill the rectangle.
-### Method <code>setRaw(characters, foreground, background) -> success</code>
+### Method <code>setRaw</code> (characters, foreground, background) → success
 Allows to set the internal data of the buffer more directly.
 
 <b>Parameters:</b>
@@ -183,7 +183,7 @@ Allows to set the internal data of the buffer more directly.
 - <code><b>success</b></code> boolean
 
   True if the raw data was successfully written
-### Method <code>clone() -> buffer</code>
+### Method <code>clone</code> () → buffer
 Clones this buffer into a new struct
 
 <b>Return Values:</b>

@@ -12,7 +12,7 @@ The base class of every object.
 - <code><b>internalPath</b></code> string
 
   The unreal engine internal path name of this object.
-### Method <code>getHash() -> hash</code>
+### Method <code>getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
 <b>Return Values:</b>
@@ -20,7 +20,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
 - <code><b>hash</b></code> integer
 
   The hash of this class.
-### Method <code>getType() -> type</code>
+### Method <code>getType</code> () → type
 Returns the type (aka class) of this class instance.
 
 <b>Return Values:</b>
@@ -39,7 +39,7 @@ Returns the type (aka class) of this class instance.
 - <code><b>internalPath</b></code> string
 
   The unreal engine internal path name of this object.
-### Method <code>getHash() -> hash</code>
+### Method <code>getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
 <b>Return Values:</b>
@@ -47,7 +47,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
 - <code><b>hash</b></code> integer
 
   The hash of this class.
-### Method <code>getType() -> type</code>
+### Method <code>getType</code> () → type
 Returns the type (aka class) of this class instance.
 
 <b>Return Values:</b>

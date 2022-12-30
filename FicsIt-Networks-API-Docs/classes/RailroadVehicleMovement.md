@@ -89,7 +89,7 @@ This actor component contains all the information about the movement of a railro
 - <code><b>isMoving</b></code> boolean
 
   True if this vehicle is currently moving.
-### Method <code>getVehicle() -> vehicle</code>
+### Method <code>getVehicle</code> () → vehicle
 Returns the vehicle this movement component holds the movement information of.
 
 <b>Return Values:</b>
@@ -97,7 +97,7 @@ Returns the vehicle this movement component holds the movement information of.
 - <code><b>vehicle</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The vehicle this movement component holds the movement information of.
-### Method <code>getWheelsetRotation(wheelset) -> x, y, z</code>
+### Method <code>getWheelsetRotation</code> (wheelset) → x, y, z
 Returns the current rotation of the given wheelset.
 
 <b>Parameters:</b>
@@ -116,7 +116,7 @@ Returns the current rotation of the given wheelset.
 - <code><b>z</b></code> float
 
   The wheelset's rotation Z component.
-### Method <code>getWheelsetOffset(wheelset) -> offset</code>
+### Method <code>getWheelsetOffset</code> (wheelset) → offset
 Returns the offset of the wheelset with the given index from the start of the vehicle.
 
 <b>Parameters:</b>
@@ -129,7 +129,7 @@ Returns the offset of the wheelset with the given index from the start of the ve
 - <code><b>offset</b></code> float
 
   The offset of the wheelset.
-### Method <code>getCouplerRotationAndExtension(coupler) -> x, y, z, extension</code>
+### Method <code>getCouplerRotationAndExtension</code> (coupler) → x, y, z, extension
 Returns the normal vector and the extension of the coupler with the given index.
 
 <b>Parameters:</b>

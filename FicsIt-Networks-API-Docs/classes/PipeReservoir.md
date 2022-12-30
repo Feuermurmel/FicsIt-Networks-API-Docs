@@ -24,10 +24,10 @@ The base class for all fluid tanks.
 - <code><b>flowLimit</b></code> float
 
   The maximum flow rate of fluid this tank can handle.
-### Method <code>flush() -> </code>
+### Method <code>flush</code> () → 
 Empties the whole fluid container.
 
-### Method <code>getFluidType() -> type</code>
+### Method <code>getFluidType</code> () → type
 Returns the type of the fluid.
 
 <b>Return Values:</b>

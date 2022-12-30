@@ -7,7 +7,7 @@ Reflection Object that holds information about structures.
 <b>Inherited Members:</b>
 - ReflectionBase: <a href="ReflectionBase.md#description">description</a>, <a href="ReflectionBase.md#displayName">displayName</a>, <a href="ReflectionBase.md#name">name</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getParent() -> parent</code>
+### Method <code>getParent</code> () → parent
 Returns the parent type of this type.
 
 <b>Return Values:</b>
@@ -15,7 +15,7 @@ Returns the parent type of this type.
 - <code><b>parent</b></code> <a href="Class.md">Class</a>
 
   The parent type of this type.
-### Method <code>getProperties() -> properties</code>
+### Method <code>getProperties</code> () → properties
 Returns all the properties of this type.
 
 <b>Return Values:</b>
@@ -23,7 +23,7 @@ Returns all the properties of this type.
 - <code><b>properties</b></code> list of <a href="Property.md">Property</a>
 
   The properties this specific type implements (excluding properties from parent types).
-### Method <code>getAllProperties() -> properties</code>
+### Method <code>getAllProperties</code> () → properties
 Returns all the properties of this and parent types.
 
 <b>Return Values:</b>
@@ -31,7 +31,7 @@ Returns all the properties of this and parent types.
 - <code><b>properties</b></code> list of <a href="Property.md">Property</a>
 
   The properties this type implements including properties from parent types.
-### Method <code>getFunctions() -> functions</code>
+### Method <code>getFunctions</code> () → functions
 Returns all the functions of this type.
 
 <b>Return Values:</b>
@@ -39,7 +39,7 @@ Returns all the functions of this type.
 - <code><b>functions</b></code> list of <a href="Function.md">Function</a>
 
   The functions this specific type implements (excluding properties from parent types).
-### Method <code>getAllFunctions() -> functions</code>
+### Method <code>getAllFunctions</code> () → functions
 Returns all the functions of this and parent types.
 
 <b>Return Values:</b>
@@ -47,7 +47,7 @@ Returns all the functions of this and parent types.
 - <code><b>functions</b></code> list of <a href="Property.md">Property</a>
 
   The functions this type implements including functions from parent types.
-### Method <code>isChildOf(parent) -> isChild</code>
+### Method <code>isChildOf</code> (parent) → isChild
 Allows to check if this struct is a child struct of the given struct or the given struct it self.
 
 <b>Parameters:</b>

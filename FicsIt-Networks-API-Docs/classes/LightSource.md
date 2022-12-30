@@ -20,7 +20,7 @@ The base class for all light you can build.
 - <code><b>colorSlot</b></code> integer
 
   The color slot the light uses.
-### Method <code>getColorFromSlot(slot) -> color</code>
+### Method <code>getColorFromSlot</code> (slot) → color
 Returns the light color that is referenced by the given slot.
 
 <b>Parameters:</b>
@@ -33,7 +33,7 @@ Returns the light color that is referenced by the given slot.
 - <code><b>color</b></code> <a href="../structs/Color.md">Color</a>
 
   The color this slot references.
-### Method <code>setColorFromSlot(slot, color) -> </code>
+### Method <code>setColorFromSlot</code> (slot, color) → 
 Allows to update the light color that is referenced by the given slot.
 
 <b>Parameters:</b>

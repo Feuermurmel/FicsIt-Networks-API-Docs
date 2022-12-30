@@ -11,7 +11,7 @@ The Lever Module for the modular I/O Panel is used to switch a programm state be
 - <code><b>state</b></code> boolean
 
   
-### Signal <code>ChangeState -> State</code>
+### Signal <code>ChangeState</code> → State
 
 
 <b>Parameters:</b>

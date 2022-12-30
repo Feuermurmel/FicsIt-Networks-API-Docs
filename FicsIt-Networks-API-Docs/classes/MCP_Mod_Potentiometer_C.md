@@ -17,7 +17,7 @@ This Potentiometer Module allows for input of a fixed value range and fires a si
 - <code><b>min</b></code> integer
 
   
-### Method <code>setColor(red, green, blue, Emit) -> </code>
+### Method <code>setColor</code> (red, green, blue, Emit) → 
 
 
 <b>Parameters:</b>
@@ -34,7 +34,7 @@ This Potentiometer Module allows for input of a fixed value range and fires a si
 - <code><b>Emit</b></code> float
 
   
-### Signal <code>valueChanged -> Value</code>
+### Signal <code>valueChanged</code> → Value
 
 
 <b>Parameters:</b>

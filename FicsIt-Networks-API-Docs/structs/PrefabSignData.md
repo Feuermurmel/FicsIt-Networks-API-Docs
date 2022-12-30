@@ -18,7 +18,7 @@ This structure stores all data that defines what a sign displays.
 - <code><b>signType</b></code> <a href="../classes/SignType.md">SignType</a>
 
   The type of sign this prefab fits to.
-### Method <code>getTextElements() -> textElements, textElementValues</code>
+### Method <code>getTextElements</code> () → textElements, textElementValues
 Returns all text elements and their values.
 
 <b>Return Values:</b>
@@ -29,7 +29,7 @@ Returns all text elements and their values.
 - <code><b>textElementValues</b></code> list of string
 
   The values for all text elements.
-### Method <code>getIconElements() -> iconElements, iconElementValues</code>
+### Method <code>getIconElements</code> () → iconElements, iconElementValues
 Returns all icon elements and their values.
 
 <b>Return Values:</b>
@@ -40,7 +40,7 @@ Returns all icon elements and their values.
 - <code><b>iconElementValues</b></code> list of integer
 
   The values for all icon elements.
-### Method <code>setTextElements(textElements, textElementValues) -> </code>
+### Method <code>setTextElements</code> (textElements, textElementValues) → 
 Sets all text elements and their values.
 
 <b>Parameters:</b>
@@ -51,7 +51,7 @@ Sets all text elements and their values.
 - <code><b>textElementValues</b></code> list of string
 
   The values for all text elements.
-### Method <code>setIconElements(iconElements, iconElementValues) -> </code>
+### Method <code>setIconElements</code> (iconElements, iconElementValues) → 
 Sets all icon elements and their values.
 
 <b>Parameters:</b>
@@ -62,7 +62,7 @@ Sets all icon elements and their values.
 - <code><b>iconElementValues</b></code> list of integer
 
   The values for all icon elements.
-### Method <code>setTextElement(elementName, value) -> </code>
+### Method <code>setTextElement</code> (elementName, value) → 
 Sets a text element with the given element name.
 
 <b>Parameters:</b>
@@ -73,7 +73,7 @@ Sets a text element with the given element name.
 - <code><b>value</b></code> string
 
   The value of the text element
-### Method <code>setIconElement(elementName, value) -> </code>
+### Method <code>setIconElement</code> (elementName, value) → 
 Sets a icon element with the given element name.
 
 <b>Parameters:</b>
@@ -84,7 +84,7 @@ Sets a icon element with the given element name.
 - <code><b>value</b></code> integer
 
   The value of the icon element
-### Method <code>getTextElement(elementName) -> value</code>
+### Method <code>getTextElement</code> (elementName) → value
 Gets a text element with the given element name.
 
 <b>Parameters:</b>
@@ -97,7 +97,7 @@ Gets a text element with the given element name.
 - <code><b>value</b></code> integer
 
   The value of the text element
-### Method <code>getIconElement(elementName) -> value</code>
+### Method <code>getIconElement</code> (elementName) → value
 Gets a icon element with the given element name.
 
 <b>Parameters:</b>

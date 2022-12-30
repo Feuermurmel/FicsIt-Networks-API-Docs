@@ -27,7 +27,7 @@ The base class for all vehicles that used wheels for movement.
 - <code><b>isDrifting</b></code> boolean
 
   True if the vehicle is currently drifting.
-### Method <code>getFuelInv() -> inventory</code>
+### Method <code>getFuelInv</code> () → inventory
 Returns the inventory that contains the fuel of the vehicle.
 
 <b>Return Values:</b>
@@ -35,7 +35,7 @@ Returns the inventory that contains the fuel of the vehicle.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The fuel inventory of the vehicle.
-### Method <code>getStorageInv() -> inventory</code>
+### Method <code>getStorageInv</code> () → inventory
 Returns the inventory that contains the storage of the vehicle.
 
 <b>Return Values:</b>
@@ -43,7 +43,7 @@ Returns the inventory that contains the storage of the vehicle.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The storage inventory of the vehicle.
-### Method <code>isValidFuel(item) -> isValid</code>
+### Method <code>isValidFuel</code> (item) → isValid
 Allows to check if the given item type is a valid fuel for this vehicle.
 
 <b>Parameters:</b>
@@ -56,7 +56,7 @@ Allows to check if the given item type is a valid fuel for this vehicle.
 - <code><b>isValid</b></code> boolean
 
   True if the given item type is a valid fuel for this vehicle.
-### Method <code>getCurrentTarget() -> index</code>
+### Method <code>getCurrentTarget</code> () → index
 Returns the index of the target that the vehicle tries to move to right now.
 
 <b>Return Values:</b>
@@ -64,10 +64,10 @@ Returns the index of the target that the vehicle tries to move to right now.
 - <code><b>index</b></code> integer
 
   The index of the current target.
-### Method <code>nextTarget() -> </code>
+### Method <code>nextTarget</code> () → 
 Sets the current target to the next target in the list.
 
-### Method <code>setCurrentTarget(index) -> </code>
+### Method <code>setCurrentTarget</code> (index) → 
 Sets the target with the given index as the target this vehicle tries to move to right now.
 
 <b>Parameters:</b>
@@ -75,7 +75,7 @@ Sets the target with the given index as the target this vehicle tries to move to
 - <code><b>index</b></code> integer
 
   The index of the target this vehicle should move to now.
-### Method <code>getTargetList() -> targetList</code>
+### Method <code>getTargetList</code> () → targetList
 Returns the list of targets/path waypoints.
 
 <b>Return Values:</b>

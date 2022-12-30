@@ -32,7 +32,7 @@ A train signal to control trains on a track.
 1 = The track is clear and the train is allowed to pass.
 2 = The next track is Occupied and the train should stop
 3 = The train should dock.
-### Method <code>getObservedBlock() -> block</code>
+### Method <code>getObservedBlock</code> () → block
 Returns the track block this signals observes.
 
 <b>Return Values:</b>
@@ -40,7 +40,7 @@ Returns the track block this signals observes.
 - <code><b>block</b></code> <a href="../structs/RailroadSignalBlock.md">RailroadSignalBlock</a>
 
   The railroad signal block this signal is observing.
-### Signal <code>AspectChanged -> aspect</code>
+### Signal <code>AspectChanged</code> → aspect
 Triggers when the aspect of this signal changes.
 
 <b>Parameters:</b>

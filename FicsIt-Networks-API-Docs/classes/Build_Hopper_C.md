@@ -8,7 +8,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - Factory: <a href="Factory.md#cycleTime">cycleTime</a>, <a href="Factory.md#maxPotential">maxPotential</a>, <a href="Factory.md#minPotential">minPotential</a>, <a href="Factory.md#potential">potential</a>, <a href="Factory.md#powerConsumProducing">powerConsumProducing</a>, <a href="Factory.md#productivity">productivity</a>, <a href="Factory.md#progress">progress</a>, <a href="Factory.md#standby">standby</a>
 - Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getFilterRules() -> itemRules</code>
+### Method <code>getFilterRules</code> () → itemRules
 
 
 <b>Return Values:</b>
@@ -16,7 +16,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>itemRules</b></code> list of string
 
   
-### Method <code>getTakeOrLeave() -> takeOrLeave</code>
+### Method <code>getTakeOrLeave</code> () → takeOrLeave
 
 
 <b>Return Values:</b>
@@ -24,7 +24,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeOrLeave</b></code> boolean
 
   
-### Method <code>setTakeOrLeave(takeOrLeave) -> </code>
+### Method <code>setTakeOrLeave</code> (takeOrLeave) → 
 
 
 <b>Parameters:</b>
@@ -32,7 +32,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeOrLeave</b></code> boolean
 
   
-### Method <code>removeFilterRule(itemRule) -> ruleRemoved</code>
+### Method <code>removeFilterRule</code> (itemRule) → ruleRemoved
 
 
 <b>Parameters:</b>
@@ -45,7 +45,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>ruleRemoved</b></code> boolean
 
   
-### Method <code>addFilterRule(itemRule) -> ruleAdded</code>
+### Method <code>addFilterRule</code> (itemRule) → ruleAdded
 
 
 <b>Parameters:</b>
@@ -58,10 +58,10 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>ruleAdded</b></code> boolean
 
   
-### Method <code>clearFilterRules() -> </code>
+### Method <code>clearFilterRules</code> () → 
 
 
-### Method <code>getTakeFullest() -> takeFullest</code>
+### Method <code>getTakeFullest</code> () → takeFullest
 
 
 <b>Return Values:</b>
@@ -69,7 +69,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeFullest</b></code> boolean
 
   
-### Method <code>setTakeFullest(takeFullest) -> </code>
+### Method <code>setTakeFullest</code> (takeFullest) → 
 
 
 <b>Parameters:</b>
@@ -77,7 +77,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeFullest</b></code> boolean
 
   
-### Method <code>getStacksToTake() -> stacksToTake</code>
+### Method <code>getStacksToTake</code> () → stacksToTake
 
 
 <b>Return Values:</b>
@@ -85,7 +85,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>stacksToTake</b></code> integer
 
   
-### Method <code>setStacksToTake(stacksToTake) -> </code>
+### Method <code>setStacksToTake</code> (stacksToTake) → 
 
 
 <b>Parameters:</b>
