@@ -2,22 +2,23 @@ import argparse
 import logging
 import sys
 from argparse import Namespace
+from pathlib import Path
 
+from fin_api_docs.generator import main
 from fin_api_docs.util import UserError
 
 
 def parse_args() -> Namespace:
     parser = argparse.ArgumentParser()
+    parser.add_argument('-o', '--output', type=Path, default=Path('FicsIt-Networks-API-Docs'), dest='output_path')
+    parser.add_argument('-c', '--clear', action='store_true')
+    parser.add_argument('input_json_path', nargs='?', type=Path)
 
     return parser.parse_args()
 
 
-def main() -> None:
-    pass
-
-
 def entry_point() -> None:
-    logging.basicConfig(format='%(message)s')
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
 
     try:
         main(**vars(parse_args()))

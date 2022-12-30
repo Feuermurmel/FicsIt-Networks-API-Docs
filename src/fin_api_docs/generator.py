@@ -1,0 +1,265 @@
+from __future__ import annotations
+
+import dataclasses
+import json
+import os
+import shutil
+from dataclasses import dataclass
+from functools import partial
+from pathlib import Path
+from typing import Optional, Callable, Iterator, NewType, Iterable
+
+from fin_api_docs.api import API, TypeRef, PrimitiveType, ArrayType, \
+    StructuredTypeID, Struct, MemberID, StructuredType, Class, Member, Field, \
+    Method, Signal, Parameter
+from fin_api_docs.util import UserError
+
+Markdown = NewType('Markdown', str)
+
+
+def get_relative_path(path: Path, relative_to: Path) -> str:
+    parts_from = list(relative_to.parts[:-1])
+    parts_to = list(path.parts)
+
+    while parts_from and parts_to and parts_from[0] == parts_to[0]:
+        parts_from.pop(0)
+        parts_to.pop(0)
+
+    return '/'.join(['..' for _ in parts_from] + parts_to)
+
+
+@dataclass
+class Link:
+    relative_to: Page
+    page: Page
+    fragment: str | None = None
+
+    def render(self, link_text: str) -> Markdown:
+        url = get_relative_path(self.page.path, self.relative_to.path)
+
+        if self.fragment is not None:
+            url = f'{url}#{self.fragment}'
+
+        return Markdown(f'<a href="{url}">{link_text}</a>')
+
+    def with_fragment(self, fragment):
+        return dataclasses.replace(self, fragment=fragment)
+
+
+@dataclass
+class Page:
+    path: Path
+    get_content: Callable[[PageContext], Markdown]
+
+
+@dataclass
+class APIDocs:
+    api: API
+    structured_type_pages: dict[StructuredTypeID, Page]
+
+    def write_pages(self, output_path: Path):
+        for i in self.structured_type_pages.values():
+            content = i.get_content(PageContext(i, self))
+            path = output_path / i.path
+
+            if not path.parent.exists():
+                path.parent.mkdir(parents=True)
+
+            path.write_text(content)
+
+
+@dataclass
+class PageContext:
+    page: Page
+    api_docs: APIDocs
+
+    def type_ref(self, ref: TypeRef) -> Markdown:
+        if isinstance(ref, PrimitiveType):
+            return Markdown(ref.value)
+        elif isinstance(ref, ArrayType):
+            return Markdown(f'list of {self.type_ref(ref.elementType)}')
+        else:
+            return self.page_link_target(ref) \
+                .render(self.api_docs.api.structured_types[ref].name)
+
+    def page_link_target(self, id: StructuredTypeID) -> Link:
+        return Link(self.page, self.api_docs.structured_type_pages[id])
+
+    def member_link_target(self, id: MemberID) -> Link:
+        return self.page_link_target(id.type).with_fragment(id.member)
+
+
+def member_sort_key(member: Member):
+    if isinstance(member, Field):
+        category_rank = 0
+    elif isinstance(member, Method):
+        category_rank = 1
+    else:
+        category_rank = 2
+
+    return category_rank, member.name
+
+
+def structured_type_content(type: StructuredType, context: PageContext) -> Markdown:
+    def param_str(parameter: Parameter) -> str:
+        param_str = f'{parameter.name}: {context.type_ref(parameter.type)}'
+
+        if parameter.is_var_arg:
+            param_str += '...'
+
+        return param_str
+
+    def iter_parameter_descriptions(
+            heading: str, parameters: list[Parameter]) \
+            -> Iterator[str]:
+        if parameters:
+            yield f'<b>{heading}:</b>'
+            yield ''
+
+            for p in parameters:
+                yield f'- <code><b>{p.name}</b></code> {context.type_ref(p.type)}'
+                yield f''
+                yield f'  {p.description}'
+
+    # TODO: Fix newlines in descriptions.
+    # TODO: Also write "(no description)" when a description is missing.
+    def iter_members(
+            heading: str,
+            type: StructuredType,
+            get_members: Callable[[StructuredType], Iterable[Member]]) \
+            -> Iterator[str]:
+        parents = context.api_docs.api.get_parent_chain(type.id)[1:]
+
+        parent_members = list[tuple[StructuredTypeID, Iterable[Member]]]()
+
+        for t in parents:
+            members = get_members(context.api_docs.api.structured_types[t])
+
+            if members:
+                parent_members.append((t, members))
+
+        members = get_members(type)
+
+        if members or parent_members:
+            yield f'## {heading}'
+
+            if parent_members:
+                yield f'<b>Inherited Members:</b>'
+
+            for parent_id, pm in parent_members:
+                parent = context.api_docs.api.structured_types[parent_id]
+
+                def member_link_text(member: Member):
+                    if isinstance(member, Method):
+                        return f'{member.name}()'
+                    else:
+                        return member.name
+
+                members_str = ', '.join(
+                    f'{context.member_link_target(m.id).render(member_link_text(m))}'
+                    for m in sorted(pm, key=lambda i: i.name))
+
+                yield f'- {parent.name}: {members_str}'
+
+            fields = list[Field]()
+            methods = list[Method]()
+            signals = list[Signal]()
+
+            for m in members:
+                if isinstance(m, Field):
+                    fields.append(m)
+                elif isinstance(m, Method):
+                    methods.append(m)
+                else:
+                    signals.append(m)
+
+            if fields:
+                yield '### Fields'
+
+                for f in fields:
+                    yield f'- <code><b>{f.name}</b></code> {context.type_ref(f.type)}'
+                    yield f''
+                    yield f'  {f.description}'
+
+            for mm in methods:
+                params_str = ', '.join(i.name for i in mm.parameters)
+                return_values_str = ', '.join(i.name for i in mm.return_values)
+
+                yield f'### Method <code>{mm.name}({params_str}) -> {return_values_str}</code>'
+                yield f'{mm.description}'
+                yield f''
+                yield from iter_parameter_descriptions('Parameters', mm.parameters)
+                yield from iter_parameter_descriptions('Return Values', mm.return_values)
+
+            for s in signals:
+                params_str = ', '.join(i.name for i in s.parameters)
+
+                yield f'### Signal <code>{s.name} -> {params_str}</code>'
+                yield f'{s.description}'
+                yield f''
+                yield from iter_parameter_descriptions('Parameters', s.parameters)
+
+    def iter_parts() -> Iterator[str]:
+        if isinstance(type, Struct):
+            kind_str = 'Struct'
+        else:
+            kind_str = 'Class'
+
+        yield f'# {kind_str} <code>{type.name}</code>'
+        yield f''
+
+        if isinstance(type, Class):
+            parents = context.api_docs.api.get_parent_chain(type.id)[1:]
+
+            if parents:
+                parents_str = \
+                    ' < '.join(context.type_ref(i) for i in parents)
+
+                yield f'Superclasses: {parents_str}'
+                yield ''
+
+        yield type.description
+
+        yield from iter_members('Instance Members', type, lambda x: x.instance_members.values())
+        yield from iter_members('Static Members', type, lambda x: x.static_members.values())
+
+    return Markdown('\n'.join(iter_parts()))
+
+
+def main(output_path: Path, clear: bool, input_json_path: Optional[Path]) -> None:
+    if input_json_path is None:
+        local_app_data = os.environ.get('LOCALAPPDATA')
+
+        if local_app_data is None:
+            raise UserError(
+                'LOCALAPPDATA environment variable is not set and '
+                'input_json_path has not been given on the command line.')
+
+        input_json_path = \
+            Path(local_app_data) \
+            / 'FactoryGame/Saved/FINReflectionDocumentation.json'
+
+    api = API.from_json(json.loads(input_json_path.read_bytes()))
+    structured_type_pages = dict[StructuredTypeID, Page]()
+
+    for i in api.structured_types.values():
+        if isinstance(i, Struct):
+            dir = Path('structs')
+        else:
+            dir = Path('classes')
+
+        structured_type_pages[i.id] = \
+            Page(dir / f'{i.name}.md', partial(structured_type_content, i))
+
+    api_docs = APIDocs(
+        api=api,
+        structured_type_pages=structured_type_pages)
+
+    if clear and output_path.exists():
+        for i in output_path.iterdir():
+            if i.is_dir():
+                shutil.rmtree(i)
+            else:
+                i.unlink()
+
+    api_docs.write_pages(output_path)
