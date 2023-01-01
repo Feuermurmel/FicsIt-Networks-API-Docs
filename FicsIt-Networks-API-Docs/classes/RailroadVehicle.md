@@ -21,6 +21,7 @@ The base class for any vehicle that drives on train tracks.
 ### Method <code>getTrain</code> () → train
 Returns the train of which this vehicle is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>train</b></code> <a href="Train.md">Train</a>
@@ -34,6 +35,7 @@ Allows to check if the given coupler is coupled to another car.
 - <code><b>coupler</b></code> integer
 
   The Coupler you want to check. 0 = Front, 1 = Back
+
 <b>Return Values:</b>
 
 - <code><b>coupled</b></code> boolean
@@ -47,6 +49,7 @@ Allows to get the coupled vehicle at the given coupler.
 - <code><b>coupler</b></code> integer
 
   The Coupler you want to get the car from. 0 = Front, 1 = Back
+
 <b>Return Values:</b>
 
 - <code><b>coupled</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
@@ -55,6 +58,7 @@ Allows to get the coupled vehicle at the given coupler.
 ### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this vehicle is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>track</b></code> <a href="../structs/TrackGraph.md">TrackGraph</a>
@@ -62,6 +66,7 @@ Returns the track graph of which this vehicle is part of.
   The track graph of which this vehicle is part of.
 ### Method <code>getTrackPos</code> () → track, offset, forward
 Returns the track pos at which this vehicle is.
+
 
 <b>Return Values:</b>
 
@@ -76,6 +81,7 @@ Returns the track pos at which this vehicle is.
   The forward direction of the track pos. 1 = with the track direction, -1 = against the track direction
 ### Method <code>getMovement</code> () → movement
 Returns the vehicle movement of this vehicle.
+
 
 <b>Return Values:</b>
 

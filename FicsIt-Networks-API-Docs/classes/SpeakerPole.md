@@ -10,6 +10,7 @@ This speaker pole allows to play custom sound files, In-Game
 ### Method <code>stopSound</code> () → 
 Stops the currently playing sound file.
 
+
 ### Method <code>playSound</code> (sound, startPoint) → 
 Plays a custom sound file in-game
 
@@ -21,6 +22,7 @@ Plays a custom sound file in-game
 - <code><b>startPoint</b></code> float
 
   The start point in seconds at which the system should start playing
+
 ### Signal <code>SpeakerSound</code> → type, sound
 Triggers when the sound play state of the speaker pole changes.
 

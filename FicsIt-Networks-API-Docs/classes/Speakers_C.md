@@ -18,6 +18,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Volume</b></code> float
 
   
+
 ### Method <code>setRange</code> (Range) → 
 
 
@@ -26,7 +27,9 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 - <code><b>Range</b></code> float
 
   
+
 ### Method <code>getVolume</code> () → Volume
+
 
 
 <b>Return Values:</b>
@@ -35,6 +38,7 @@ The speaker pole can play sound files located in the Computer Folder "/Sounds" i
 
   
 ### Method <code>getRange</code> () → Range
+
 
 
 <b>Return Values:</b>

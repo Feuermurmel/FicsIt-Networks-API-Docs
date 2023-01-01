@@ -11,6 +11,7 @@ The base class of every machine that uses a recipe to produce something automati
 ### Method <code>getRecipe</code> () → recipe
 Returns the currently set recipe of the manufacturer.
 
+
 <b>Return Values:</b>
 
 - <code><b>recipe</b></code> <a href="Recipe.md">Recipe</a>
@@ -18,6 +19,7 @@ Returns the currently set recipe of the manufacturer.
   The currently set recipe.
 ### Method <code>getRecipes</code> () → recipes
 Returns the list of recipes this manufacturer can get set to and process.
+
 
 <b>Return Values:</b>
 
@@ -32,6 +34,7 @@ Sets the currently producing recipe of this manufacturer.
 - <code><b>recipe</b></code> <a href="Recipe.md">Recipe</a>
 
   The recipe this manufacturer should produce.
+
 <b>Return Values:</b>
 
 - <code><b>gotSet</b></code> boolean
@@ -40,6 +43,7 @@ Sets the currently producing recipe of this manufacturer.
 ### Method <code>getInputInv</code> () → inventory
 Returns the input inventory of this manufacturer.
 
+
 <b>Return Values:</b>
 
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
@@ -47,6 +51,7 @@ Returns the input inventory of this manufacturer.
   The input inventory of this manufacturer
 ### Method <code>getOutputInv</code> () → inventory
 Returns the output inventory of this manufacturer.
+
 
 <b>Return Values:</b>
 

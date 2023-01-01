@@ -10,6 +10,7 @@ This Stop Button Module for the modular I/O Panel is used to trigger important p
 ### Method <code>trigger</code> () → 
 Triggers a button press by code.
 
+
 ### Signal <code>Trigger</code> → 
 Triggers when the button gets pressed.
 

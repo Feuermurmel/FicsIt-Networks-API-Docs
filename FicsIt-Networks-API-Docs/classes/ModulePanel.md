@@ -15,6 +15,7 @@ Enclosure for 1 command points
 - <code><b>Y</b></code> integer
 
   
+
 <b>Return Values:</b>
 
 - <code><b>Module</b></code> <a href="Actor.md">Actor</a>
@@ -28,12 +29,14 @@ Enclosure for 1 command points
 - <code><b>X</b></code> integer
 
   
+
 <b>Return Values:</b>
 
 - <code><b>Module</b></code> <a href="Actor.md">Actor</a>
 
   
 ### Method <code>getModules</code> () → modules
+
 
 
 <b>Return Values:</b>
@@ -52,6 +55,7 @@ Enclosure for 1 command points
 - <code><b>Y</b></code> integer
 
   
+
 <b>Return Values:</b>
 
 - <code><b>Module</b></code> <a href="Actor.md">Actor</a>

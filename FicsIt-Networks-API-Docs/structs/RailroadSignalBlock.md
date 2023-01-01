@@ -26,6 +26,7 @@ Allows you to check if this block is occupied by a given train.
 - <code><b>train</b></code> <a href="../classes/Train.md">Train</a>
 
   The train you want to check if it occupies this block
+
 <b>Return Values:</b>
 
 - <code><b>isOccupied</b></code> boolean

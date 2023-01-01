@@ -10,6 +10,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 ### Method <code>getNext</code> () → next
 Returns the next pole module if any.
 
+
 <b>Return Values:</b>
 
 - <code><b>next</b></code> <a href="Actor.md">Actor</a>
@@ -23,6 +24,7 @@ Gets the module at the given position in the stack
 - <code><b>module</b></code> integer
 
   The module at the given offset in the stack or nil if none
+
 <b>Return Values:</b>
 
 - <code><b>index</b></code> <a href="Actor.md">Actor</a>

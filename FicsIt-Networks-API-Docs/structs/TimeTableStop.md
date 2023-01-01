@@ -9,6 +9,7 @@ Information about a train stop in a time table.
 ### Method <code>getRuleSet</code> () → ruleset
 Returns The rule set wich describe when the train will depart from the train station.
 
+
 <b>Return Values:</b>
 
 - <code><b>ruleset</b></code> <a href="TrainDockingRuleSet.md">TrainDockingRuleSet</a>

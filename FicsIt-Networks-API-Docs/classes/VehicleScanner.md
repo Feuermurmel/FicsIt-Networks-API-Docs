@@ -24,8 +24,10 @@ Allows to change the color and light intensity of the scanner.
 - <code><b>e</b></code> float
 
   The light intensity of the scanner. (0.0 - 5.0)
+
 ### Method <code>getLastVehicle</code> () → vehicle
 Returns the last vehicle that entered the scanner.
+
 
 <b>Return Values:</b>
 
@@ -34,6 +36,7 @@ Returns the last vehicle that entered the scanner.
   The vehicle that entered the scanner. null if it has already left the scanner.
 ### Method <code>getColor</code> () → r, g, b, e
 Allows to get the color and light intensity of the scanner.
+
 
 <b>Return Values:</b>
 

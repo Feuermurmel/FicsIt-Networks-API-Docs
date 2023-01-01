@@ -11,6 +11,7 @@ A reflection object representing a trace property.
 ### Method <code>getSubclass</code> () → subclass
 Returns the subclass type of this trace. Meaning, the stored traces need to be of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>subclass</b></code> <a href="Class.md">Class</a>

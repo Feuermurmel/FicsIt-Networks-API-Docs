@@ -15,6 +15,7 @@ Allows to transfer an item from the input queue to the given output queue if pos
 - <code><b>output</b></code> integer
 
   The index of the output queue you want to transfer the next item to (0 = left, 1 = middle, 2 = right)
+
 <b>Return Values:</b>
 
 - <code><b>transferred</b></code> boolean
@@ -22,6 +23,7 @@ Allows to transfer an item from the input queue to the given output queue if pos
   true if it was able to transfer the item.
 ### Method <code>getInput</code> () → item
 Returns the next item in the input queue.
+
 
 <b>Return Values:</b>
 
@@ -36,6 +38,7 @@ Allows to check if we can transfer an item to the given output queue.
 - <code><b>output</b></code> integer
 
   The index of the output queue you want to check (0 = left, 1 = middle, 2 = right)
+
 <b>Return Values:</b>
 
 - <code><b>canTransfer</b></code> boolean

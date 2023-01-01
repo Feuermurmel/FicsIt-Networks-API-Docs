@@ -26,11 +26,14 @@ Takes integers as input and returns the corresponding stacks.
 - <code><b>args</b></code> unknown
 
   
+
 ### Method <code>sort</code> () → 
 Sorts the whole inventory. (like the middle mouse click into a inventory)
 
+
 ### Method <code>flush</code> () → 
 Removes all discardable items from the inventory completely. They will be gone! No way to get them back!
+
 
 ### Method <code>canSplitStackAtIndex</code> (index) → canSplit
 Returns true of the stack at the given index can be split.
@@ -40,6 +43,7 @@ Returns true of the stack at the given index can be split.
 - <code><b>index</b></code> integer
 
   The index of the item stack that you want to check if can be split.
+
 <b>Return Values:</b>
 
 - <code><b>canSplit</b></code> boolean
@@ -56,6 +60,7 @@ Splits the stack at the given index into two. The passed amount of items gets tr
 - <code><b>itemCount</b></code> integer
 
   The count of items that should get transferred to the next available slot.
+
 ### Method <code>moveItemStack</code> (fromIndex, toIndex, allowPartial) → count
 Moves the stack of the given slot to another given slot. If partial is allowed, only moves as much items as possible, if not allowed, and the full stack doesnt fit onto the new slot, skips the move.
 
@@ -70,6 +75,7 @@ Moves the stack of the given slot to another given slot. If partial is allowed, 
 - <code><b>allowPartial</b></code> boolean
 
   Pass true if only partial item stack moving is allowed.
+
 <b>Return Values:</b>
 
 - <code><b>count</b></code> integer

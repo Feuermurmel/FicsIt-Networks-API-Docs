@@ -11,8 +11,10 @@ The controller object for a railroad switch.
 ### Method <code>toggleSwitch</code> () → 
 Toggles the railroad switch like if you interact with it.
 
+
 ### Method <code>switchPosition</code> () → position
 Returns the current switch position of this switch.
+
 
 <b>Return Values:</b>
 

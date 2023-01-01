@@ -24,8 +24,10 @@ This Mushroom Button Module for modular I/O Panels can have different knob color
 - <code><b>Emit</b></code> float
 
   
+
 ### Method <code>trigger</code> () → 
 Triggers a button press by code.
+
 
 ### Signal <code>Trigger</code> → 
 Triggers a button press by code.

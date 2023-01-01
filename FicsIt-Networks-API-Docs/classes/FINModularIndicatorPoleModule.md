@@ -10,6 +10,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 ### Method <code>getPrevious</code> () → previous
 Gets the previous module or the base mount if this called from the last module.
 
+
 <b>Return Values:</b>
 
 - <code><b>previous</b></code> <a href="FGBuildable.md">FGBuildable</a>
@@ -17,6 +18,7 @@ Gets the previous module or the base mount if this called from the last module.
   The previous module or base mount.
 ### Method <code>getNext</code> () → next
 Returns the next pole module if any.
+
 
 <b>Return Values:</b>
 

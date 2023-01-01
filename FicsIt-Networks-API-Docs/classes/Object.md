@@ -15,6 +15,7 @@ The base class of every object.
 ### Method <code>getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
+
 <b>Return Values:</b>
 
 - <code><b>hash</b></code> integer
@@ -22,6 +23,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
   The hash of this class.
 ### Method <code>getType</code> () → type
 Returns the type (aka class) of this class instance.
+
 
 <b>Return Values:</b>
 
@@ -42,6 +44,7 @@ Returns the type (aka class) of this class instance.
 ### Method <code>getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
+
 <b>Return Values:</b>
 
 - <code><b>hash</b></code> integer
@@ -49,6 +52,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
   The hash of this class.
 ### Method <code>getType</code> () → type
 Returns the type (aka class) of this class instance.
+
 
 <b>Return Values:</b>
 

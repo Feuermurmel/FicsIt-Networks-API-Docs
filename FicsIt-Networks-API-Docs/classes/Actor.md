@@ -19,6 +19,7 @@ This is the base class of all things that can exist within the world by them sel
 ### Method <code>getPowerConnectors</code> () → connectors
 Returns a list of power connectors this actor might have.
 
+
 <b>Return Values:</b>
 
 - <code><b>connectors</b></code> list of <a href="PowerConnection.md">PowerConnection</a>
@@ -26,6 +27,7 @@ Returns a list of power connectors this actor might have.
   The power connectors this actor has.
 ### Method <code>getFactoryConnectors</code> () → connectors
 Returns a list of factory connectors this actor might have.
+
 
 <b>Return Values:</b>
 
@@ -35,6 +37,7 @@ Returns a list of factory connectors this actor might have.
 ### Method <code>getPipeConnectors</code> () → connectors
 Returns a list of pipe connectors this actor might have.
 
+
 <b>Return Values:</b>
 
 - <code><b>connectors</b></code> list of <a href="PipeConnection.md">PipeConnection</a>
@@ -43,6 +46,7 @@ Returns a list of pipe connectors this actor might have.
 ### Method <code>getInventories</code> () → inventories
 Returns a list of inventories this actor might have.
 
+
 <b>Return Values:</b>
 
 - <code><b>inventories</b></code> list of <a href="Inventory.md">Inventory</a>
@@ -50,6 +54,7 @@ Returns a list of inventories this actor might have.
   The inventories this actor has.
 ### Method <code>getNetworkConnectors</code> () → connectors
 Returns the name of network connectors this actor might have.
+
 
 <b>Return Values:</b>
 

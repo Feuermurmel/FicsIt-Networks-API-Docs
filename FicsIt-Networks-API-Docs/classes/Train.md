@@ -35,6 +35,7 @@ This class holds information and references about a trains (a collection of mult
 ### Method <code>getName</code> () → name
 Returns the name of this train.
 
+
 <b>Return Values:</b>
 
 - <code><b>name</b></code> string
@@ -48,8 +49,10 @@ Allows to set the name of this train.
 - <code><b>name</b></code> string
 
   The new name of this train.
+
 ### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this train is part of.
+
 
 <b>Return Values:</b>
 
@@ -64,8 +67,10 @@ Allows to set if the train should be self driving or not.
 - <code><b>selfDriving</b></code> boolean
 
   True if the train should be self driving.
+
 ### Method <code>getMaster</code> () → master
 Returns the master locomotive that is part of this train.
+
 
 <b>Return Values:</b>
 
@@ -75,6 +80,7 @@ Returns the master locomotive that is part of this train.
 ### Method <code>getTimeTable</code> () → timeTable
 Returns the timetable of this train.
 
+
 <b>Return Values:</b>
 
 - <code><b>timeTable</b></code> <a href="TimeTable.md">TimeTable</a>
@@ -82,6 +88,7 @@ Returns the timetable of this train.
   The timetable of this train.
 ### Method <code>newTimeTable</code> () → timeTable
 Creates and returns a new timetable for this train.
+
 
 <b>Return Values:</b>
 
@@ -91,6 +98,7 @@ Creates and returns a new timetable for this train.
 ### Method <code>getFirst</code> () → first
 Returns the first railroad vehicle that is part of this train.
 
+
 <b>Return Values:</b>
 
 - <code><b>first</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
@@ -98,6 +106,7 @@ Returns the first railroad vehicle that is part of this train.
   The first railroad vehicle that is part of this train.
 ### Method <code>getLast</code> () → last
 Returns the last railroad vehicle that is part of this train.
+
 
 <b>Return Values:</b>
 
@@ -107,8 +116,10 @@ Returns the last railroad vehicle that is part of this train.
 ### Method <code>dock</code> () → 
 Trys to dock the train to the station it is currently at.
 
+
 ### Method <code>getVehicles</code> () → vehicles
 Returns a list of all the vehicles this train has.
+
 
 <b>Return Values:</b>
 

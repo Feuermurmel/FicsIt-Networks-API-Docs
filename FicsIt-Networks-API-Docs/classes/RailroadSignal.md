@@ -35,6 +35,7 @@ A train signal to control trains on a track.
 ### Method <code>getObservedBlock</code> () → block
 Returns the track block this signals observes.
 
+
 <b>Return Values:</b>
 
 - <code><b>block</b></code> <a href="../structs/RailroadSignalBlock.md">RailroadSignalBlock</a>

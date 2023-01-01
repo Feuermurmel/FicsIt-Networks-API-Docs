@@ -20,6 +20,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
 ### Method <code>getInventory</code> () → inventory
 Returns the internal inventory of the connection component.
 
+
 <b>Return Values:</b>
 
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
@@ -27,6 +28,7 @@ Returns the internal inventory of the connection component.
   The internal inventory of the connection component.
 ### Method <code>getConnected</code> () → connected
 Returns the connected factory connection component.
+
 
 <b>Return Values:</b>
 

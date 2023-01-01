@@ -14,6 +14,7 @@ Important to note is that every module is it's own component, that means if you 
 ### Method <code>getModules</code> () → modules
 
 
+
 <b>Return Values:</b>
 
 - <code><b>modules</b></code> list of <a href="Object.md">Object</a>
@@ -33,6 +34,7 @@ Important to note is that every module is it's own component, that means if you 
 - <code><b>Panel</b></code> integer
 
   
+
 <b>Return Values:</b>
 
 - <code><b>Module</b></code> <a href="Actor.md">Actor</a>

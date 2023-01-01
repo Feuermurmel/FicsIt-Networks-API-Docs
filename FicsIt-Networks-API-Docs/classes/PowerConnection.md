@@ -17,6 +17,7 @@ A actor component that allows for a connection point to the power network. Basic
 ### Method <code>getPower</code> () → power
 Returns the power info component of this power connection.
 
+
 <b>Return Values:</b>
 
 - <code><b>power</b></code> <a href="PowerInfo.md">PowerInfo</a>
@@ -24,6 +25,7 @@ Returns the power info component of this power connection.
   The power info component this power connection uses.
 ### Method <code>getCircuit</code> () → circuit
 Returns the power circuit to which this connection component is attached to.
+
 
 <b>Return Values:</b>
 

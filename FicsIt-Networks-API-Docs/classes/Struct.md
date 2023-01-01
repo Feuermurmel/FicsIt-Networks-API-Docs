@@ -10,6 +10,7 @@ Reflection Object that holds information about structures.
 ### Method <code>getParent</code> () → parent
 Returns the parent type of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>parent</b></code> <a href="Class.md">Class</a>
@@ -17,6 +18,7 @@ Returns the parent type of this type.
   The parent type of this type.
 ### Method <code>getProperties</code> () → properties
 Returns all the properties of this type.
+
 
 <b>Return Values:</b>
 
@@ -26,6 +28,7 @@ Returns all the properties of this type.
 ### Method <code>getAllProperties</code> () → properties
 Returns all the properties of this and parent types.
 
+
 <b>Return Values:</b>
 
 - <code><b>properties</b></code> list of <a href="Property.md">Property</a>
@@ -34,6 +37,7 @@ Returns all the properties of this and parent types.
 ### Method <code>getFunctions</code> () → functions
 Returns all the functions of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>functions</b></code> list of <a href="Function.md">Function</a>
@@ -41,6 +45,7 @@ Returns all the functions of this type.
   The functions this specific type implements (excluding properties from parent types).
 ### Method <code>getAllFunctions</code> () → functions
 Returns all the functions of this and parent types.
+
 
 <b>Return Values:</b>
 
@@ -55,6 +60,7 @@ Allows to check if this struct is a child struct of the given struct or the give
 - <code><b>parent</b></code> <a href="Struct.md">Struct</a>
 
   The parent struct you want to check if this struct is a child of.
+
 <b>Return Values:</b>
 
 - <code><b>isChild</b></code> boolean

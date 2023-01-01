@@ -19,6 +19,7 @@ Allows to transfer an item from the given input queue to the output queue if pos
 - <code><b>input</b></code> integer
 
   The index of the input queue you want to transfer the next item to the output queue. (0 = right, 1 = middle, 2 = left)
+
 <b>Return Values:</b>
 
 - <code><b>transferred</b></code> boolean
@@ -32,6 +33,7 @@ Returns the next item in the given input queue.
 - <code><b>input</b></code> integer
 
   The index of the input queue you want to check (0 = right, 1 = middle, 2 = left)
+
 <b>Return Values:</b>
 
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>

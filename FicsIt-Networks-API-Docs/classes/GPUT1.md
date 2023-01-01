@@ -22,6 +22,7 @@ Draws the given text at the given position to the hidden screen buffer.
 - <code><b>str</b></code> string
 
   The text you want to draw on-to the buffer.
+
 ### Method <code>setSize</code> (w, h) → 
 Changes the size of the text-grid (and buffer).
 
@@ -33,6 +34,7 @@ Changes the size of the text-grid (and buffer).
 - <code><b>h</b></code> integer
 
   The height of the text-grid.
+
 ### Method <code>setForeground</code> (r, g, b, a) → 
 Changes the foreground color that is used for the next draw calls.
 
@@ -50,6 +52,7 @@ Changes the foreground color that is used for the next draw calls.
 - <code><b>a</b></code> float
 
   The opacity of the foreground color. (0.0 - 1.0)
+
 ### Method <code>setBuffer</code> (buffer) → 
 Allows to change the back buffer of the GPU to the given buffer.
 
@@ -58,6 +61,7 @@ Allows to change the back buffer of the GPU to the given buffer.
 - <code><b>buffer</b></code> <a href="../structs/GPUT1Buffer.md">GPUT1Buffer</a>
 
   The Buffer you want to now use as back buffer.
+
 ### Method <code>setBackground</code> (r, g, b, a) → 
 Changes the background color that is used for the next draw calls.
 
@@ -75,8 +79,10 @@ Changes the background color that is used for the next draw calls.
 - <code><b>a</b></code> float
 
   The opacity of the background color. (0.0 - 1.0)
+
 ### Method <code>getSize</code> () → w, h
 Returns the size of the text-grid (and buffer).
+
 
 <b>Return Values:</b>
 
@@ -89,6 +95,7 @@ Returns the size of the text-grid (and buffer).
 ### Method <code>getScreen</code> () → screen
 Returns the currently bound screen.
 
+
 <b>Return Values:</b>
 
 - <code><b>screen</b></code> <a href="Object.md">Object</a>
@@ -97,6 +104,7 @@ Returns the currently bound screen.
 ### Method <code>getBuffer</code> () → buffer
 Returns the back buffer as struct to be able to use advanced buffer handling functions. (struct is a copy)
 
+
 <b>Return Values:</b>
 
 - <code><b>buffer</b></code> <a href="../structs/GPUT1Buffer.md">GPUT1Buffer</a>
@@ -104,6 +112,7 @@ Returns the back buffer as struct to be able to use advanced buffer handling fun
   The Buffer that is currently the back buffer.
 ### Method <code>flush</code> () → 
 Flushes the hidden screen buffer to the visible screen buffer and so makes the draw calls visible.
+
 
 ### Method <code>fill</code> (x, y, dx, dy, str) → 
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
@@ -125,6 +134,7 @@ Draws the given character at all given positions in the given rectangle on-to th
 - <code><b>str</b></code> string
 
   The character you want to use for the rectangle. (first char in the given string)
+
 ### Method <code>bindScreen</code> (newScreen) → 
 Binds this GPU to the given screen. Unbinds the already bound screen.
 
@@ -133,6 +143,7 @@ Binds this GPU to the given screen. Unbinds the already bound screen.
 - <code><b>newScreen</b></code> unknown
 
   The screen you want to bind this GPU to. Null if you want to unbind the screen.
+
 ### Signal <code>ScreenSizeChanged</code> → oldW, oldH
 Triggers when the size of the text grid changed.
 

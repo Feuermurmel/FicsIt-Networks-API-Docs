@@ -92,6 +92,7 @@ This actor component contains all the information about the movement of a railro
 ### Method <code>getVehicle</code> () → vehicle
 Returns the vehicle this movement component holds the movement information of.
 
+
 <b>Return Values:</b>
 
 - <code><b>vehicle</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
@@ -105,6 +106,7 @@ Returns the current rotation of the given wheelset.
 - <code><b>wheelset</b></code> integer
 
   The index of the wheelset you want to get the rotation of.
+
 <b>Return Values:</b>
 
 - <code><b>x</b></code> float
@@ -124,6 +126,7 @@ Returns the offset of the wheelset with the given index from the start of the ve
 - <code><b>wheelset</b></code> integer
 
   The index of the wheelset you want to get the offset of.
+
 <b>Return Values:</b>
 
 - <code><b>offset</b></code> float
@@ -137,6 +140,7 @@ Returns the normal vector and the extension of the coupler with the given index.
 - <code><b>coupler</b></code> integer
 
   The index of which you want to get the normal and extension of.
+
 <b>Return Values:</b>
 
 - <code><b>x</b></code> float

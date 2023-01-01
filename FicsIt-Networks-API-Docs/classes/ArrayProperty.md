@@ -11,6 +11,7 @@ A reflection object representing a array property.
 ### Method <code>getInner</code> () → inner
 Returns the inner type of this array.
 
+
 <b>Return Values:</b>
 
 - <code><b>inner</b></code> <a href="Property.md">Property</a>

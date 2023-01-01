@@ -24,6 +24,7 @@ This Potentiometer Module allows for input of a value with infinite range, this 
 - <code><b>Emit</b></code> float
 
   
+
 ### Signal <code>valueChanged</code> → Value
 
 

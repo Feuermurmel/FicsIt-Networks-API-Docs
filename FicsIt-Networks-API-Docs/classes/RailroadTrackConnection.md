@@ -34,6 +34,7 @@ Returns the connected connection with the given index.
 - <code><b>index</b></code> integer
 
   The index of the connected connection you want to get.
+
 <b>Return Values:</b>
 
 - <code><b>connection</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
@@ -42,6 +43,7 @@ Returns the connected connection with the given index.
 ### Method <code>getConnections</code> () → connections
 Returns a list of all connected connections.
 
+
 <b>Return Values:</b>
 
 - <code><b>connections</b></code> list of <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
@@ -49,6 +51,7 @@ Returns a list of all connected connections.
   A list of all connected connections.
 ### Method <code>getTrackPos</code> () → track, offset, forward
 Returns the track pos at which this connection is.
+
 
 <b>Return Values:</b>
 
@@ -64,6 +67,7 @@ Returns the track pos at which this connection is.
 ### Method <code>getTrack</code> () → track
 Returns the track of which this connection is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>track</b></code> <a href="RailroadTrack.md">RailroadTrack</a>
@@ -71,6 +75,7 @@ Returns the track of which this connection is part of.
   The track of which this connection is part of.
 ### Method <code>getSwitchControl</code> () → switchControl
 Returns the switch control of this connection.
+
 
 <b>Return Values:</b>
 
@@ -80,6 +85,7 @@ Returns the switch control of this connection.
 ### Method <code>getStation</code> () → station
 Returns the station of which this connection is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>station</b></code> <a href="RailroadStation.md">RailroadStation</a>
@@ -87,6 +93,7 @@ Returns the station of which this connection is part of.
   The station of which this connection is part of.
 ### Method <code>getFacingSignal</code> () → signal
 Returns the signal this connection is facing to.
+
 
 <b>Return Values:</b>
 
@@ -96,6 +103,7 @@ Returns the signal this connection is facing to.
 ### Method <code>getTrailingSignal</code> () → signal
 Returns the signal this connection is trailing from.
 
+
 <b>Return Values:</b>
 
 - <code><b>signal</b></code> <a href="RailroadSignal.md">RailroadSignal</a>
@@ -104,6 +112,7 @@ Returns the signal this connection is trailing from.
 ### Method <code>getOpposite</code> () → opposite
 Returns the opposite connection of the track this connection is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>opposite</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
@@ -111,6 +120,7 @@ Returns the opposite connection of the track this connection is part of.
   The opposite connection of the track this connection is part of.
 ### Method <code>getNext</code> () → next
 Returns the next connection in the direction of the track. (used the correct path switched point to)
+
 
 <b>Return Values:</b>
 
@@ -125,8 +135,10 @@ Sets the position (connection index) to which the track switch points to.
 - <code><b>index</b></code> integer
 
   The connection index to which the switch should point to.
+
 ### Method <code>getSwitchPosition</code> () → index
 Returns the current switch position.
+
 
 <b>Return Values:</b>
 

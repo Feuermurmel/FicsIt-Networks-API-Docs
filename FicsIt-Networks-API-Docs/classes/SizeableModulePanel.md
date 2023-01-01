@@ -10,6 +10,7 @@ This panel allows for dynamic sizing. For placing on walls.
 ### Method <code>getModules</code> () → modules
 
 
+
 <b>Return Values:</b>
 
 - <code><b>modules</b></code> list of <a href="Object.md">Object</a>
@@ -26,6 +27,7 @@ This panel allows for dynamic sizing. For placing on walls.
 - <code><b>Y</b></code> integer
 
   
+
 <b>Return Values:</b>
 
 - <code><b>Module</b></code> <a href="Actor.md">Actor</a>

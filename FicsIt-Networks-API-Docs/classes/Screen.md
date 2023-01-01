@@ -10,6 +10,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 ### Method <code>getSize</code> () → width, height
 Returns the size of the screen in 'panels'.
 
+
 <b>Return Values:</b>
 
 - <code><b>width</b></code> integer

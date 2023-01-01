@@ -22,6 +22,7 @@ Returns the closes track position from the given world position
 - <code><b>worldPos</b></code> <a href="../structs/Vector.md">Vector</a>
 
   The world position form which you want to get the closest track position.
+
 <b>Return Values:</b>
 
 - <code><b>track</b></code> <a href="RailroadTrack.md">RailroadTrack</a>
@@ -47,6 +48,7 @@ Returns the world location and world rotation of the track position from the giv
 - <code><b>forward</b></code> float
 
   The forward direction of the track pos. 1 = with the track direction, -1 = against the track direction
+
 <b>Return Values:</b>
 
 - <code><b>location</b></code> <a href="../structs/Vector.md">Vector</a>
@@ -63,6 +65,7 @@ Returns the railroad track connection at the given direction.
 - <code><b>direction</b></code> integer
 
   The direction of which you want to get the connector from. 0 = front, 1 = back
+
 <b>Return Values:</b>
 
 - <code><b>connection</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
@@ -70,6 +73,7 @@ Returns the railroad track connection at the given direction.
   The connection component in the given direction.
 ### Method <code>getTrackGraph</code> () → track
 Returns the track graph of which this track is part of.
+
 
 <b>Return Values:</b>
 

@@ -5,6 +5,7 @@ Struct that holds a cache of a whole train/rail network.
 ### Method <code>getTrains</code> () → trains
 Returns a list of all trains in the network.
 
+
 <b>Return Values:</b>
 
 - <code><b>trains</b></code> list of <a href="../classes/Train.md">Train</a>
@@ -12,6 +13,7 @@ Returns a list of all trains in the network.
   The list of trains in the network.
 ### Method <code>getStations</code> () → stations
 Returns a list of all train stations in the network.
+
 
 <b>Return Values:</b>
 

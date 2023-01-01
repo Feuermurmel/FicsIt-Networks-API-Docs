@@ -16,8 +16,10 @@ Sets the prefabg [?] sign data e.g. the user settings like colo [colon?] and mor
 - <code><b>prefabSignData</b></code> <a href="../structs/PrefabSignData.md">PrefabSignData</a>
 
   The new prefab sign data for this sign.
+
 ### Method <code>getPrefabSignData</code> () → prefabSignData
 Returns the prefabg [?] sign data e.g. the user settings like colo [colon?] and more to define the signs content.
+
 
 <b>Return Values:</b>
 

@@ -24,6 +24,7 @@ The function has a variable amount of return values.
 ### Method <code>getParameters</code> () → parameters
 Returns all the parameters of this function.
 
+
 <b>Return Values:</b>
 
 - <code><b>parameters</b></code> list of <a href="Property.md">Property</a>

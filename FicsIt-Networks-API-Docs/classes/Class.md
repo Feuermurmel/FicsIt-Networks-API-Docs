@@ -11,6 +11,7 @@ Object that contains all information about a type.
 ### Method <code>getSignals</code> () → signals
 Returns all the signals of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>signals</b></code> list of <a href="Signal.md">Signal</a>
@@ -18,6 +19,7 @@ Returns all the signals of this type.
   The signals this specific type implements (excluding properties from parent types).
 ### Method <code>getAllSignals</code> () → signals
 Returns all the signals of this and its parent types.
+
 
 <b>Return Values:</b>
 

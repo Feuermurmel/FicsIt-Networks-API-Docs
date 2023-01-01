@@ -11,12 +11,14 @@ Interact with the sides of the hopper to configure the item filter, then interac
 ### Method <code>getFilterRules</code> () → itemRules
 
 
+
 <b>Return Values:</b>
 
 - <code><b>itemRules</b></code> list of string
 
   
 ### Method <code>getTakeOrLeave</code> () → takeOrLeave
+
 
 
 <b>Return Values:</b>
@@ -32,6 +34,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeOrLeave</b></code> boolean
 
   
+
 ### Method <code>removeFilterRule</code> (itemRule) → ruleRemoved
 
 
@@ -40,6 +43,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>itemRule</b></code> string
 
   
+
 <b>Return Values:</b>
 
 - <code><b>ruleRemoved</b></code> boolean
@@ -53,6 +57,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>itemRule</b></code> string
 
   
+
 <b>Return Values:</b>
 
 - <code><b>ruleAdded</b></code> boolean
@@ -61,7 +66,9 @@ Interact with the sides of the hopper to configure the item filter, then interac
 ### Method <code>clearFilterRules</code> () → 
 
 
+
 ### Method <code>getTakeFullest</code> () → takeFullest
+
 
 
 <b>Return Values:</b>
@@ -77,7 +84,9 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeFullest</b></code> boolean
 
   
+
 ### Method <code>getStacksToTake</code> () → stacksToTake
+
 
 
 <b>Return Values:</b>
@@ -93,6 +102,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>stacksToTake</b></code> integer
 
   
+
 ## Static Members
 <b>Inherited Members:</b>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>

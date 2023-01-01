@@ -5,6 +5,7 @@ A structure that can hold a buffer of characters and colors that can be displaye
 ### Method <code>getSize</code> () → width, height
 Allows to get the dimensions of the buffer.
 
+
 <b>Return Values:</b>
 
 - <code><b>width</b></code> float
@@ -24,6 +25,7 @@ Allows to set the dimensions of the buffer.
 - <code><b>height</b></code> float
 
   The height this buffer now have
+
 ### Method <code>get</code> (x, y) → c, foreground, background
 Allows to get a single pixel from the buffer at the given position
 
@@ -35,6 +37,7 @@ Allows to get a single pixel from the buffer at the given position
 - <code><b>y</b></code> integer
 
   The y position of the character you want to get
+
 <b>Return Values:</b>
 
 - <code><b>c</b></code> string
@@ -66,6 +69,7 @@ Allows to set a single pixel of the buffer at the given position
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color the pixel at the given position should have
+
 <b>Return Values:</b>
 
 - <code><b>done</b></code> boolean
@@ -118,6 +122,7 @@ Copies the given buffer at the given offset of the upper left corner into this b
 7 = Darken Only
 8 = Lighten Only
 9 = None
+
 ### Method <code>setText</code> (x, y, text, foreground, background) → 
 Allows to write the given text onto the buffer and with the given offset.
 
@@ -138,6 +143,7 @@ Allows to write the given text onto the buffer and with the given offset.
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color which will be used to write the text.
+
 ### Method <code>fill</code> (x, y, width, height, character, foreground, background) → 
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
 
@@ -164,6 +170,7 @@ Draws the given character at all given positions in the given rectangle on-to th
 - <code><b>background</b></code> <a href="Color.md">Color</a>
 
   The background color which will be used to fill the rectangle.
+
 ### Method <code>setRaw</code> (characters, foreground, background) → success
 Allows to set the internal data of the buffer more directly.
 
@@ -178,6 +185,7 @@ Allows to set the internal data of the buffer more directly.
 - <code><b>background</b></code> list of float
 
   The values of the background color slots for each character were a group of four values give one color. so the length has to be exactly width*height*4.
+
 <b>Return Values:</b>
 
 - <code><b>success</b></code> boolean
@@ -185,6 +193,7 @@ Allows to set the internal data of the buffer more directly.
   True if the raw data was successfully written
 ### Method <code>clone</code> () → buffer
 Clones this buffer into a new struct
+
 
 <b>Return Values:</b>
 

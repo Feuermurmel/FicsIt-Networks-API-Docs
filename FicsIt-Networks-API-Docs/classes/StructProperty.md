@@ -11,6 +11,7 @@ A reflection object representing a struct property.
 ### Method <code>getSubclass</code> () → subclass
 Returns the subclass type of this struct. Meaning, the stored structs need to be of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>subclass</b></code> <a href="Struct.md">Struct</a>

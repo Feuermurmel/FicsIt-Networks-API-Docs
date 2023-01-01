@@ -27,8 +27,10 @@ The base class for all fluid tanks.
 ### Method <code>flush</code> () → 
 Empties the whole fluid container.
 
+
 ### Method <code>getFluidType</code> () → type
 Returns the type of the fluid.
+
 
 <b>Return Values:</b>
 

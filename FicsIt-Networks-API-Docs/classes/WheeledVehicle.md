@@ -30,6 +30,7 @@ The base class for all vehicles that used wheels for movement.
 ### Method <code>getFuelInv</code> () → inventory
 Returns the inventory that contains the fuel of the vehicle.
 
+
 <b>Return Values:</b>
 
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
@@ -37,6 +38,7 @@ Returns the inventory that contains the fuel of the vehicle.
   The fuel inventory of the vehicle.
 ### Method <code>getStorageInv</code> () → inventory
 Returns the inventory that contains the storage of the vehicle.
+
 
 <b>Return Values:</b>
 
@@ -51,6 +53,7 @@ Allows to check if the given item type is a valid fuel for this vehicle.
 - <code><b>item</b></code> <a href="ItemType.md">ItemType</a>
 
   The item type you want to check.
+
 <b>Return Values:</b>
 
 - <code><b>isValid</b></code> boolean
@@ -58,6 +61,7 @@ Allows to check if the given item type is a valid fuel for this vehicle.
   True if the given item type is a valid fuel for this vehicle.
 ### Method <code>getCurrentTarget</code> () → index
 Returns the index of the target that the vehicle tries to move to right now.
+
 
 <b>Return Values:</b>
 
@@ -67,6 +71,7 @@ Returns the index of the target that the vehicle tries to move to right now.
 ### Method <code>nextTarget</code> () → 
 Sets the current target to the next target in the list.
 
+
 ### Method <code>setCurrentTarget</code> (index) → 
 Sets the target with the given index as the target this vehicle tries to move to right now.
 
@@ -75,8 +80,10 @@ Sets the target with the given index as the target this vehicle tries to move to
 - <code><b>index</b></code> integer
 
   The index of the target this vehicle should move to now.
+
 ### Method <code>getTargetList</code> () → targetList
 Returns the list of targets/path waypoints.
+
 
 <b>Return Values:</b>
 

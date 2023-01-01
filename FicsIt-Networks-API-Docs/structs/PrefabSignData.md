@@ -21,6 +21,7 @@ This structure stores all data that defines what a sign displays.
 ### Method <code>getTextElements</code> () → textElements, textElementValues
 Returns all text elements and their values.
 
+
 <b>Return Values:</b>
 
 - <code><b>textElements</b></code> list of string
@@ -31,6 +32,7 @@ Returns all text elements and their values.
   The values for all text elements.
 ### Method <code>getIconElements</code> () → iconElements, iconElementValues
 Returns all icon elements and their values.
+
 
 <b>Return Values:</b>
 
@@ -51,6 +53,7 @@ Sets all text elements and their values.
 - <code><b>textElementValues</b></code> list of string
 
   The values for all text elements.
+
 ### Method <code>setIconElements</code> (iconElements, iconElementValues) → 
 Sets all icon elements and their values.
 
@@ -62,6 +65,7 @@ Sets all icon elements and their values.
 - <code><b>iconElementValues</b></code> list of integer
 
   The values for all icon elements.
+
 ### Method <code>setTextElement</code> (elementName, value) → 
 Sets a text element with the given element name.
 
@@ -73,6 +77,7 @@ Sets a text element with the given element name.
 - <code><b>value</b></code> string
 
   The value of the text element
+
 ### Method <code>setIconElement</code> (elementName, value) → 
 Sets a icon element with the given element name.
 
@@ -84,6 +89,7 @@ Sets a icon element with the given element name.
 - <code><b>value</b></code> integer
 
   The value of the icon element
+
 ### Method <code>getTextElement</code> (elementName) → value
 Gets a text element with the given element name.
 
@@ -92,6 +98,7 @@ Gets a text element with the given element name.
 - <code><b>elementName</b></code> string
 
   The name of the text element
+
 <b>Return Values:</b>
 
 - <code><b>value</b></code> integer
@@ -105,6 +112,7 @@ Gets a icon element with the given element name.
 - <code><b>elementName</b></code> string
 
   The name of the icon element
+
 <b>Return Values:</b>
 
 - <code><b>value</b></code> integer

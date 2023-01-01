@@ -11,6 +11,7 @@ A reflection object representing a class property.
 ### Method <code>getSubclass</code> () → subclass
 Returns the subclass type of this class. Meaning, the stored classes need to be of this type.
 
+
 <b>Return Values:</b>
 
 - <code><b>subclass</b></code> <a href="Class.md">Class</a>

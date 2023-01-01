@@ -16,6 +16,7 @@ Describes the type of a sign.
 ### Method <code>getColors</code> () → foreground, background, auxiliary
 Returns the default foreground/background/auxiliary colors of this sign type.
 
+
 <b>Return Values:</b>
 
 - <code><b>foreground</b></code> <a href="../structs/Color.md">Color</a>
@@ -30,6 +31,7 @@ Returns the default foreground/background/auxiliary colors of this sign type.
 ### Method <code>getPrefabs</code> () → prefabs
 Returns a list of all sign prefabs this sign can use.
 
+
 <b>Return Values:</b>
 
 - <code><b>prefabs</b></code> list of <a href="SignPrefab.md">SignPrefab</a>
@@ -38,6 +40,7 @@ Returns a list of all sign prefabs this sign can use.
 ### Method <code>getTextElements</code> () → textElementsDefaultValues
 Returns a list of element names and their default text values.
 
+
 <b>Return Values:</b>
 
 - <code><b>textElementsDefaultValues</b></code> list of string
@@ -45,6 +48,7 @@ Returns a list of element names and their default text values.
   A list of default values for the text elements of this type.
 ### Method <code>getIconElements</code> () → iconElementsDefaultValues
 Returns a list of element names and their default icon values.
+
 
 <b>Return Values:</b>
 

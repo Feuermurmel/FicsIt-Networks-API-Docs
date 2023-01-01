@@ -38,6 +38,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
 ### Method <code>getFluidDescriptor</code> () → fluidDescriptor
 ?
 
+
 <b>Return Values:</b>
 
 - <code><b>fluidDescriptor</b></code> <a href="ItemType.md">ItemType</a>
@@ -45,6 +46,7 @@ A actor component that is a connection point to which a conveyor or pipe can get
   ?
 ### Method <code>flushPipeNetwork</code> () → 
 Flush the associated pipe network
+
 
 ## Static Members
 <b>Inherited Members:</b>

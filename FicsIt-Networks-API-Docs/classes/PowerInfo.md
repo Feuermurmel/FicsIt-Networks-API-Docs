@@ -29,6 +29,7 @@ A actor component that provides information and mainly statistics about the powe
 ### Method <code>getCircuit</code> () → circuit
 Returns the power circuit this info component is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>circuit</b></code> <a href="PowerCircuit.md">PowerCircuit</a>

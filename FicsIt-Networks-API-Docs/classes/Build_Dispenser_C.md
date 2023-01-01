@@ -11,6 +11,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 ### Method <code>getThresholdFillMode</code> () → thresholdFill
 
 
+
 <b>Return Values:</b>
 
 - <code><b>thresholdFill</b></code> boolean
@@ -24,7 +25,9 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>thresholdFill</b></code> boolean
 
   
+
 ### Method <code>getTopOffPartial</code> () → topOffPartial
+
 
 
 <b>Return Values:</b>
@@ -40,7 +43,9 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>topOff</b></code> boolean
 
   
+
 ### Method <code>getStacksToDispense</code> () → stacksToDispense
+
 
 
 <b>Return Values:</b>
@@ -56,6 +61,7 @@ Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Acc
 - <code><b>stacks</b></code> integer
 
   
+
 ## Static Members
 <b>Inherited Members:</b>
 - Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>

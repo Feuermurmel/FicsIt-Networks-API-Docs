@@ -18,6 +18,7 @@ A docking station for wheeled vehicles to transfer cargo.
 ### Method <code>getFuelInv</code> () → inventory
 Returns the fuel inventory of the docking station.
 
+
 <b>Return Values:</b>
 
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
@@ -25,6 +26,7 @@ Returns the fuel inventory of the docking station.
   The fuel inventory of the docking station.
 ### Method <code>getInv</code> () → inventory
 Returns the cargo inventory of the docking station.
+
 
 <b>Return Values:</b>
 
@@ -34,6 +36,7 @@ Returns the cargo inventory of the docking station.
 ### Method <code>getDocked</code> () → docked
 Returns the currently docked actor.
 
+
 <b>Return Values:</b>
 
 - <code><b>docked</b></code> <a href="Actor.md">Actor</a>
@@ -41,6 +44,7 @@ Returns the currently docked actor.
   The currently docked actor.
 ### Method <code>undock</code> () → 
 Undocked the currently docked vehicle from this docking station.
+
 
 ## Static Members
 <b>Inherited Members:</b>

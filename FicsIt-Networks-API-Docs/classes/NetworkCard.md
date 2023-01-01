@@ -21,6 +21,7 @@ Sends a network message to the receiver with the given address on the given port
 - <code><b>args</b></code> unknown
 
   
+
 ### Method <code>open</code> (port) → 
 Opens the given port so the network card is able to receive network messages on the given port.
 
@@ -29,8 +30,10 @@ Opens the given port so the network card is able to receive network messages on 
 - <code><b>port</b></code> integer
 
   The port you want to open.
+
 ### Method <code>closeAll</code> () → 
 Closes all ports of the network card so no further messages are able to get received
+
 
 ### Method <code>close</code> (port) → 
 Closes the given port so the network card wont receive network messages on the given port.
@@ -40,6 +43,7 @@ Closes the given port so the network card wont receive network messages on the g
 - <code><b>port</b></code> integer
 
   The port you want to close.
+
 ### Method <code>broadcast</code> (port, args) → 
 Sends a network message to all components in the network message network (including networks seperated by network routers) on the given port. The data you want to add can be passed as additional parameters. Max amount of such parameters is 7 and they can only be nil, booleans, numbers and strings.
 
@@ -51,6 +55,7 @@ Sends a network message to all components in the network message network (includ
 - <code><b>args</b></code> unknown
 
   
+
 ### Signal <code>NetworkMessage</code> → sender, port, values
 Triggers when the network card receives a network message on one of its opened ports. The additional arguments are the data that is contained within the network message.
 

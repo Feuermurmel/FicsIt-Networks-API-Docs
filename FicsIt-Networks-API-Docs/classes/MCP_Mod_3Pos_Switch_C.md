@@ -28,6 +28,7 @@ This Switch Module for modular I/O Panels is used to toggle between three differ
 - <code><b>Emit</b></code> float
 
   
+
 ### Signal <code>ChangeState</code> → State2
 
 

@@ -19,6 +19,7 @@ A struct that holds information about a recipe in its class. Means don't use it 
 ### Method <code>getProducts</code> () → products
 Returns a array of item amounts, this recipe returns (outputs) when the recipe is processed once.
 
+
 <b>Return Values:</b>
 
 - <code><b>products</b></code> list of <a href="../structs/ItemAmount.md">ItemAmount</a>
@@ -26,6 +27,7 @@ Returns a array of item amounts, this recipe returns (outputs) when the recipe i
   The products of this recipe.
 ### Method <code>getIngredients</code> () → ingredients
 Returns a array of item amounts, this recipe needs (input) so the recipe can be processed.
+
 
 <b>Return Values:</b>
 

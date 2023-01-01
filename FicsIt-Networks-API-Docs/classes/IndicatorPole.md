@@ -24,8 +24,10 @@ Allows to change the color and light intensity of the indicator lamp.
 - <code><b>e</b></code> float
 
   The light intensity of the pole. (0.0 - 5.0)
+
 ### Method <code>getTopPole</code> () → topPole
 Allows to get the pole placed on top of this pole.
+
 
 <b>Return Values:</b>
 
@@ -34,6 +36,7 @@ Allows to get the pole placed on top of this pole.
   The pole placed on top of this pole.
 ### Method <code>getColor</code> () → r, g, b, e
 Allows to get the color and light intensity of the indicator lamp.
+
 
 <b>Return Values:</b>
 
@@ -50,6 +53,7 @@ Allows to get the color and light intensity of the indicator lamp.
 
   The light intensity of the pole. (0.0 - 5.0)
 ### Method <code>getBottomPole</code> () → ReturnValue
+
 
 
 <b>Return Values:</b>

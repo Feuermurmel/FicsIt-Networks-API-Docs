@@ -14,6 +14,7 @@ A reflection object representing a signal.
 ### Method <code>getParameters</code> () → parameters
 Returns all the parameters of this signal.
 
+
 <b>Return Values:</b>
 
 - <code><b>parameters</b></code> list of <a href="Property.md">Property</a>

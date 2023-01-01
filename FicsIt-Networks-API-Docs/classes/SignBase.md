@@ -10,6 +10,7 @@ The base class for all signs in the game.
 ### Method <code>getSignType</code> () → descriptor
 Returns the sign type descriptor
 
+
 <b>Return Values:</b>
 
 - <code><b>descriptor</b></code> <a href="SignType.md">SignType</a>

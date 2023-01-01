@@ -189,6 +189,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
                 yield f'{mm.description}'
                 yield f''
                 yield from iter_parameter_descriptions('Parameters', mm.parameters)
+                yield f''
                 yield from iter_parameter_descriptions('Return Values', mm.return_values)
 
             for s in signals:

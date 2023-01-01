@@ -25,6 +25,7 @@ Adds a stop to the time table.
 - <code><b>ruleSet</b></code> <a href="../structs/TrainDockingRuleSet.md">TrainDockingRuleSet</a>
 
   The docking rule set that describes when the train will depart from the station.
+
 <b>Return Values:</b>
 
 - <code><b>added</b></code> boolean
@@ -38,8 +39,10 @@ Removes the stop with the given index from the time table.
 - <code><b>index</b></code> integer
 
   The index at which the stop should get added.
+
 ### Method <code>getStops</code> () → stops
 Returns a list of all the stops this time table has
+
 
 <b>Return Values:</b>
 
@@ -48,6 +51,7 @@ Returns a list of all the stops this time table has
   A list of time table stops this time table has.
 ### Method <code>setStops</code> () → gotSet
 Allows to empty and fill the stops of this time table with the given list of new stops.
+
 
 <b>Return Values:</b>
 
@@ -62,6 +66,7 @@ Allows to check if the given stop index is valid.
 - <code><b>index</b></code> integer
 
   The stop index you want to check its validity.
+
 <b>Return Values:</b>
 
 - <code><b>valid</b></code> boolean
@@ -75,6 +80,7 @@ Returns the stop at the given index.
 - <code><b>index</b></code> integer
 
   The index of the stop you want to get.
+
 <b>Return Values:</b>
 
 - <code><b>stop</b></code> <a href="../structs/TimeTableStop.md">TimeTableStop</a>
@@ -88,11 +94,14 @@ Sets the stop, to which the train trys to drive to right now.
 - <code><b>index</b></code> integer
 
   The index of the stop the train should drive to right now.
+
 ### Method <code>incrementCurrentStop</code> () → 
 Sets the current stop to the next stop in the time table.
 
+
 ### Method <code>getCurrentStop</code> () → index
 Returns the index of the stop the train drives to right now.
+
 
 <b>Return Values:</b>
 

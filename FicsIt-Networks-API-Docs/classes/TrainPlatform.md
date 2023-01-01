@@ -18,6 +18,7 @@ The base class for all train station parts.
 ### Method <code>getTrackGraph</code> () → graph
 Returns the track graph of which this platform is part of.
 
+
 <b>Return Values:</b>
 
 - <code><b>graph</b></code> <a href="../structs/TrackGraph.md">TrackGraph</a>
@@ -25,6 +26,7 @@ Returns the track graph of which this platform is part of.
   The track graph of which this platform is part of.
 ### Method <code>getTrackPos</code> () → track, offset, forward
 Returns the track pos at which this train platform is placed.
+
 
 <b>Return Values:</b>
 
@@ -45,6 +47,7 @@ Returns the connected platform in the given direction.
 - <code><b>direction</b></code> integer
 
   The direction in which you want to get the connected platform.
+
 <b>Return Values:</b>
 
 - <code><b>platform</b></code> <a href="TrainPlatform.md">TrainPlatform</a>
@@ -52,6 +55,7 @@ Returns the connected platform in the given direction.
   The platform connected to this platform in the given direction.
 ### Method <code>getDockedVehicle</code> () → vehicle
 Returns the currently docked vehicle.
+
 
 <b>Return Values:</b>
 
@@ -61,6 +65,7 @@ Returns the currently docked vehicle.
 ### Method <code>getMaster</code> () → master
 Returns the master platform of this train station.
 
+
 <b>Return Values:</b>
 
 - <code><b>master</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
@@ -68,6 +73,7 @@ Returns the master platform of this train station.
   The master platform of this train station.
 ### Method <code>getDockedLocomotive</code> () → locomotive
 Returns the currently docked locomotive at the train station.
+
 
 <b>Return Values:</b>
 

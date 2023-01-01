@@ -17,6 +17,7 @@ You can rotate it indefinitely into any direction where every rotation triggers 
 - <code><b>AntiClockwise</b></code> boolean
 
   
+
 ### Signal <code>PotRotate</code> → AntiClockwise
 
 
