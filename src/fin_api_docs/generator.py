@@ -3,6 +3,7 @@ from __future__ import annotations
 import dataclasses
 import json
 import os
+import re
 import shutil
 from dataclasses import dataclass
 from functools import partial
@@ -13,8 +14,6 @@ from fin_api_docs.api import API, TypeRef, PrimitiveType, ArrayType, \
     StructuredTypeID, Struct, MemberID, StructuredType, Class, Member, Field, \
     Method, Signal, Parameter
 from fin_api_docs.util import UserError
-
-Markdown = NewType('Markdown', str)
 
 
 def get_relative_path(path: Path, relative_to: Path) -> str:
@@ -34,13 +33,13 @@ class Link:
     page: Page
     fragment: str | None = None
 
-    def render(self, link_text: str) -> Markdown:
+    def render(self, link_text: str) -> str:
         url = get_relative_path(self.page.path, self.relative_to.path)
 
         if self.fragment is not None:
             url = f'{url}#{self.fragment}'
 
-        return Markdown(f'<a href="{url}">{link_text}</a>')
+        return f'<a href="{url}">{link_text}</a>'
 
     def with_fragment(self, fragment):
         return dataclasses.replace(self, fragment=fragment)
@@ -49,7 +48,7 @@ class Link:
 @dataclass
 class Page:
     path: Path
-    get_content: Callable[[PageContext], Markdown]
+    get_content: Callable[[PageContext], str]
 
 
 @dataclass
@@ -73,11 +72,11 @@ class PageContext:
     page: Page
     api_docs: APIDocs
 
-    def type_ref(self, ref: TypeRef) -> Markdown:
+    def type_ref(self, ref: TypeRef) -> str:
         if isinstance(ref, PrimitiveType):
-            return Markdown(ref.value)
+            return ref.value
         elif isinstance(ref, ArrayType):
-            return Markdown(f'list of {self.type_ref(ref.elementType)}')
+            return f'list of {self.type_ref(ref.elementType)}'
         else:
             return self.page_link_target(ref) \
                 .render(self.api_docs.api.structured_types[ref].name)
@@ -85,8 +84,17 @@ class PageContext:
     def page_link_target(self, id: StructuredTypeID) -> Link:
         return Link(self.page, self.api_docs.structured_type_pages[id])
 
+    def member_anchor(self, id: MemberID) -> str:
+        anchor = re.sub('(?=[A-Z]+)', '-', id.member).lower()
+
+        if id.static:
+            anchor = 's-' + anchor
+
+        return anchor
+
     def member_link_target(self, id: MemberID) -> Link:
-        return self.page_link_target(id.type).with_fragment(id.member)
+        return self.page_link_target(id.type) \
+            .with_fragment(f'user-content-{self.member_anchor(id)}')
 
 
 def member_sort_key(member: Member):
@@ -100,14 +108,9 @@ def member_sort_key(member: Member):
     return category_rank, member.name
 
 
-def structured_type_content(type: StructuredType, context: PageContext) -> Markdown:
-    def param_str(parameter: Parameter) -> str:
-        param_str = f'{parameter.name}: {context.type_ref(parameter.type)}'
-
-        if parameter.is_var_arg:
-            param_str += '...'
-
-        return param_str
+def structured_type_content(type: StructuredType, context: PageContext) -> str:
+    def member_title(member: Member):
+        return f'<code id="{context.member_anchor(member.id)}">{member.name}</code>'
 
     def iter_parameter_descriptions(
             heading: str, parameters: list[Parameter]) \
@@ -177,15 +180,19 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
                 yield '### Fields'
 
                 for f in fields:
-                    yield f'- <code><b>{f.name}</b></code> {context.type_ref(f.type)}'
+                    yield f'- {member_title(f)} {context.type_ref(f.type)}'
                     yield f''
                     yield f'  {f.description}'
 
             for mm in methods:
                 params_str = ', '.join(i.name for i in mm.parameters)
-                return_values_str = ', '.join(i.name for i in mm.return_values)
 
-                yield f'### Method <code>{mm.name}</code> ({params_str}) → {return_values_str}'
+                if mm.return_values:
+                    return_part = ' → ' + ', '.join(i.name for i in mm.return_values)
+                else:
+                    return_part = ''
+
+                yield f'### Method {member_title(mm)} ({params_str}){return_part}'
                 yield f'{mm.description}'
                 yield f''
                 yield from iter_parameter_descriptions('Parameters', mm.parameters)
@@ -193,9 +200,12 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
                 yield from iter_parameter_descriptions('Return Values', mm.return_values)
 
             for s in signals:
-                params_str = ', '.join(i.name for i in s.parameters)
+                if s.parameters:
+                    parameters_part = ' → ' + ', '.join(i.name for i in s.parameters)
+                else:
+                    parameters_part = ''
 
-                yield f'### Signal <code>{s.name}</code> → {params_str}'
+                yield f'### Signal {member_title(s)}{parameters_part}'
                 yield f'{s.description}'
                 yield f''
                 yield from iter_parameter_descriptions('Parameters', s.parameters)
@@ -224,7 +234,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> Markd
         yield from iter_members('Instance Members', type, lambda x: x.instance_members.values())
         yield from iter_members('Static Members', type, lambda x: x.static_members.values())
 
-    return Markdown('\n'.join(iter_parts()))
+    return '\n'.join(iter_parts())
 
 
 def main(output_path: Path, clear: bool, input_json_path: Optional[Path]) -> None:

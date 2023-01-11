@@ -5,23 +5,23 @@ Superclasses: <a href="FGBuildableControlPanelHost.md">FGBuildableControlPanelHo
 A control panel to configure multiple lights at once.
 ## Instance Members
 <b>Inherited Members:</b>
-- CircuitBridge: <a href="CircuitBridge.md#isBridgeActive">isBridgeActive</a>, <a href="CircuitBridge.md#isBridgeConnected">isBridgeConnected</a>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- CircuitBridge: <a href="CircuitBridge.md#user-content-is-bridge-active">isBridgeActive</a>, <a href="CircuitBridge.md#user-content-is-bridge-connected">isBridgeConnected</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>isLightEnabled</b></code> boolean
+- <code id="is-light-enabled">isLightEnabled</code> boolean
 
   True if the lights should be enabled
-- <code><b>isTimeOfDayAware</b></code> boolean
+- <code id="is-time-of-day-aware">isTimeOfDayAware</code> boolean
 
   True if the lights should automatically turn on and off depending on the time of the day.
-- <code><b>intensity</b></code> float
+- <code id="intensity">intensity</code> float
 
   The intensity of the lights.
-- <code><b>colorSlot</b></code> integer
+- <code id="color-slot">colorSlot</code> integer
 
   The color slot the lights should use.
-### Method <code>setColorFromSlot</code> (slot, color) → 
+### Method <code id="set-color-from-slot">setColorFromSlot</code> (slot, color)
 Allows to update the light color that is referenced by the given slot.
 
 <b>Parameters:</b>
@@ -35,4 +35,4 @@ Allows to update the light color that is referenced by the given slot.
 
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

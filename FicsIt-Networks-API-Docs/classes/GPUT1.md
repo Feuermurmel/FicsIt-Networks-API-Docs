@@ -5,10 +5,10 @@ Superclasses: <a href="FINComputerGPU.md">FINComputerGPU</a> < <a href="FINCompu
 
 ## Instance Members
 <b>Inherited Members:</b>
-- FINComputerGPU: <a href="FINComputerGPU.md#ScreenBound">ScreenBound</a>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>setText</code> (x, y, str) → 
+- FINComputerGPU: <a href="FINComputerGPU.md#user-content--screen-bound">ScreenBound</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="set-text">setText</code> (x, y, str)
 Draws the given text at the given position to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -23,7 +23,7 @@ Draws the given text at the given position to the hidden screen buffer.
 
   The text you want to draw on-to the buffer.
 
-### Method <code>setSize</code> (w, h) → 
+### Method <code id="set-size">setSize</code> (w, h)
 Changes the size of the text-grid (and buffer).
 
 <b>Parameters:</b>
@@ -35,7 +35,7 @@ Changes the size of the text-grid (and buffer).
 
   The height of the text-grid.
 
-### Method <code>setForeground</code> (r, g, b, a) → 
+### Method <code id="set-foreground">setForeground</code> (r, g, b, a)
 Changes the foreground color that is used for the next draw calls.
 
 <b>Parameters:</b>
@@ -53,7 +53,7 @@ Changes the foreground color that is used for the next draw calls.
 
   The opacity of the foreground color. (0.0 - 1.0)
 
-### Method <code>setBuffer</code> (buffer) → 
+### Method <code id="set-buffer">setBuffer</code> (buffer)
 Allows to change the back buffer of the GPU to the given buffer.
 
 <b>Parameters:</b>
@@ -62,7 +62,7 @@ Allows to change the back buffer of the GPU to the given buffer.
 
   The Buffer you want to now use as back buffer.
 
-### Method <code>setBackground</code> (r, g, b, a) → 
+### Method <code id="set-background">setBackground</code> (r, g, b, a)
 Changes the background color that is used for the next draw calls.
 
 <b>Parameters:</b>
@@ -80,7 +80,7 @@ Changes the background color that is used for the next draw calls.
 
   The opacity of the background color. (0.0 - 1.0)
 
-### Method <code>getSize</code> () → w, h
+### Method <code id="get-size">getSize</code> () → w, h
 Returns the size of the text-grid (and buffer).
 
 
@@ -92,7 +92,7 @@ Returns the size of the text-grid (and buffer).
 - <code><b>h</b></code> integer
 
   The height of the text-grid.
-### Method <code>getScreen</code> () → screen
+### Method <code id="get-screen">getScreen</code> () → screen
 Returns the currently bound screen.
 
 
@@ -101,7 +101,7 @@ Returns the currently bound screen.
 - <code><b>screen</b></code> <a href="Object.md">Object</a>
 
   The currently bound screen.
-### Method <code>getBuffer</code> () → buffer
+### Method <code id="get-buffer">getBuffer</code> () → buffer
 Returns the back buffer as struct to be able to use advanced buffer handling functions. (struct is a copy)
 
 
@@ -110,11 +110,11 @@ Returns the back buffer as struct to be able to use advanced buffer handling fun
 - <code><b>buffer</b></code> <a href="../structs/GPUT1Buffer.md">GPUT1Buffer</a>
 
   The Buffer that is currently the back buffer.
-### Method <code>flush</code> () → 
+### Method <code id="flush">flush</code> ()
 Flushes the hidden screen buffer to the visible screen buffer and so makes the draw calls visible.
 
 
-### Method <code>fill</code> (x, y, dx, dy, str) → 
+### Method <code id="fill">fill</code> (x, y, dx, dy, str)
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -135,7 +135,7 @@ Draws the given character at all given positions in the given rectangle on-to th
 
   The character you want to use for the rectangle. (first char in the given string)
 
-### Method <code>bindScreen</code> (newScreen) → 
+### Method <code id="bind-screen">bindScreen</code> (newScreen)
 Binds this GPU to the given screen. Unbinds the already bound screen.
 
 <b>Parameters:</b>
@@ -144,7 +144,7 @@ Binds this GPU to the given screen. Unbinds the already bound screen.
 
   The screen you want to bind this GPU to. Null if you want to unbind the screen.
 
-### Signal <code>ScreenSizeChanged</code> → oldW, oldH
+### Signal <code id="-screen-size-changed">ScreenSizeChanged</code> → oldW, oldH
 Triggers when the size of the text grid changed.
 
 <b>Parameters:</b>
@@ -155,7 +155,7 @@ Triggers when the size of the text grid changed.
 - <code><b>oldH</b></code> integer
 
   The old height of the screen.
-### Signal <code>OnMouseUp</code> → x, y, btn
+### Signal <code id="-on-mouse-up">OnMouseUp</code> → x, y, btn
 Triggers when a mouse button got released.
 
 <b>Parameters:</b>
@@ -176,7 +176,7 @@ Bits:
 4th shift key pressed
 5th alt key pressed
 6th cmd key pressed
-### Signal <code>OnMouseMove</code> → x, y, btn
+### Signal <code id="-on-mouse-move">OnMouseMove</code> → x, y, btn
 Triggers when the mouse cursor moves on the screen.
 
 <b>Parameters:</b>
@@ -197,7 +197,7 @@ Bits:
 4th shift key pressed
 5th alt key pressed
 6th cmd key pressed
-### Signal <code>OnMouseDown</code> → x, y, btn
+### Signal <code id="-on-mouse-down">OnMouseDown</code> → x, y, btn
 Triggers when a mouse button got pressed.
 
 <b>Parameters:</b>
@@ -218,7 +218,7 @@ Bits:
 4th shift key pressed
 5th alt key pressed
 6th cmd key pressed
-### Signal <code>OnKeyUp</code> → c, code, btn
+### Signal <code id="-on-key-up">OnKeyUp</code> → c, code, btn
 Triggers when a key got released.
 
 <b>Parameters:</b>
@@ -239,7 +239,7 @@ Bits:
 4th shift key pressed
 5th alt key pressed
 6th cmd key pressed
-### Signal <code>OnKeyDown</code> → c, code, btn
+### Signal <code id="-on-key-down">OnKeyDown</code> → c, code, btn
 Triggers when a key got pressed.
 
 <b>Parameters:</b>
@@ -260,7 +260,7 @@ Bits:
 4th shift key pressed
 5th alt key pressed
 6th cmd key pressed
-### Signal <code>OnKeyChar</code> → c, btn
+### Signal <code id="-on-key-char">OnKeyChar</code> → c, btn
 Triggers when a character key got 'clicked' and essentially a character got typed in, useful for text input.
 
 <b>Parameters:</b>
@@ -280,4 +280,4 @@ Bits:
 6th cmd key pressed
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

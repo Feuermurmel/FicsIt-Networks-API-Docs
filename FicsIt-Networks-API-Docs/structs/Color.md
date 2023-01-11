@@ -3,15 +3,15 @@
 A structure that holds a rgba color value
 ## Instance Members
 ### Fields
-- <code><b>r</b></code> float
+- <code id="r">r</code> float
 
   The red portion of the color.
-- <code><b>g</b></code> float
+- <code id="g">g</code> float
 
   The green portion of the color.
-- <code><b>b</b></code> float
+- <code id="b">b</code> float
 
   The blue portion of the color.
-- <code><b>a</b></code> float
+- <code id="a">a</code> float
 
   The alpha (opacity) portion of the color.

@@ -5,9 +5,9 @@ Superclasses: <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 The list of targets/path-waypoints a autonomous vehicle can drive
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getTarget</code> () → target
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="get-target">getTarget</code> () → target
 Returns the target struct at with the given index in the target list.
 
 
@@ -16,7 +16,7 @@ Returns the target struct at with the given index in the target list.
 - <code><b>target</b></code> <a href="../structs/TargetPoint.md">TargetPoint</a>
 
   The TargetPoint-Struct with the given index in the target list.
-### Method <code>removeTarget</code> (index) → 
+### Method <code id="remove-target">removeTarget</code> (index)
 Removes the target with the given index from the target list.
 
 <b>Parameters:</b>
@@ -25,7 +25,7 @@ Removes the target with the given index from the target list.
 
   The index of the target point you want to remove from the target list.
 
-### Method <code>addTarget</code> (target) → 
+### Method <code id="add-target">addTarget</code> (target)
 Adds the given target point struct at the end of the target list.
 
 <b>Parameters:</b>
@@ -34,7 +34,7 @@ Adds the given target point struct at the end of the target list.
 
   The target point you want to add.
 
-### Method <code>setTarget</code> (index, target) → 
+### Method <code id="set-target">setTarget</code> (index, target)
 Allows to set the target at the given index to the given target point struct.
 
 <b>Parameters:</b>
@@ -46,7 +46,7 @@ Allows to set the target at the given index to the given target point struct.
 
   The new target point struct for the given index.
 
-### Method <code>getTargets</code> () → targets
+### Method <code id="get-targets">getTargets</code> () → targets
 Returns a list of target point structs of all the targets in the target point list.
 
 
@@ -55,7 +55,7 @@ Returns a list of target point structs of all the targets in the target point li
 - <code><b>targets</b></code> list of <a href="../structs/TargetPoint.md">TargetPoint</a>
 
   A list of target point structs containing all the targets of the target point list.
-### Method <code>setTargets</code> (targets) → 
+### Method <code id="set-targets">setTargets</code> (targets)
 Removes all targets from the target point list and adds the given array of target point structs to the empty target point list.
 
 <b>Parameters:</b>
@@ -66,4 +66,4 @@ Removes all targets from the target point list and adds the given array of targe
 
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

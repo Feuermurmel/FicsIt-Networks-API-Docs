@@ -35,6 +35,7 @@ class _Item:
 class MemberID:
     type: StructuredTypeID
     member: str
+    static: bool
 
 
 @dataclass
@@ -118,15 +119,16 @@ class _MembersBuilder:
 
     def add_field(self, data: PropertyJSON):
         member_name = data['internalName']
+        static = data['Flag_ClassProp']
 
         field = Field(
             name=member_name,
             description=data['description'],
             type=_type_ref_from_json(data['type']),
-            id=MemberID(self.type_id, member_name),
+            id=MemberID(self.type_id, member_name, static),
             read_only=data['Flag_ReadOnly'])
 
-        if data['Flag_ClassProp']:
+        if static:
             self.static_members.append(field)
         else:
             self.instance_members.append(field)
@@ -135,6 +137,7 @@ class _MembersBuilder:
         member_name = data['internalName']
         parameters = list[Parameter]()
         return_values = list[Parameter]()
+        static = data['Flag_ClassFunc']
 
         for pa in data['parameters']:
             parameter = Parameter(
@@ -167,11 +170,11 @@ class _MembersBuilder:
         method = Method(
             name=member_name,
             description=data['description'],
-            id=MemberID(self.type_id, member_name),
+            id=MemberID(self.type_id, member_name, static),
             parameters=parameters,
             return_values=return_values)
 
-        if data['Flag_ClassFunc']:
+        if static:
             self.static_members.append(method)
         else:
             self.instance_members.append(method)
@@ -200,7 +203,7 @@ class _MembersBuilder:
             Signal(
                 name=member_name,
                 description=data['description'],
-                id=MemberID(self.type_id, member_name),
+                id=MemberID(self.type_id, member_name, False),
                 parameters=parameters))
 
 

@@ -5,28 +5,28 @@ Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.m
 This is a actor component for railroad tracks that allows to connect to other track connections and so to connection multiple tracks with each other so you can build a train network.
 ## Instance Members
 <b>Inherited Members:</b>
-- ActorComponent: <a href="ActorComponent.md#owner">owner</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>connectorLocation</b></code> <a href="../structs/Vector.md">Vector</a>
+- <code id="connector-location">connectorLocation</code> <a href="../structs/Vector.md">Vector</a>
 
   The world location of the the connection.
-- <code><b>connectorNormal</b></code> <a href="../structs/Vector.md">Vector</a>
+- <code id="connector-normal">connectorNormal</code> <a href="../structs/Vector.md">Vector</a>
 
   The normal vector of the connector.
-- <code><b>isConnected</b></code> boolean
+- <code id="is-connected">isConnected</code> boolean
 
   True if the connection has any connection to other connections.
-- <code><b>isFacingSwitch</b></code> boolean
+- <code id="is-facing-switch">isFacingSwitch</code> boolean
 
   True if this connection is pointing to the merge/spread point of the switch.
-- <code><b>isTrailingSwitch</b></code> boolean
+- <code id="is-trailing-switch">isTrailingSwitch</code> boolean
 
   True if this connection is pointing away from the merge/spread point of a switch.
-- <code><b>numSwitchPositions</b></code> integer
+- <code id="num-switch-positions">numSwitchPositions</code> integer
 
   Returns the number of different switch positions this switch can have.
-### Method <code>getConnection</code> (index) → connection
+### Method <code id="get-connection">getConnection</code> (index) → connection
 Returns the connected connection with the given index.
 
 <b>Parameters:</b>
@@ -40,7 +40,7 @@ Returns the connected connection with the given index.
 - <code><b>connection</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
 
   The connected connection at the given index.
-### Method <code>getConnections</code> () → connections
+### Method <code id="get-connections">getConnections</code> () → connections
 Returns a list of all connected connections.
 
 
@@ -49,7 +49,7 @@ Returns a list of all connected connections.
 - <code><b>connections</b></code> list of <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
 
   A list of all connected connections.
-### Method <code>getTrackPos</code> () → track, offset, forward
+### Method <code id="get-track-pos">getTrackPos</code> () → track, offset, forward
 Returns the track pos at which this connection is.
 
 
@@ -64,7 +64,7 @@ Returns the track pos at which this connection is.
 - <code><b>forward</b></code> float
 
   The forward direction of the track pos. 1 = with the track direction, -1 = against the track direction
-### Method <code>getTrack</code> () → track
+### Method <code id="get-track">getTrack</code> () → track
 Returns the track of which this connection is part of.
 
 
@@ -73,7 +73,7 @@ Returns the track of which this connection is part of.
 - <code><b>track</b></code> <a href="RailroadTrack.md">RailroadTrack</a>
 
   The track of which this connection is part of.
-### Method <code>getSwitchControl</code> () → switchControl
+### Method <code id="get-switch-control">getSwitchControl</code> () → switchControl
 Returns the switch control of this connection.
 
 
@@ -82,7 +82,7 @@ Returns the switch control of this connection.
 - <code><b>switchControl</b></code> <a href="RailroadSwitchControl.md">RailroadSwitchControl</a>
 
   The switch control of this connection.
-### Method <code>getStation</code> () → station
+### Method <code id="get-station">getStation</code> () → station
 Returns the station of which this connection is part of.
 
 
@@ -91,7 +91,7 @@ Returns the station of which this connection is part of.
 - <code><b>station</b></code> <a href="RailroadStation.md">RailroadStation</a>
 
   The station of which this connection is part of.
-### Method <code>getFacingSignal</code> () → signal
+### Method <code id="get-facing-signal">getFacingSignal</code> () → signal
 Returns the signal this connection is facing to.
 
 
@@ -100,7 +100,7 @@ Returns the signal this connection is facing to.
 - <code><b>signal</b></code> <a href="RailroadSignal.md">RailroadSignal</a>
 
   The signal this connection is facing.
-### Method <code>getTrailingSignal</code> () → signal
+### Method <code id="get-trailing-signal">getTrailingSignal</code> () → signal
 Returns the signal this connection is trailing from.
 
 
@@ -109,7 +109,7 @@ Returns the signal this connection is trailing from.
 - <code><b>signal</b></code> <a href="RailroadSignal.md">RailroadSignal</a>
 
   The signal this connection is trailing.
-### Method <code>getOpposite</code> () → opposite
+### Method <code id="get-opposite">getOpposite</code> () → opposite
 Returns the opposite connection of the track this connection is part of.
 
 
@@ -118,7 +118,7 @@ Returns the opposite connection of the track this connection is part of.
 - <code><b>opposite</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
 
   The opposite connection of the track this connection is part of.
-### Method <code>getNext</code> () → next
+### Method <code id="get-next">getNext</code> () → next
 Returns the next connection in the direction of the track. (used the correct path switched point to)
 
 
@@ -127,7 +127,7 @@ Returns the next connection in the direction of the track. (used the correct pat
 - <code><b>next</b></code> <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>
 
   The next connection in the direction of the track.
-### Method <code>setSwitchPosition</code> (index) → 
+### Method <code id="set-switch-position">setSwitchPosition</code> (index)
 Sets the position (connection index) to which the track switch points to.
 
 <b>Parameters:</b>
@@ -136,7 +136,7 @@ Sets the position (connection index) to which the track switch points to.
 
   The connection index to which the switch should point to.
 
-### Method <code>getSwitchPosition</code> () → index
+### Method <code id="get-switch-position">getSwitchPosition</code> () → index
 Returns the current switch position.
 
 
@@ -147,4 +147,4 @@ Returns the current switch position.
   The index of the connection connection the switch currently points to.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

@@ -3,22 +3,22 @@
 A track section that combines the area between multiple signals.
 ## Instance Members
 ### Fields
-- <code><b>isValid</b></code> boolean
+- <code id="is-valid">isValid</code> boolean
 
   Is true if this signal block reference is valid.
-- <code><b>isBlockOccupied</b></code> boolean
+- <code id="is-block-occupied">isBlockOccupied</code> boolean
 
   True if the block this signal is observing is currently occupied by a vehicle.
-- <code><b>hasBlockReservation</b></code> boolean
+- <code id="has-block-reservation">hasBlockReservation</code> boolean
 
   True if the block this signal is observing has a reservation of a train e.g. will be passed by a train soon.
-- <code><b>isPathBlock</b></code> boolean
+- <code id="is-path-block">isPathBlock</code> boolean
 
   True if the block this signal is observing is a path-block.
-- <code><b>blockValidation</b></code> integer
+- <code id="block-validation">blockValidation</code> integer
 
   Returns the blocks validation status.
-### Method <code>isOccupiedBy</code> (train) → isOccupied
+### Method <code id="is-occupied-by">isOccupiedBy</code> (train) → isOccupied
 Allows you to check if this block is occupied by a given train.
 
 <b>Parameters:</b>

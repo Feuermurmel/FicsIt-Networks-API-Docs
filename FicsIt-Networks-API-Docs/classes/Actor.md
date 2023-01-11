@@ -5,18 +5,18 @@ Superclasses: <a href="Object.md">Object</a>
 This is the base class of all things that can exist within the world by them self.
 ## Instance Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>location</b></code> <a href="../structs/Vector.md">Vector</a>
+- <code id="location">location</code> <a href="../structs/Vector.md">Vector</a>
 
   The location of the actor in the world.
-- <code><b>scale</b></code> <a href="../structs/Vector.md">Vector</a>
+- <code id="scale">scale</code> <a href="../structs/Vector.md">Vector</a>
 
   The scale of the actor in the world.
-- <code><b>rotation</b></code> <a href="../structs/Rotator.md">Rotator</a>
+- <code id="rotation">rotation</code> <a href="../structs/Rotator.md">Rotator</a>
 
   The rotation of the actor in the world.
-### Method <code>getPowerConnectors</code> () → connectors
+### Method <code id="get-power-connectors">getPowerConnectors</code> () → connectors
 Returns a list of power connectors this actor might have.
 
 
@@ -25,7 +25,7 @@ Returns a list of power connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="PowerConnection.md">PowerConnection</a>
 
   The power connectors this actor has.
-### Method <code>getFactoryConnectors</code> () → connectors
+### Method <code id="get-factory-connectors">getFactoryConnectors</code> () → connectors
 Returns a list of factory connectors this actor might have.
 
 
@@ -34,7 +34,7 @@ Returns a list of factory connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="FactoryConnection.md">FactoryConnection</a>
 
   The factory connectors this actor has.
-### Method <code>getPipeConnectors</code> () → connectors
+### Method <code id="get-pipe-connectors">getPipeConnectors</code> () → connectors
 Returns a list of pipe connectors this actor might have.
 
 
@@ -43,7 +43,7 @@ Returns a list of pipe connectors this actor might have.
 - <code><b>connectors</b></code> list of <a href="PipeConnection.md">PipeConnection</a>
 
   The factory connectors this actor has.
-### Method <code>getInventories</code> () → inventories
+### Method <code id="get-inventories">getInventories</code> () → inventories
 Returns a list of inventories this actor might have.
 
 
@@ -52,7 +52,7 @@ Returns a list of inventories this actor might have.
 - <code><b>inventories</b></code> list of <a href="Inventory.md">Inventory</a>
 
   The inventories this actor has.
-### Method <code>getNetworkConnectors</code> () → connectors
+### Method <code id="get-network-connectors">getNetworkConnectors</code> () → connectors
 Returns the name of network connectors this actor might have.
 
 
@@ -63,4 +63,4 @@ Returns the name of network connectors this actor might have.
   The factory connectors this actor has.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

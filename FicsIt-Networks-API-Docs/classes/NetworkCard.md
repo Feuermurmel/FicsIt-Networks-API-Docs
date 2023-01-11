@@ -5,9 +5,9 @@ Superclasses: <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FG
 
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>send</code> (receiver, port, args) → 
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="send">send</code> (receiver, port, args)
 Sends a network message to the receiver with the given address on the given port. The data you want to add can be passed as additional parameters. Max amount of such parameters is 7 and they can only be nil, booleans, numbers and strings.
 
 <b>Parameters:</b>
@@ -22,7 +22,7 @@ Sends a network message to the receiver with the given address on the given port
 
   
 
-### Method <code>open</code> (port) → 
+### Method <code id="open">open</code> (port)
 Opens the given port so the network card is able to receive network messages on the given port.
 
 <b>Parameters:</b>
@@ -31,11 +31,11 @@ Opens the given port so the network card is able to receive network messages on 
 
   The port you want to open.
 
-### Method <code>closeAll</code> () → 
+### Method <code id="close-all">closeAll</code> ()
 Closes all ports of the network card so no further messages are able to get received
 
 
-### Method <code>close</code> (port) → 
+### Method <code id="close">close</code> (port)
 Closes the given port so the network card wont receive network messages on the given port.
 
 <b>Parameters:</b>
@@ -44,7 +44,7 @@ Closes the given port so the network card wont receive network messages on the g
 
   The port you want to close.
 
-### Method <code>broadcast</code> (port, args) → 
+### Method <code id="broadcast">broadcast</code> (port, args)
 Sends a network message to all components in the network message network (including networks seperated by network routers) on the given port. The data you want to add can be passed as additional parameters. Max amount of such parameters is 7 and they can only be nil, booleans, numbers and strings.
 
 <b>Parameters:</b>
@@ -56,7 +56,7 @@ Sends a network message to all components in the network message network (includ
 
   
 
-### Signal <code>NetworkMessage</code> → sender, port, values
+### Signal <code id="-network-message">NetworkMessage</code> → sender, port, values
 Triggers when the network card receives a network message on one of its opened ports. The additional arguments are the data that is contained within the network message.
 
 <b>Parameters:</b>
@@ -72,4 +72,4 @@ Triggers when the network card receives a network message on one of its opened p
   
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

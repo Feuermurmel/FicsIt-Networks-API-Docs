@@ -5,15 +5,15 @@ Superclasses: <a href="Object.md">Object</a>
 Describes the type of a sign.
 ## Instance Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>
 ### Fields
-- <code><b>dimensions</b></code> <a href="../structs/Vector2D.md">Vector2D</a>
+- <code id="s-dimensions">dimensions</code> <a href="../structs/Vector2D.md">Vector2D</a>
 
   The canvas dimensions of this sign.
-### Method <code>getColors</code> () → foreground, background, auxiliary
+### Method <code id="s-get-colors">getColors</code> () → foreground, background, auxiliary
 Returns the default foreground/background/auxiliary colors of this sign type.
 
 
@@ -28,7 +28,7 @@ Returns the default foreground/background/auxiliary colors of this sign type.
 - <code><b>auxiliary</b></code> <a href="../structs/Color.md">Color</a>
 
   The auxiliary color
-### Method <code>getPrefabs</code> () → prefabs
+### Method <code id="s-get-prefabs">getPrefabs</code> () → prefabs
 Returns a list of all sign prefabs this sign can use.
 
 
@@ -37,7 +37,7 @@ Returns a list of all sign prefabs this sign can use.
 - <code><b>prefabs</b></code> list of <a href="SignPrefab.md">SignPrefab</a>
 
   The sign prefabs this sign can use
-### Method <code>getTextElements</code> () → textElementsDefaultValues
+### Method <code id="s-get-text-elements">getTextElements</code> () → textElementsDefaultValues
 Returns a list of element names and their default text values.
 
 
@@ -46,7 +46,7 @@ Returns a list of element names and their default text values.
 - <code><b>textElementsDefaultValues</b></code> list of string
 
   A list of default values for the text elements of this type.
-### Method <code>getIconElements</code> () → iconElementsDefaultValues
+### Method <code id="s-get-icon-elements">getIconElements</code> () → iconElementsDefaultValues
 Returns a list of element names and their default icon values.
 
 

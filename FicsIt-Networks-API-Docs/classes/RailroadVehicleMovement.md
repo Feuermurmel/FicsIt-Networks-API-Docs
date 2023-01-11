@@ -5,91 +5,91 @@ Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.m
 This actor component contains all the information about the movement of a railroad vehicle.
 ## Instance Members
 <b>Inherited Members:</b>
-- ActorComponent: <a href="ActorComponent.md#owner">owner</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>orientation</b></code> float
+- <code id="orientation">orientation</code> float
 
   The orientation of the vehicle
-- <code><b>mass</b></code> float
+- <code id="mass">mass</code> float
 
   The current mass of the vehicle.
-- <code><b>tareMass</b></code> float
+- <code id="tare-mass">tareMass</code> float
 
   The tare mass of the vehicle.
-- <code><b>payloadMass</b></code> float
+- <code id="payload-mass">payloadMass</code> float
 
   The mass of the payload of the vehicle.
-- <code><b>speed</b></code> float
+- <code id="speed">speed</code> float
 
   The current forward speed of the vehicle.
-- <code><b>relativeSpeed</b></code> float
+- <code id="relative-speed">relativeSpeed</code> float
 
   The current relative forward speed to the ground.
-- <code><b>maxSpeed</b></code> float
+- <code id="max-speed">maxSpeed</code> float
 
   The maximum forward speed the vehicle can reach.
-- <code><b>gravitationalForce</b></code> float
+- <code id="gravitational-force">gravitationalForce</code> float
 
   The current gravitational force acting on the vehicle.
-- <code><b>tractiveForce</b></code> float
+- <code id="tractive-force">tractiveForce</code> float
 
   The current tractive force acting on the vehicle.
-- <code><b>resistiveForce</b></code> float
+- <code id="resistive-force">resistiveForce</code> float
 
   The resistive force currently acting on the vehicle.
-- <code><b>gradientForce</b></code> float
+- <code id="gradient-force">gradientForce</code> float
 
   The gradient force currently acting on the vehicle.
-- <code><b>brakingForce</b></code> float
+- <code id="braking-force">brakingForce</code> float
 
   The braking force currently acting on the vehicle.
-- <code><b>airBrakingForce</b></code> float
+- <code id="air-braking-force">airBrakingForce</code> float
 
   The air braking force currently acting on the vehicle.
-- <code><b>dynamicBrakingForce</b></code> float
+- <code id="dynamic-braking-force">dynamicBrakingForce</code> float
 
   The dynamic braking force currently acting on the vehicle.
-- <code><b>maxTractiveEffort</b></code> float
+- <code id="max-tractive-effort">maxTractiveEffort</code> float
 
   The maximum tractive effort of this vehicle.
-- <code><b>maxDynamicBrakingEffort</b></code> float
+- <code id="max-dynamic-braking-effort">maxDynamicBrakingEffort</code> float
 
   The maximum dynamic braking effort of this vehicle.
-- <code><b>maxAirBrakingEffort</b></code> float
+- <code id="max-air-braking-effort">maxAirBrakingEffort</code> float
 
   The maximum air braking effort of this vehicle.
-- <code><b>trackGrade</b></code> float
+- <code id="track-grade">trackGrade</code> float
 
   The current track grade of this vehicle.
-- <code><b>trackCurvature</b></code> float
+- <code id="track-curvature">trackCurvature</code> float
 
   The current track curvature of this vehicle.
-- <code><b>wheelsetAngle</b></code> float
+- <code id="wheelset-angle">wheelsetAngle</code> float
 
   The wheelset angle of this vehicle.
-- <code><b>rollingResistance</b></code> float
+- <code id="rolling-resistance">rollingResistance</code> float
 
   The current rolling resistance of this vehicle.
-- <code><b>curvatureResistance</b></code> float
+- <code id="curvature-resistance">curvatureResistance</code> float
 
   The current curvature resistance of this vehicle.
-- <code><b>airResistance</b></code> float
+- <code id="air-resistance">airResistance</code> float
 
   The current air resistance of this vehicle.
-- <code><b>gradientResistance</b></code> float
+- <code id="gradient-resistance">gradientResistance</code> float
 
   The current gradient resistance of this vehicle.
-- <code><b>wheelRotation</b></code> float
+- <code id="wheel-rotation">wheelRotation</code> float
 
   The current wheel rotation of this vehicle.
-- <code><b>numWheelsets</b></code> integer
+- <code id="num-wheelsets">numWheelsets</code> integer
 
   The number of wheelsets this vehicle has.
-- <code><b>isMoving</b></code> boolean
+- <code id="is-moving">isMoving</code> boolean
 
   True if this vehicle is currently moving.
-### Method <code>getVehicle</code> () → vehicle
+### Method <code id="get-vehicle">getVehicle</code> () → vehicle
 Returns the vehicle this movement component holds the movement information of.
 
 
@@ -98,7 +98,7 @@ Returns the vehicle this movement component holds the movement information of.
 - <code><b>vehicle</b></code> <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   The vehicle this movement component holds the movement information of.
-### Method <code>getWheelsetRotation</code> (wheelset) → x, y, z
+### Method <code id="get-wheelset-rotation">getWheelsetRotation</code> (wheelset) → x, y, z
 Returns the current rotation of the given wheelset.
 
 <b>Parameters:</b>
@@ -118,7 +118,7 @@ Returns the current rotation of the given wheelset.
 - <code><b>z</b></code> float
 
   The wheelset's rotation Z component.
-### Method <code>getWheelsetOffset</code> (wheelset) → offset
+### Method <code id="get-wheelset-offset">getWheelsetOffset</code> (wheelset) → offset
 Returns the offset of the wheelset with the given index from the start of the vehicle.
 
 <b>Parameters:</b>
@@ -132,7 +132,7 @@ Returns the offset of the wheelset with the given index from the start of the ve
 - <code><b>offset</b></code> float
 
   The offset of the wheelset.
-### Method <code>getCouplerRotationAndExtension</code> (coupler) → x, y, z, extension
+### Method <code id="get-coupler-rotation-and-extension">getCouplerRotationAndExtension</code> (coupler) → x, y, z, extension
 Returns the normal vector and the extension of the coupler with the given index.
 
 <b>Parameters:</b>
@@ -157,4 +157,4 @@ Returns the normal vector and the extension of the coupler with the given index.
   The extension of the coupler.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

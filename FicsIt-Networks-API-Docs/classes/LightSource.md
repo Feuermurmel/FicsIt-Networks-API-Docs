@@ -5,22 +5,22 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 The base class for all light you can build.
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>isLightEnabled</b></code> boolean
+- <code id="is-light-enabled">isLightEnabled</code> boolean
 
   True if the light is enabled
-- <code><b>isTimeOfDayAware</b></code> boolean
+- <code id="is-time-of-day-aware">isTimeOfDayAware</code> boolean
 
   True if the light should automatically turn on and off depending on the time of the day.
-- <code><b>intensity</b></code> float
+- <code id="intensity">intensity</code> float
 
   The intensity of the light.
-- <code><b>colorSlot</b></code> integer
+- <code id="color-slot">colorSlot</code> integer
 
   The color slot the light uses.
-### Method <code>getColorFromSlot</code> (slot) → color
+### Method <code id="get-color-from-slot">getColorFromSlot</code> (slot) → color
 Returns the light color that is referenced by the given slot.
 
 <b>Parameters:</b>
@@ -34,7 +34,7 @@ Returns the light color that is referenced by the given slot.
 - <code><b>color</b></code> <a href="../structs/Color.md">Color</a>
 
   The color this slot references.
-### Method <code>setColorFromSlot</code> (slot, color) → 
+### Method <code id="set-color-from-slot">setColorFromSlot</code> (slot, color)
 Allows to update the light color that is referenced by the given slot.
 
 <b>Parameters:</b>
@@ -48,4 +48,4 @@ Allows to update the light color that is referenced by the given slot.
 
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

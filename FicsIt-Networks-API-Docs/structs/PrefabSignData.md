@@ -3,22 +3,22 @@
 This structure stores all data that defines what a sign displays.
 ## Instance Members
 ### Fields
-- <code><b>layout</b></code> <a href="../classes/Object.md">Object</a>
+- <code id="layout">layout</code> <a href="../classes/Object.md">Object</a>
 
   The object that actually displays the layout
-- <code><b>foreground</b></code> <a href="Color.md">Color</a>
+- <code id="foreground">foreground</code> <a href="Color.md">Color</a>
 
   The foreground Color.
-- <code><b>background</b></code> <a href="Color.md">Color</a>
+- <code id="background">background</code> <a href="Color.md">Color</a>
 
   The background Color.
-- <code><b>auxiliary</b></code> <a href="Color.md">Color</a>
+- <code id="auxiliary">auxiliary</code> <a href="Color.md">Color</a>
 
   The auxiliary Color.
-- <code><b>signType</b></code> <a href="../classes/SignType.md">SignType</a>
+- <code id="sign-type">signType</code> <a href="../classes/SignType.md">SignType</a>
 
   The type of sign this prefab fits to.
-### Method <code>getTextElements</code> () → textElements, textElementValues
+### Method <code id="get-text-elements">getTextElements</code> () → textElements, textElementValues
 Returns all text elements and their values.
 
 
@@ -30,7 +30,7 @@ Returns all text elements and their values.
 - <code><b>textElementValues</b></code> list of string
 
   The values for all text elements.
-### Method <code>getIconElements</code> () → iconElements, iconElementValues
+### Method <code id="get-icon-elements">getIconElements</code> () → iconElements, iconElementValues
 Returns all icon elements and their values.
 
 
@@ -42,7 +42,7 @@ Returns all icon elements and their values.
 - <code><b>iconElementValues</b></code> list of integer
 
   The values for all icon elements.
-### Method <code>setTextElements</code> (textElements, textElementValues) → 
+### Method <code id="set-text-elements">setTextElements</code> (textElements, textElementValues)
 Sets all text elements and their values.
 
 <b>Parameters:</b>
@@ -54,7 +54,7 @@ Sets all text elements and their values.
 
   The values for all text elements.
 
-### Method <code>setIconElements</code> (iconElements, iconElementValues) → 
+### Method <code id="set-icon-elements">setIconElements</code> (iconElements, iconElementValues)
 Sets all icon elements and their values.
 
 <b>Parameters:</b>
@@ -66,7 +66,7 @@ Sets all icon elements and their values.
 
   The values for all icon elements.
 
-### Method <code>setTextElement</code> (elementName, value) → 
+### Method <code id="set-text-element">setTextElement</code> (elementName, value)
 Sets a text element with the given element name.
 
 <b>Parameters:</b>
@@ -78,7 +78,7 @@ Sets a text element with the given element name.
 
   The value of the text element
 
-### Method <code>setIconElement</code> (elementName, value) → 
+### Method <code id="set-icon-element">setIconElement</code> (elementName, value)
 Sets a icon element with the given element name.
 
 <b>Parameters:</b>
@@ -90,7 +90,7 @@ Sets a icon element with the given element name.
 
   The value of the icon element
 
-### Method <code>getTextElement</code> (elementName) → value
+### Method <code id="get-text-element">getTextElement</code> (elementName) → value
 Gets a text element with the given element name.
 
 <b>Parameters:</b>
@@ -104,7 +104,7 @@ Gets a text element with the given element name.
 - <code><b>value</b></code> integer
 
   The value of the text element
-### Method <code>getIconElement</code> (elementName) → value
+### Method <code id="get-icon-element">getIconElement</code> (elementName) → value
 Gets a icon element with the given element name.
 
 <b>Parameters:</b>

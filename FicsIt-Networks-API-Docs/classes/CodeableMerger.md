@@ -5,13 +5,13 @@ Superclasses: <a href="FGBuildableConveyorAttachment.md">FGBuildableConveyorAtta
 
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>canOutput</b></code> boolean
+- <code id="can-output">canOutput</code> boolean
 
   Is true if the output queue has a slot available for an item from one of the input queues.
-### Method <code>transferItem</code> (input) → transferred
+### Method <code id="transfer-item">transferItem</code> (input) → transferred
 Allows to transfer an item from the given input queue to the output queue if possible.
 
 <b>Parameters:</b>
@@ -25,7 +25,7 @@ Allows to transfer an item from the given input queue to the output queue if pos
 - <code><b>transferred</b></code> boolean
 
   true if it was able to transfer the item.
-### Method <code>getInput</code> (input) → item
+### Method <code id="get-input">getInput</code> (input) → item
 Returns the next item in the given input queue.
 
 <b>Parameters:</b>
@@ -39,7 +39,7 @@ Returns the next item in the given input queue.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The next item in the input queue.
-### Signal <code>ItemRequest</code> → input, item
+### Signal <code id="-item-request">ItemRequest</code> → input, item
 Triggers when a new item is ready in one of the input queues.
 
 <b>Parameters:</b>
@@ -50,7 +50,7 @@ Triggers when a new item is ready in one of the input queues.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The new item in the input queue.
-### Signal <code>ItemOutputted</code> → item
+### Signal <code id="-item-outputted">ItemOutputted</code> → item
 Triggers when an item is popped from the output queue (aka it got transferred to a conveyor).
 
 <b>Parameters:</b>
@@ -60,4 +60,4 @@ Triggers when an item is popped from the output queue (aka it got transferred to
   The item removed from the output queue.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

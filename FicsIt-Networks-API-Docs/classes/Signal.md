@@ -5,13 +5,13 @@ Superclasses: <a href="ReflectionBase.md">ReflectionBase</a> < <a href="Object.m
 A reflection object representing a signal.
 ## Instance Members
 <b>Inherited Members:</b>
-- ReflectionBase: <a href="ReflectionBase.md#description">description</a>, <a href="ReflectionBase.md#displayName">displayName</a>, <a href="ReflectionBase.md#name">name</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ReflectionBase: <a href="ReflectionBase.md#user-content-description">description</a>, <a href="ReflectionBase.md#user-content-display-name">displayName</a>, <a href="ReflectionBase.md#user-content-name">name</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>isVarArgs</b></code> boolean
+- <code id="is-var-args">isVarArgs</code> boolean
 
   True if this signal has a variable amount of arguments.
-### Method <code>getParameters</code> () → parameters
+### Method <code id="get-parameters">getParameters</code> () → parameters
 Returns all the parameters of this signal.
 
 
@@ -22,4 +22,4 @@ Returns all the parameters of this signal.
   The parameters this signal.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

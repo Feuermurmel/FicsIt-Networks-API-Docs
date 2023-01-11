@@ -5,16 +5,16 @@ Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.m
 A actor component that allows for a connection point to the power network. Basically a point were a power cable can get attached to.
 ## Instance Members
 <b>Inherited Members:</b>
-- ActorComponent: <a href="ActorComponent.md#owner">owner</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>connections</b></code> integer
+- <code id="connections">connections</code> integer
 
   The amount of connections this power connection has.
-- <code><b>maxConnections</b></code> integer
+- <code id="max-connections">maxConnections</code> integer
 
   The maximum amount of connections this power connection can handle.
-### Method <code>getPower</code> () → power
+### Method <code id="get-power">getPower</code> () → power
 Returns the power info component of this power connection.
 
 
@@ -23,7 +23,7 @@ Returns the power info component of this power connection.
 - <code><b>power</b></code> <a href="PowerInfo.md">PowerInfo</a>
 
   The power info component this power connection uses.
-### Method <code>getCircuit</code> () → circuit
+### Method <code id="get-circuit">getCircuit</code> () → circuit
 Returns the power circuit to which this connection component is attached to.
 
 
@@ -34,4 +34,4 @@ Returns the power circuit to which this connection component is attached to.
   The Power Circuit this connection component is attached to.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

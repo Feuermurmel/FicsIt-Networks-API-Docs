@@ -3,16 +3,16 @@
 The base class of every object.
 ## Instance Members
 ### Fields
-- <code><b>hash</b></code> integer
+- <code id="hash">hash</code> integer
 
   A Hash of this object. This is a value that nearly uniquely identifies this object.
-- <code><b>internalName</b></code> string
+- <code id="internal-name">internalName</code> string
 
   The unreal engine internal name of this object.
-- <code><b>internalPath</b></code> string
+- <code id="internal-path">internalPath</code> string
 
   The unreal engine internal path name of this object.
-### Method <code>getHash</code> () → hash
+### Method <code id="get-hash">getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
 
@@ -21,7 +21,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
 - <code><b>hash</b></code> integer
 
   The hash of this class.
-### Method <code>getType</code> () → type
+### Method <code id="get-type">getType</code> () → type
 Returns the type (aka class) of this class instance.
 
 
@@ -32,16 +32,16 @@ Returns the type (aka class) of this class instance.
   The type of this class instance
 ## Static Members
 ### Fields
-- <code><b>hash</b></code> integer
+- <code id="s-hash">hash</code> integer
 
   A Hash of this object. This is a value that nearly uniquely identifies this object.
-- <code><b>internalName</b></code> string
+- <code id="s-internal-name">internalName</code> string
 
   The unreal engine internal name of this object.
-- <code><b>internalPath</b></code> string
+- <code id="s-internal-path">internalPath</code> string
 
   The unreal engine internal path name of this object.
-### Method <code>getHash</code> () → hash
+### Method <code id="s-get-hash">getHash</code> () → hash
 Returns the hash of this class. This is a value that nearly uniquely identifies this object.
 
 
@@ -50,7 +50,7 @@ Returns the hash of this class. This is a value that nearly uniquely identifies 
 - <code><b>hash</b></code> integer
 
   The hash of this class.
-### Method <code>getType</code> () → type
+### Method <code id="s-get-type">getType</code> () → type
 Returns the type (aka class) of this class instance.
 
 

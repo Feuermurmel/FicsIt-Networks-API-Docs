@@ -3,9 +3,9 @@
 A struct that holds a pair of amount and item type.
 ## Instance Members
 ### Fields
-- <code><b>amount</b></code> integer
+- <code id="amount">amount</code> integer
 
   The amount of items.
-- <code><b>type</b></code> <a href="../classes/ItemType.md">ItemType</a>
+- <code id="type">type</code> <a href="../classes/ItemType.md">ItemType</a>
 
   The type of the items.

@@ -5,19 +5,19 @@ Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.m
 A actor component that can hold multiple item stacks.
 ## Instance Members
 <b>Inherited Members:</b>
-- ActorComponent: <a href="ActorComponent.md#owner">owner</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>canRearrange</b></code> boolean
+- <code id="can-rearrange">canRearrange</code> boolean
 
   Is true if items can be moved between the slots freely.
-- <code><b>itemCount</b></code> integer
+- <code id="item-count">itemCount</code> integer
 
   The absolute amount of items in the whole inventory.
-- <code><b>size</b></code> integer
+- <code id="size">size</code> integer
 
   The count of available item stack slots this inventory has.
-### Method <code>getStack</code> (args) → 
+### Method <code id="get-stack">getStack</code> (args)
 Returns the item stack at the given index.
 Takes integers as input and returns the corresponding stacks.
 
@@ -27,15 +27,15 @@ Takes integers as input and returns the corresponding stacks.
 
   
 
-### Method <code>sort</code> () → 
+### Method <code id="sort">sort</code> ()
 Sorts the whole inventory. (like the middle mouse click into a inventory)
 
 
-### Method <code>flush</code> () → 
+### Method <code id="flush">flush</code> ()
 Removes all discardable items from the inventory completely. They will be gone! No way to get them back!
 
 
-### Method <code>canSplitStackAtIndex</code> (index) → canSplit
+### Method <code id="can-split-stack-at-index">canSplitStackAtIndex</code> (index) → canSplit
 Returns true of the stack at the given index can be split.
 
 <b>Parameters:</b>
@@ -49,7 +49,7 @@ Returns true of the stack at the given index can be split.
 - <code><b>canSplit</b></code> boolean
 
   True if the item stack can be split.
-### Method <code>splitStackAtIndex</code> (index, itemCount) → 
+### Method <code id="split-stack-at-index">splitStackAtIndex</code> (index, itemCount)
 Splits the stack at the given index into two. The passed amount of items gets transferred to the next available slot.
 
 <b>Parameters:</b>
@@ -61,7 +61,7 @@ Splits the stack at the given index into two. The passed amount of items gets tr
 
   The count of items that should get transferred to the next available slot.
 
-### Method <code>moveItemStack</code> (fromIndex, toIndex, allowPartial) → count
+### Method <code id="move-item-stack">moveItemStack</code> (fromIndex, toIndex, allowPartial) → count
 Moves the stack of the given slot to another given slot. If partial is allowed, only moves as much items as possible, if not allowed, and the full stack doesnt fit onto the new slot, skips the move.
 
 <b>Parameters:</b>
@@ -83,4 +83,4 @@ Moves the stack of the given slot to another given slot. If partial is allowed, 
   The count of items that have been moved.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

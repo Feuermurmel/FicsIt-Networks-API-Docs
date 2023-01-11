@@ -5,10 +5,10 @@ Superclasses: <a href="FGBuildableStorage.md">FGBuildableStorage</a> < <a href="
 Interact with the sides of the hopper to configure the item filter, then interact with the chute to extract a stack of filtered items from your inventory. 24 slot inventory.
 ## Instance Members
 <b>Inherited Members:</b>
-- Factory: <a href="Factory.md#cycleTime">cycleTime</a>, <a href="Factory.md#maxPotential">maxPotential</a>, <a href="Factory.md#minPotential">minPotential</a>, <a href="Factory.md#potential">potential</a>, <a href="Factory.md#powerConsumProducing">powerConsumProducing</a>, <a href="Factory.md#productivity">productivity</a>, <a href="Factory.md#progress">progress</a>, <a href="Factory.md#standby">standby</a>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>getFilterRules</code> () → itemRules
+- Factory: <a href="Factory.md#user-content-cycle-time">cycleTime</a>, <a href="Factory.md#user-content-max-potential">maxPotential</a>, <a href="Factory.md#user-content-min-potential">minPotential</a>, <a href="Factory.md#user-content-potential">potential</a>, <a href="Factory.md#user-content-power-consum-producing">powerConsumProducing</a>, <a href="Factory.md#user-content-productivity">productivity</a>, <a href="Factory.md#user-content-progress">progress</a>, <a href="Factory.md#user-content-standby">standby</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="get-filter-rules">getFilterRules</code> () → itemRules
 
 
 
@@ -17,7 +17,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>itemRules</b></code> list of string
 
   
-### Method <code>getTakeOrLeave</code> () → takeOrLeave
+### Method <code id="get-take-or-leave">getTakeOrLeave</code> () → takeOrLeave
 
 
 
@@ -26,7 +26,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeOrLeave</b></code> boolean
 
   
-### Method <code>setTakeOrLeave</code> (takeOrLeave) → 
+### Method <code id="set-take-or-leave">setTakeOrLeave</code> (takeOrLeave)
 
 
 <b>Parameters:</b>
@@ -35,7 +35,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 
   
 
-### Method <code>removeFilterRule</code> (itemRule) → ruleRemoved
+### Method <code id="remove-filter-rule">removeFilterRule</code> (itemRule) → ruleRemoved
 
 
 <b>Parameters:</b>
@@ -49,7 +49,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>ruleRemoved</b></code> boolean
 
   
-### Method <code>addFilterRule</code> (itemRule) → ruleAdded
+### Method <code id="add-filter-rule">addFilterRule</code> (itemRule) → ruleAdded
 
 
 <b>Parameters:</b>
@@ -63,11 +63,11 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>ruleAdded</b></code> boolean
 
   
-### Method <code>clearFilterRules</code> () → 
+### Method <code id="clear-filter-rules">clearFilterRules</code> ()
 
 
 
-### Method <code>getTakeFullest</code> () → takeFullest
+### Method <code id="get-take-fullest">getTakeFullest</code> () → takeFullest
 
 
 
@@ -76,7 +76,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>takeFullest</b></code> boolean
 
   
-### Method <code>setTakeFullest</code> (takeFullest) → 
+### Method <code id="set-take-fullest">setTakeFullest</code> (takeFullest)
 
 
 <b>Parameters:</b>
@@ -85,7 +85,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 
   
 
-### Method <code>getStacksToTake</code> () → stacksToTake
+### Method <code id="get-stacks-to-take">getStacksToTake</code> () → stacksToTake
 
 
 
@@ -94,7 +94,7 @@ Interact with the sides of the hopper to configure the item filter, then interac
 - <code><b>stacksToTake</b></code> integer
 
   
-### Method <code>setStacksToTake</code> (stacksToTake) → 
+### Method <code id="set-stacks-to-take">setStacksToTake</code> (stacksToTake)
 
 
 <b>Parameters:</b>
@@ -105,4 +105,4 @@ Interact with the sides of the hopper to configure the item filter, then interac
 
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

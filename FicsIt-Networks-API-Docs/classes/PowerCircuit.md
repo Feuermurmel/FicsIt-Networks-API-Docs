@@ -5,53 +5,53 @@ Superclasses: <a href="Object.md">Object</a>
 A Object that represents a whole power circuit.
 ## Instance Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>production</b></code> float
+- <code id="production">production</code> float
 
   The amount of power produced by the whole circuit in the last tick.
-- <code><b>consumption</b></code> float
+- <code id="consumption">consumption</code> float
 
   The power consumption of the whole circuit in thg last tick.
-- <code><b>capacity</b></code> float
+- <code id="capacity">capacity</code> float
 
   The power capacity of the whole network in the last tick. (The max amount of power available in the last tick)
-- <code><b>batteryInput</b></code> float
+- <code id="battery-input">batteryInput</code> float
 
   The power that gone into batteries in the last tick.
-- <code><b>maxPowerConsumption</b></code> float
+- <code id="max-power-consumption">maxPowerConsumption</code> float
 
   The maximum consumption of power in the last tick.
-- <code><b>isFuseTriggered</b></code> boolean
+- <code id="is-fuse-triggered">isFuseTriggered</code> boolean
 
   True if the fuse in the network triggered.
-- <code><b>hasBatteries</b></code> boolean
+- <code id="has-batteries">hasBatteries</code> boolean
 
   True if the power circuit has batteries connected to it.
-- <code><b>batteryCapacity</b></code> float
+- <code id="battery-capacity">batteryCapacity</code> float
 
   The energy capacity all batteries of the network combined provide.
-- <code><b>batteryStore</b></code> float
+- <code id="battery-store">batteryStore</code> float
 
   The amount of energy currently stored in all batteries of the network combined.
-- <code><b>batteryStorePercent</b></code> float
+- <code id="battery-store-percent">batteryStorePercent</code> float
 
   The fill status in percent of all batteries of the network combined.
-- <code><b>batteryTimeUntilFull</b></code> float
+- <code id="battery-time-until-full">batteryTimeUntilFull</code> float
 
   The time in seconds until every battery in the network is filled.
-- <code><b>batteryTimeUntilEmpty</b></code> float
+- <code id="battery-time-until-empty">batteryTimeUntilEmpty</code> float
 
   The time in seconds until every battery in the network is empty.
-- <code><b>batteryIn</b></code> float
+- <code id="battery-in">batteryIn</code> float
 
   The amount of energy that currently gets stored in every battery of the whole network.
-- <code><b>batteryOut</b></code> float
+- <code id="battery-out">batteryOut</code> float
 
   The amount of energy that currently discharges from every battery in the whole network.
-### Signal <code>PowerFuseChanged</code> → 
+### Signal <code id="-power-fuse-changed">PowerFuseChanged</code>
 Get Triggered when the fuse state of the power circuit changes.
 
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

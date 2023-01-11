@@ -5,10 +5,10 @@ Superclasses: <a href="ReflectionBase.md">ReflectionBase</a> < <a href="Object.m
 A reflection object representing a function.
 ## Instance Members
 <b>Inherited Members:</b>
-- ReflectionBase: <a href="ReflectionBase.md#description">description</a>, <a href="ReflectionBase.md#displayName">displayName</a>, <a href="ReflectionBase.md#name">name</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- ReflectionBase: <a href="ReflectionBase.md#user-content-description">description</a>, <a href="ReflectionBase.md#user-content-display-name">displayName</a>, <a href="ReflectionBase.md#user-content-name">name</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>flags</b></code> integer
+- <code id="flags">flags</code> integer
 
   The function bit flag register defining some behaviour of it.
 
@@ -21,7 +21,7 @@ Is this function a member function.
 The function is a class function.
 The function is a static function.
 The function has a variable amount of return values.
-### Method <code>getParameters</code> () → parameters
+### Method <code id="get-parameters">getParameters</code> () → parameters
 Returns all the parameters of this function.
 
 
@@ -32,4 +32,4 @@ Returns all the parameters of this function.
   The parameters this function.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

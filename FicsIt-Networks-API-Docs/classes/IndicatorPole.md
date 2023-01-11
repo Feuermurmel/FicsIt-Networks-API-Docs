@@ -5,9 +5,9 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>setColor</code> (r, g, b, e) → 
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="set-color">setColor</code> (r, g, b, e)
 Allows to change the color and light intensity of the indicator lamp.
 
 <b>Parameters:</b>
@@ -25,7 +25,7 @@ Allows to change the color and light intensity of the indicator lamp.
 
   The light intensity of the pole. (0.0 - 5.0)
 
-### Method <code>getTopPole</code> () → topPole
+### Method <code id="get-top-pole">getTopPole</code> () → topPole
 Allows to get the pole placed on top of this pole.
 
 
@@ -34,7 +34,7 @@ Allows to get the pole placed on top of this pole.
 - <code><b>topPole</b></code> <a href="IndicatorPole.md">IndicatorPole</a>
 
   The pole placed on top of this pole.
-### Method <code>getColor</code> () → r, g, b, e
+### Method <code id="get-color">getColor</code> () → r, g, b, e
 Allows to get the color and light intensity of the indicator lamp.
 
 
@@ -52,7 +52,7 @@ Allows to get the color and light intensity of the indicator lamp.
 - <code><b>e</b></code> float
 
   The light intensity of the pole. (0.0 - 5.0)
-### Method <code>getBottomPole</code> () → ReturnValue
+### Method <code id="get-bottom-pole">getBottomPole</code> () → ReturnValue
 
 
 
@@ -61,7 +61,7 @@ Allows to get the color and light intensity of the indicator lamp.
 - <code><b>ReturnValue</b></code> <a href="IndicatorPole.md">IndicatorPole</a>
 
   
-### Signal <code>ColorChanged</code> → r, g, b, e
+### Signal <code id="-color-changed">ColorChanged</code> → r, g, b, e
 Triggers when the color of the indicator pole changes.
 
 <b>Parameters:</b>
@@ -80,4 +80,4 @@ Triggers when the color of the indicator pole changes.
   The light intensity of the pole. (0.0 - 5.0)
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

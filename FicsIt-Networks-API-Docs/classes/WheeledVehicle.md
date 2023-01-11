@@ -5,29 +5,29 @@ Superclasses: <a href="Vehicle.md">Vehicle</a> < <a href="Actor.md">Actor</a> < 
 The base class for all vehicles that used wheels for movement.
 ## Instance Members
 <b>Inherited Members:</b>
-- Vehicle: <a href="Vehicle.md#health">health</a>, <a href="Vehicle.md#isSelfDriving">isSelfDriving</a>, <a href="Vehicle.md#maxHealth">maxHealth</a>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Vehicle: <a href="Vehicle.md#user-content-health">health</a>, <a href="Vehicle.md#user-content-is-self-driving">isSelfDriving</a>, <a href="Vehicle.md#user-content-max-health">maxHealth</a>
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code><b>speed</b></code> float
+- <code id="speed">speed</code> float
 
   The current forward speed of this vehicle.
-- <code><b>burnRatio</b></code> float
+- <code id="burn-ratio">burnRatio</code> float
 
   The amount of fuel this vehicle burns.
-- <code><b>wheelsOnGround</b></code> integer
+- <code id="wheels-on-ground">wheelsOnGround</code> integer
 
   The number of wheels currently on the ground.
-- <code><b>hasFuel</b></code> boolean
+- <code id="has-fuel">hasFuel</code> boolean
 
   True if the vehicle has currently fuel to drive.
-- <code><b>isInAir</b></code> boolean
+- <code id="is-in-air">isInAir</code> boolean
 
   True if the vehicle is currently in the air.
-- <code><b>isDrifting</b></code> boolean
+- <code id="is-drifting">isDrifting</code> boolean
 
   True if the vehicle is currently drifting.
-### Method <code>getFuelInv</code> () → inventory
+### Method <code id="get-fuel-inv">getFuelInv</code> () → inventory
 Returns the inventory that contains the fuel of the vehicle.
 
 
@@ -36,7 +36,7 @@ Returns the inventory that contains the fuel of the vehicle.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The fuel inventory of the vehicle.
-### Method <code>getStorageInv</code> () → inventory
+### Method <code id="get-storage-inv">getStorageInv</code> () → inventory
 Returns the inventory that contains the storage of the vehicle.
 
 
@@ -45,7 +45,7 @@ Returns the inventory that contains the storage of the vehicle.
 - <code><b>inventory</b></code> <a href="Inventory.md">Inventory</a>
 
   The storage inventory of the vehicle.
-### Method <code>isValidFuel</code> (item) → isValid
+### Method <code id="is-valid-fuel">isValidFuel</code> (item) → isValid
 Allows to check if the given item type is a valid fuel for this vehicle.
 
 <b>Parameters:</b>
@@ -59,7 +59,7 @@ Allows to check if the given item type is a valid fuel for this vehicle.
 - <code><b>isValid</b></code> boolean
 
   True if the given item type is a valid fuel for this vehicle.
-### Method <code>getCurrentTarget</code> () → index
+### Method <code id="get-current-target">getCurrentTarget</code> () → index
 Returns the index of the target that the vehicle tries to move to right now.
 
 
@@ -68,11 +68,11 @@ Returns the index of the target that the vehicle tries to move to right now.
 - <code><b>index</b></code> integer
 
   The index of the current target.
-### Method <code>nextTarget</code> () → 
+### Method <code id="next-target">nextTarget</code> ()
 Sets the current target to the next target in the list.
 
 
-### Method <code>setCurrentTarget</code> (index) → 
+### Method <code id="set-current-target">setCurrentTarget</code> (index)
 Sets the target with the given index as the target this vehicle tries to move to right now.
 
 <b>Parameters:</b>
@@ -81,7 +81,7 @@ Sets the target with the given index as the target this vehicle tries to move to
 
   The index of the target this vehicle should move to now.
 
-### Method <code>getTargetList</code> () → targetList
+### Method <code id="get-target-list">getTargetList</code> () → targetList
 Returns the list of targets/path waypoints.
 
 
@@ -92,4 +92,4 @@ Returns the list of targets/path waypoints.
   The list of targets/path-waypoints.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

@@ -5,9 +5,9 @@ Superclasses: <a href="FGBuildableConveyorAttachment.md">FGBuildableConveyorAtta
 
 ## Instance Members
 <b>Inherited Members:</b>
-- Actor: <a href="Actor.md#getFactoryConnectors">getFactoryConnectors()</a>, <a href="Actor.md#getInventories">getInventories()</a>, <a href="Actor.md#getNetworkConnectors">getNetworkConnectors()</a>, <a href="Actor.md#getPipeConnectors">getPipeConnectors()</a>, <a href="Actor.md#getPowerConnectors">getPowerConnectors()</a>, <a href="Actor.md#location">location</a>, <a href="Actor.md#rotation">rotation</a>, <a href="Actor.md#scale">scale</a>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
-### Method <code>transferItem</code> (output) → transferred
+- Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
+- Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
+### Method <code id="transfer-item">transferItem</code> (output) → transferred
 Allows to transfer an item from the input queue to the given output queue if possible.
 
 <b>Parameters:</b>
@@ -21,7 +21,7 @@ Allows to transfer an item from the input queue to the given output queue if pos
 - <code><b>transferred</b></code> boolean
 
   true if it was able to transfer the item.
-### Method <code>getInput</code> () → item
+### Method <code id="get-input">getInput</code> () → item
 Returns the next item in the input queue.
 
 
@@ -30,7 +30,7 @@ Returns the next item in the input queue.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The next item in the input queue.
-### Method <code>canOutput</code> (output) → canTransfer
+### Method <code id="can-output">canOutput</code> (output) → canTransfer
 Allows to check if we can transfer an item to the given output queue.
 
 <b>Parameters:</b>
@@ -44,7 +44,7 @@ Allows to check if we can transfer an item to the given output queue.
 - <code><b>canTransfer</b></code> boolean
 
   True if you could transfer an item to the given output queue.
-### Signal <code>ItemRequest</code> → item
+### Signal <code id="-item-request">ItemRequest</code> → item
 Triggers when a new item is ready in the input queue.
 
 <b>Parameters:</b>
@@ -52,7 +52,7 @@ Triggers when a new item is ready in the input queue.
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
   The new item in the input queue.
-### Signal <code>ItemOutputted</code> → output, item
+### Signal <code id="-item-outputted">ItemOutputted</code> → output, item
 Triggers when an item is popped from on of the output queues (aka it got transferred to a conveyor).
 
 <b>Parameters:</b>
@@ -65,4 +65,4 @@ Triggers when an item is popped from on of the output queues (aka it got transfe
   The item removed from the output queue.
 ## Static Members
 <b>Inherited Members:</b>
-- Object: <a href="Object.md#getHash">getHash()</a>, <a href="Object.md#getType">getType()</a>, <a href="Object.md#hash">hash</a>, <a href="Object.md#internalName">internalName</a>, <a href="Object.md#internalPath">internalPath</a>
+- Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>
