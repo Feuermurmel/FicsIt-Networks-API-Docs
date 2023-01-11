@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePowerPole.md">FGBuildablePowerPole</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_PowerPoleWallDouble_Mk2_C.md">Build_PowerPoleWallDouble_Mk2_C</a>
+
 Power Pole that attaches to a wall. Has one connector on each side of the wall.
 
 Can handle up to 4 Power Line connections.

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="BP_ChristmasCalendar_C.md">BP_ChristmasCalendar_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

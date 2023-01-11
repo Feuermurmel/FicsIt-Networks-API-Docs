@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableResourceExtractorBase.md">FGBuildableResourceExtractorBase</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_MinerMk1_C.md">Build_MinerMk1_C</a>, <a href="Build_MinerMk2_C.md">Build_MinerMk2_C</a>, <a href="Build_OilPump_C.md">Build_OilPump_C</a>, <a href="FGBuildableFrackingExtractor.md">FGBuildableFrackingExtractor</a>, <a href="FGBuildableWaterPump.md">FGBuildableWaterPump</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

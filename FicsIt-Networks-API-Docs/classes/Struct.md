@@ -2,6 +2,8 @@
 
 Superclasses: <a href="ReflectionBase.md">ReflectionBase</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Class.md">Class</a>
+
 Reflection Object that holds information about structures.
 ## Instance Members
 <b>Inherited Members:</b>

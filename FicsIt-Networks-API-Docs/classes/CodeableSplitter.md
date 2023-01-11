@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableConveyorAttachment.md">FGBuildableConveyorAttachment</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="CodeableSplitter_C.md">CodeableSplitter_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

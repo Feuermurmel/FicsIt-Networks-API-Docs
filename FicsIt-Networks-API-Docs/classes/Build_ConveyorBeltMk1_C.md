@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableConveyorBelt.md">FGBuildableConveyorBelt</a> < <a href="FGBuildableConveyorBase.md">FGBuildableConveyorBase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_ConveyorBeltMk2_C.md">Build_ConveyorBeltMk2_C</a>, <a href="Build_ConveyorBeltMk3_C.md">Build_ConveyorBeltMk3_C</a>, <a href="Build_ConveyorBeltMk4_C.md">Build_ConveyorBeltMk4_C</a>, <a href="Build_ConveyorBeltMk5_C.md">Build_ConveyorBeltMk5_C</a>
+
 Transports up to 60 resources per minute. Used to move resources between buildings.
 ## Instance Members
 <b>Inherited Members:</b>

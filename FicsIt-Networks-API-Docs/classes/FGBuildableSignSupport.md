@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePoleBase.md">FGBuildablePoleBase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_SignPole_C.md">Build_SignPole_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

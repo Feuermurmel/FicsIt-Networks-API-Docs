@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableGeneratorFuel.md">FGBuildableGeneratorFuel</a> < <a href="FGBuildableGenerator.md">FGBuildableGenerator</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_GeneratorBiomassBeltfed_C.md">Build_GeneratorBiomassBeltfed_C</a>
+
 Burns various forms of biomass to generate electricity for the power grid.
 Has no input and must therefore be fed biomass manually.
 

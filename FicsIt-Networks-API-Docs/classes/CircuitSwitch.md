@@ -2,6 +2,8 @@
 
 Superclasses: <a href="CircuitBridge.md">CircuitBridge</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_PowerSwitch_C.md">Build_PowerSwitch_C</a>, <a href="FGBuildablePriorityPowerSwitch.md">FGBuildablePriorityPowerSwitch</a>
+
 A circuit bridge that can be activated and deactivate by the player.
 ## Instance Members
 <b>Inherited Members:</b>

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="MCP_1Point_C.md">MCP_1Point_C</a>, <a href="MCP_1Point_Center_C.md">MCP_1Point_Center_C</a>, <a href="MCP_2Point_C.md">MCP_2Point_C</a>, <a href="MCP_3Point_C.md">MCP_3Point_C</a>, <a href="MCP_6Point_C.md">MCP_6Point_C</a>
+
 Enclosure for 1 command points
 ## Instance Members
 <b>Inherited Members:</b>

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Manufacturer.md">Manufacturer</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_HadronCollider_C.md">Build_HadronCollider_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

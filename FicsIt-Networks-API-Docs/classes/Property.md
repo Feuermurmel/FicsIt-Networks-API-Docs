@@ -2,6 +2,8 @@
 
 Superclasses: <a href="ReflectionBase.md">ReflectionBase</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="ArrayProperty.md">ArrayProperty</a>, <a href="ClassProperty.md">ClassProperty</a>, <a href="ObjectProperty.md">ObjectProperty</a>, <a href="StructProperty.md">StructProperty</a>, <a href="TraceProperty.md">TraceProperty</a>
+
 A Reflection object that holds information about properties and parameters.
 ## Instance Members
 <b>Inherited Members:</b>

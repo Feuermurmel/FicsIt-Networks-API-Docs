@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="DriveHolder_C.md">DriveHolder_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

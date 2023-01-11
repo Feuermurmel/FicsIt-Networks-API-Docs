@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableControlPanelHost.md">FGBuildableControlPanelHost</a> < <a href="CircuitBridge.md">CircuitBridge</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_LightsControlPanel_C.md">Build_LightsControlPanel_C</a>
+
 A control panel to configure multiple lights at once.
 ## Instance Members
 <b>Inherited Members:</b>

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePipelineAttachment.md">FGBuildablePipelineAttachment</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_PipelinePump_C.md">Build_PipelinePump_C</a>, <a href="Build_PipelinePumpMk2_C.md">Build_PipelinePumpMk2_C</a>, <a href="Build_Valve_C.md">Build_Valve_C</a>
+
 A building that can pump fluids to a higher level within a pipeline.
 ## Instance Members
 <b>Inherited Members:</b>

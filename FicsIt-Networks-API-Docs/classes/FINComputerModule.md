@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FINComputerDriveHolder.md">FINComputerDriveHolder</a>, <a href="FINComputerGPU.md">FINComputerGPU</a>, <a href="FINComputerMemory.md">FINComputerMemory</a>, <a href="FINComputerProcessor.md">FINComputerProcessor</a>, <a href="FINComputerScreen.md">FINComputerScreen</a>, <a href="FINInternetCard.md">FINInternetCard</a>, <a href="NetworkCard.md">NetworkCard</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

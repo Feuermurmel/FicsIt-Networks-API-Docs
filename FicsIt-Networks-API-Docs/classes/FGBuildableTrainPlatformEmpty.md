@@ -2,6 +2,8 @@
 
 Superclasses: <a href="TrainPlatform.md">TrainPlatform</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_TrainPlatformEmpty_02_C.md">Build_TrainPlatformEmpty_02_C</a>, <a href="Build_TrainPlatformEmpty_C.md">Build_TrainPlatformEmpty_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableStorage.md">FGBuildableStorage</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_HopperMk2_C.md">Build_HopperMk2_C</a>, <a href="Build_MiniHopper_C.md">Build_MiniHopper_C</a>
+
 Interact with the sides of the hopper to configure the item filter, then interact with the chute to extract a stack of filtered items from your inventory. 24 slot inventory.
 ## Instance Members
 <b>Inherited Members:</b>

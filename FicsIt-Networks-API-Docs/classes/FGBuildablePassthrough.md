@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_FoundationPassthrough_Hypertube_C.md">Build_FoundationPassthrough_Hypertube_C</a>, <a href="Build_FoundationPassthrough_Lift_C.md">Build_FoundationPassthrough_Lift_C</a>, <a href="Build_FoundationPassthrough_Pipe_C.md">Build_FoundationPassthrough_Pipe_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

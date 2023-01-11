@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="CircuitSwitch.md">CircuitSwitch</a>, <a href="FGBuildableControlPanelHost.md">FGBuildableControlPanelHost</a>
+
 A building that can connect two circuit networks together.
 ## Instance Members
 <b>Inherited Members:</b>

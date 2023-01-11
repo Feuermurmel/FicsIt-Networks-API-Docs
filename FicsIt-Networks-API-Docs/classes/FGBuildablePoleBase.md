@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FGBuildablePipelineSupport.md">FGBuildablePipelineSupport</a>, <a href="FGBuildablePole.md">FGBuildablePole</a>, <a href="FGBuildableSignSupport.md">FGBuildableSignSupport</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

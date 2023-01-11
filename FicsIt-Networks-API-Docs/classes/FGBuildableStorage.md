@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Dispenser_C.md">Build_Dispenser_C</a>, <a href="Build_Hopper_C.md">Build_Hopper_C</a>, <a href="Build_SmallStorage_C.md">Build_SmallStorage_C</a>, <a href="Build_StorageBlueprint_C.md">Build_StorageBlueprint_C</a>, <a href="Build_StorageContainerMk1_C.md">Build_StorageContainerMk1_C</a>, <a href="Build_StorageContainerMk2_C.md">Build_StorageContainerMk2_C</a>, <a href="Build_StorageHazard_C.md">Build_StorageHazard_C</a>, <a href="Build_StorageIntegrated_C.md">Build_StorageIntegrated_C</a>, <a href="Build_StorageMedkit_C.md">Build_StorageMedkit_C</a>, <a href="Build_StoragePlayer_C.md">Build_StoragePlayer_C</a>, <a href="FGCentralStorageContainer.md">FGCentralStorageContainer</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

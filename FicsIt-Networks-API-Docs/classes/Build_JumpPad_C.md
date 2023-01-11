@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_JumpPadTilted_C.md">Build_JumpPadTilted_C</a>
+
 Propels you upwards through the air.
 Make sure you land softly.
 ## Instance Members

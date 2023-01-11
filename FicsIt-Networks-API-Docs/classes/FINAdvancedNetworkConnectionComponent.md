@@ -2,6 +2,8 @@
 
 Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FINMCPAdvConnector.md">FINMCPAdvConnector</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

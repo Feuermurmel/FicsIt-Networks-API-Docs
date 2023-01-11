@@ -221,12 +221,19 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
 
         if isinstance(type, Class):
             parents = context.api_docs.api.get_parent_chain(type.id)[1:]
+            children = context.api_docs.api.get_direct_subclasses(type.id)
 
             if parents:
                 parents_str = \
                     ' < '.join(context.type_ref(i) for i in parents)
 
                 yield f'Superclasses: {parents_str}'
+                yield ''
+
+            if children:
+                children_str = ', '.join(context.type_ref(i) for i  in children)
+
+                yield f'Direct subclasses: {children_str}'
                 yield ''
 
         yield type.description

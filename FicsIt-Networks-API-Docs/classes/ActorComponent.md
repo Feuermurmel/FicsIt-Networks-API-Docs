@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FactoryConnection.md">FactoryConnection</a>, <a href="FINAdvancedNetworkConnectionComponent.md">FINAdvancedNetworkConnectionComponent</a>, <a href="Inventory.md">Inventory</a>, <a href="PipeConnection.md">PipeConnection</a>, <a href="PowerConnection.md">PowerConnection</a>, <a href="PowerInfo.md">PowerInfo</a>, <a href="RailroadTrackConnection.md">RailroadTrackConnection</a>, <a href="RailroadVehicleMovement.md">RailroadVehicleMovement</a>
+
 A component/part of an actor in the world.
 ## Instance Members
 <b>Inherited Members:</b>

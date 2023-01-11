@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FGBuildablePipeHyper.md">FGBuildablePipeHyper</a>, <a href="FGBuildablePipeline.md">FGBuildablePipeline</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

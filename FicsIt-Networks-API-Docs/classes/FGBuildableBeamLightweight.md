@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableBeam.md">FGBuildableBeam</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Beam_C.md">Build_Beam_C</a>, <a href="Build_Beam_Painted_C.md">Build_Beam_Painted_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

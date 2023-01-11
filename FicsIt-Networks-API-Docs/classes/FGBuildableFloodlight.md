@@ -2,6 +2,8 @@
 
 Superclasses: <a href="LightSource.md">LightSource</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_FloodlightPole_C.md">Build_FloodlightPole_C</a>, <a href="Build_FloodlightWall_C.md">Build_FloodlightWall_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

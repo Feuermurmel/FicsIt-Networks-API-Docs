@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_AssemblerMk1_C.md">Build_AssemblerMk1_C</a>, <a href="Build_Blender_C.md">Build_Blender_C</a>, <a href="Build_ConstructorMk1_C.md">Build_ConstructorMk1_C</a>, <a href="Build_FoundryMk1_C.md">Build_FoundryMk1_C</a>, <a href="Build_ManufacturerMk1_C.md">Build_ManufacturerMk1_C</a>, <a href="Build_OilRefinery_C.md">Build_OilRefinery_C</a>, <a href="Build_Packager_C.md">Build_Packager_C</a>, <a href="Build_SmelterMk1_C.md">Build_SmelterMk1_C</a>, <a href="FGBuildableAutomatedWorkBench.md">FGBuildableAutomatedWorkBench</a>, <a href="FGBuildableConverter.md">FGBuildableConverter</a>, <a href="FGBuildableManufacturerVariablePower.md">FGBuildableManufacturerVariablePower</a>
+
 The base class of every machine that uses a recipe to produce something automatically.
 ## Instance Members
 <b>Inherited Members:</b>

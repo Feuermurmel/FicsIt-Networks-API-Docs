@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePillar.md">FGBuildablePillar</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Pillar_Small_Concrete_C.md">Build_Pillar_Small_Concrete_C</a>, <a href="Build_Pillar_Small_Frame_C.md">Build_Pillar_Small_Frame_C</a>, <a href="Build_Pillar_Small_Metal_C.md">Build_Pillar_Small_Metal_C</a>, <a href="Build_PillarBase_C.md">Build_PillarBase_C</a>, <a href="Build_PillarBase_Small_C.md">Build_PillarBase_Small_C</a>, <a href="Build_PillarMiddle_C.md">Build_PillarMiddle_C</a>, <a href="Build_PillarMiddle_Concrete_C.md">Build_PillarMiddle_Concrete_C</a>, <a href="Build_PillarMiddle_Frame_C.md">Build_PillarMiddle_Frame_C</a>, <a href="Build_PillarTop_C.md">Build_PillarTop_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

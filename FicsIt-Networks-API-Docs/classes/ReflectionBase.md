@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Function.md">Function</a>, <a href="Property.md">Property</a>, <a href="Signal.md">Signal</a>, <a href="Struct.md">Struct</a>
+
 The base class for all things of the reflection system.
 ## Instance Members
 <b>Inherited Members:</b>

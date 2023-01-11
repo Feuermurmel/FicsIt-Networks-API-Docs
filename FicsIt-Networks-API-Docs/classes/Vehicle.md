@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="RailroadVehicle.md">RailroadVehicle</a>, <a href="WheeledVehicle.md">WheeledVehicle</a>
+
 A base class for all vehicles.
 ## Instance Members
 <b>Inherited Members:</b>

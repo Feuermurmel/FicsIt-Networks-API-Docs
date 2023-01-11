@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FGBuildablePixelSign.md">FGBuildablePixelSign</a>, <a href="WidgetSign.md">WidgetSign</a>
+
 The base class for all signs in the game.
 ## Instance Members
 <b>Inherited Members:</b>

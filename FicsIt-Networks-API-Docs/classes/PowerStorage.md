@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_PowerStorageMk1_C.md">Build_PowerStorageMk1_C</a>
+
 A building that can store power for later usage.
 ## Instance Members
 <b>Inherited Members:</b>

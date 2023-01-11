@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableStorage.md">FGBuildableStorage</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_DispenserMk2_C.md">Build_DispenserMk2_C</a>, <a href="Build_MiniDispenser_C.md">Build_MiniDispenser_C</a>
+
 Dispenses 1 stack of items per use from the front. 16 slot buffer inventory. Accepts a belt input.
 ## Instance Members
 <b>Inherited Members:</b>

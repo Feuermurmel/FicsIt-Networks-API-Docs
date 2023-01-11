@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_RailroadBlockSignal_C.md">Build_RailroadBlockSignal_C</a>, <a href="Build_RailroadPathSignal_C.md">Build_RailroadPathSignal_C</a>
+
 A train signal to control trains on a track.
 ## Instance Members
 <b>Inherited Members:</b>

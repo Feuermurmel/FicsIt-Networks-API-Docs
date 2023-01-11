@@ -226,6 +226,17 @@ class API:
 
         return res
 
+    def get_direct_subclasses(
+            self, id: StructuredTypeID) \
+            -> list[StructuredTypeID]:
+        res = list[StructuredTypeID]()
+
+        for i in self.structured_types.values():
+            if isinstance(i, Class) and i.parent_class == id:
+                res.append(i.id)
+
+        return res
+
     @classmethod
     def from_json(cls, data: FileJSON):
         structured_types = list[StructuredType]()

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="BUILD_SingleDoor_Base_01_C.md">BUILD_SingleDoor_Base_01_C</a> < <a href="FGBuildableDoor.md">FGBuildableDoor</a> < <a href="FGBuildableWall.md">FGBuildableWall</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Wall_Door_8x4_01_Steel_C.md">Build_Wall_Door_8x4_01_Steel_C</a>
+
 Snaps to foundations and other walls.
 Useful for building multi-floor structures.
 ## Instance Members

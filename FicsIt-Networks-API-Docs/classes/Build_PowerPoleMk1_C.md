@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePowerPole.md">FGBuildablePowerPole</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_PowerPoleMk2_C.md">Build_PowerPoleMk2_C</a>, <a href="Build_PowerPoleMk3_C.md">Build_PowerPoleMk3_C</a>
+
 Can handle up to 4 Power Line connections.
 
 Connect Power Poles, Power Generators and factory buildings together with Power Lines to create a power grid. The power grid supplies the connected buildings with power.

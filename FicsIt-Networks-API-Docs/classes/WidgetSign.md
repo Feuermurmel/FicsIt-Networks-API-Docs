@@ -2,6 +2,8 @@
 
 Superclasses: <a href="SignBase.md">SignBase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_StandaloneWidgetSign_Huge_C.md">Build_StandaloneWidgetSign_Huge_C</a>, <a href="Build_StandaloneWidgetSign_Large_C.md">Build_StandaloneWidgetSign_Large_C</a>, <a href="Build_StandaloneWidgetSign_Medium_C.md">Build_StandaloneWidgetSign_Medium_C</a>, <a href="Build_StandaloneWidgetSign_Portrait_C.md">Build_StandaloneWidgetSign_Portrait_C</a>, <a href="Build_StandaloneWidgetSign_Small_C.md">Build_StandaloneWidgetSign_Small_C</a>, <a href="Build_StandaloneWidgetSign_SmallVeryWide_C.md">Build_StandaloneWidgetSign_SmallVeryWide_C</a>, <a href="Build_StandaloneWidgetSign_SmallWide_C.md">Build_StandaloneWidgetSign_SmallWide_C</a>, <a href="Build_StandaloneWidgetSign_Square_C.md">Build_StandaloneWidgetSign_Square_C</a>, <a href="Build_StandaloneWidgetSign_Square_Small_C.md">Build_StandaloneWidgetSign_Square_Small_C</a>, <a href="Build_StandaloneWidgetSign_Square_Tiny_C.md">Build_StandaloneWidgetSign_Square_Tiny_C</a>
+
 The type of sign that allows you to define layouts, images, texts and colors manually.
 ## Instance Members
 <b>Inherited Members:</b>

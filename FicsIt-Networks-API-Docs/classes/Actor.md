@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FGBuildable.md">FGBuildable</a>, <a href="TargetList.md">TargetList</a>, <a href="TimeTable.md">TimeTable</a>, <a href="Train.md">Train</a>, <a href="Vehicle.md">Vehicle</a>
+
 This is the base class of all things that can exist within the world by them self.
 ## Instance Members
 <b>Inherited Members:</b>

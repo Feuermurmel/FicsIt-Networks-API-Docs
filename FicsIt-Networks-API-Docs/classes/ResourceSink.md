@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_ResourceSink_C.md">Build_ResourceSink_C</a>
+
 The resource sink, also known a A.W.E.S.O.M.E Sink
 ## Instance Members
 <b>Inherited Members:</b>

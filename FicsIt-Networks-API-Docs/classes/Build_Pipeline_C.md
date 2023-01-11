@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildablePipeline.md">FGBuildablePipeline</a> < <a href="FGBuildablePipeBase.md">FGBuildablePipeBase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Pipeline_NoIndicator_C.md">Build_Pipeline_NoIndicator_C</a>
+
 Outside indicators show volume, flow rate and direction.
 Transports up to 300m³ of fluid per minute.
 Used to transport fluids.

@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_CeilingLight_C.md">Build_CeilingLight_C</a>, <a href="Build_StreetLight_C.md">Build_StreetLight_C</a>, <a href="FGBuildableFloodlight.md">FGBuildableFloodlight</a>
+
 The base class for all light you can build.
 ## Instance Members
 <b>Inherited Members:</b>

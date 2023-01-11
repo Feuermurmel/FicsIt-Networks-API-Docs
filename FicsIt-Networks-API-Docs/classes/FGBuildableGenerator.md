@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="FGBuildableGeneratorFuel.md">FGBuildableGeneratorFuel</a>, <a href="FGBuildableGeneratorGeoThermal.md">FGBuildableGeneratorGeoThermal</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

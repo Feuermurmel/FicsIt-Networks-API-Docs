@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Speakers_C.md">Speakers_C</a>
+
 This speaker pole allows to play custom sound files, In-Game
 ## Instance Members
 <b>Inherited Members:</b>

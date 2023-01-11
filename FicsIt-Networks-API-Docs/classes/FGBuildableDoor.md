@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableWall.md">FGBuildableWall</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Gate_Automated_8x4_C.md">Build_Gate_Automated_8x4_C</a>, <a href="BUILD_SingleDoor_Base_01_C.md">BUILD_SingleDoor_Base_01_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

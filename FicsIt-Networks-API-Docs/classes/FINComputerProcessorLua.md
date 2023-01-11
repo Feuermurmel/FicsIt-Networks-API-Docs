@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FINComputerProcessor.md">FINComputerProcessor</a> < <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="CPU_Lua_C.md">CPU_Lua_C</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

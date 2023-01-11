@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildableResourceExtractor.md">FGBuildableResourceExtractor</a> < <a href="FGBuildableResourceExtractorBase.md">FGBuildableResourceExtractorBase</a> < <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_MinerMk3_C.md">Build_MinerMk3_C</a>
+
 Extracts solid resources from the resource node it is built on. 
 The normal extraction rate is 120 resources per minute. 
 The extraction rate is modified depending on resource node purity. Outputs all extracted resources onto connected conveyor belts.

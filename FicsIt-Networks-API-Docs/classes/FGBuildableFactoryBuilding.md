@@ -2,6 +2,8 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_Beam_Connector_C.md">Build_Beam_Connector_C</a>, <a href="Build_Beam_Connector_Double_C.md">Build_Beam_Connector_Double_C</a>, <a href="Build_Beam_Support_C.md">Build_Beam_Support_C</a>, <a href="FGBuildableBeam.md">FGBuildableBeam</a>, <a href="FGBuildableCornerWall.md">FGBuildableCornerWall</a>, <a href="FGBuildableFactoryBuildingLightweight.md">FGBuildableFactoryBuildingLightweight</a>, <a href="FGBuildableFoundation.md">FGBuildableFoundation</a>, <a href="FGBuildablePillar.md">FGBuildablePillar</a>, <a href="FGBuildableStair.md">FGBuildableStair</a>, <a href="FGBuildableWalkway.md">FGBuildableWalkway</a>, <a href="FGBuildableWall.md">FGBuildableWall</a>
+
 
 ## Instance Members
 <b>Inherited Members:</b>

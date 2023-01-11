@@ -2,6 +2,8 @@
 
 Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
+Direct subclasses: <a href="Build_IndustrialTank_C.md">Build_IndustrialTank_C</a>, <a href="Build_PipeStorageTank_C.md">Build_PipeStorageTank_C</a>
+
 The base class for all fluid tanks.
 ## Instance Members
 <b>Inherited Members:</b>
