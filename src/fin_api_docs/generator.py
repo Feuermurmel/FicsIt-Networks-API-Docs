@@ -8,11 +8,11 @@ import shutil
 from dataclasses import dataclass
 from functools import partial
 from pathlib import Path
-from typing import Optional, Callable, Iterator, NewType, Iterable
+from typing import Optional, Callable, Iterator, Iterable
 
 from fin_api_docs.api import API, TypeRef, PrimitiveType, ArrayType, \
     StructuredTypeID, Struct, MemberID, StructuredType, Class, Member, Field, \
-    Method, Signal, Parameter
+    Method, Signal, Parameter, FutureType
 from fin_api_docs.util import UserError
 
 
@@ -77,6 +77,8 @@ class PageContext:
             return ref.value
         elif isinstance(ref, ArrayType):
             return f'list of {self.type_ref(ref.elementType)}'
+        elif isinstance(ref, FutureType):
+            return f'future of {self.type_ref(ref.resultType)}'
         else:
             return self.page_link_target(ref) \
                 .render(self.api_docs.api.structured_types[ref].name)

@@ -1,10 +1,20 @@
 from __future__ import annotations
 
+import dataclasses
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional, NewType, Literal
+from typing import Optional, NewType
 
 from fin_api_docs.reflection_json import FileJSON, TypeRefJSON, PropertyJSON, FunctionJSON, SignalJSON
+
+
+class PrimitiveType(Enum):
+    nil = 'nil'
+    boolean = 'boolean'
+    integer = 'integer'
+    float = 'float'
+    string = 'string'
+    unknown = 'unknown'
 
 
 @dataclass
@@ -12,17 +22,14 @@ class ArrayType:
     elementType: TypeRef
 
 
-class PrimitiveType(Enum):
-    unknown = 'unknown'
-    boolean = 'boolean'
-    integer = 'integer'
-    float = 'float'
-    string = 'string'
+@dataclass
+class FutureType:
+    resultType: TypeRef
 
 
 StructuredTypeID = NewType('StructuredTypeID', str)
 
-TypeRef = PrimitiveType | ArrayType | StructuredTypeID
+TypeRef = PrimitiveType | ArrayType | FutureType | StructuredTypeID
 
 
 @dataclass
@@ -160,12 +167,21 @@ class _MembersBuilder:
                     is_var_arg=True))
 
         if data['Flag_VarRets']:
-            parameters.append(
+            return_values.append(
                 Parameter(
-                    name='values',
+                    name='results',
                     description='',
                     type=PrimitiveType.unknown,
                     is_var_arg=True))
+
+        if data['Flag_RT_Async']:
+            if return_values:
+                return_values = [
+                    dataclasses.replace(i, type=FutureType(i.type))
+                    for i in return_values]
+            else:
+                return_values = [
+                    Parameter('result', '', FutureType(PrimitiveType.nil), False)]
 
         method = Method(
             name=member_name,

@@ -10,7 +10,7 @@ Direct subclasses: <a href="GPU_T1_C.md">GPU_T1_C</a>
 - FINComputerGPU: <a href="FINComputerGPU.md#user-content--screen-bound">ScreenBound</a>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
-### Method <code id="set-text">setText</code> (x, y, str)
+### Method <code id="set-text">setText</code> (x, y, str) → result
 Draws the given text at the given position to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -25,6 +25,11 @@ Draws the given text at the given position to the hidden screen buffer.
 
   The text you want to draw on-to the buffer.
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="set-size">setSize</code> (w, h)
 Changes the size of the text-grid (and buffer).
 
@@ -37,7 +42,7 @@ Changes the size of the text-grid (and buffer).
 
   The height of the text-grid.
 
-### Method <code id="set-foreground">setForeground</code> (r, g, b, a)
+### Method <code id="set-foreground">setForeground</code> (r, g, b, a) → result
 Changes the foreground color that is used for the next draw calls.
 
 <b>Parameters:</b>
@@ -55,7 +60,12 @@ Changes the foreground color that is used for the next draw calls.
 
   The opacity of the foreground color. (0.0 - 1.0)
 
-### Method <code id="set-buffer">setBuffer</code> (buffer)
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
+### Method <code id="set-buffer">setBuffer</code> (buffer) → result
 Allows to change the back buffer of the GPU to the given buffer.
 
 <b>Parameters:</b>
@@ -64,7 +74,12 @@ Allows to change the back buffer of the GPU to the given buffer.
 
   The Buffer you want to now use as back buffer.
 
-### Method <code id="set-background">setBackground</code> (r, g, b, a)
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
+### Method <code id="set-background">setBackground</code> (r, g, b, a) → result
 Changes the background color that is used for the next draw calls.
 
 <b>Parameters:</b>
@@ -82,6 +97,11 @@ Changes the background color that is used for the next draw calls.
 
   The opacity of the background color. (0.0 - 1.0)
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="get-size">getSize</code> () → w, h
 Returns the size of the text-grid (and buffer).
 
@@ -109,14 +129,14 @@ Returns the back buffer as struct to be able to use advanced buffer handling fun
 
 <b>Return Values:</b>
 
-- <code><b>buffer</b></code> <a href="../structs/GPUT1Buffer.md">GPUT1Buffer</a>
+- <code><b>buffer</b></code> future of <a href="../structs/GPUT1Buffer.md">GPUT1Buffer</a>
 
   The Buffer that is currently the back buffer.
 ### Method <code id="flush">flush</code> ()
 Flushes the hidden screen buffer to the visible screen buffer and so makes the draw calls visible.
 
 
-### Method <code id="fill">fill</code> (x, y, dx, dy, str)
+### Method <code id="fill">fill</code> (x, y, dx, dy, str) → result
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -137,6 +157,11 @@ Draws the given character at all given positions in the given rectangle on-to th
 
   The character you want to use for the rectangle. (first char in the given string)
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="bind-screen">bindScreen</code> (newScreen)
 Binds this GPU to the given screen. Unbinds the already bound screen.
 

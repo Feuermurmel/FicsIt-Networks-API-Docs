@@ -15,10 +15,10 @@ Returns the size of the screen in 'panels'.
 
 <b>Return Values:</b>
 
-- <code><b>width</b></code> integer
+- <code><b>width</b></code> future of integer
 
   The width of the screen.
-- <code><b>height</b></code> integer
+- <code><b>height</b></code> future of integer
 
   The height of the screen.
 ## Static Members

@@ -8,13 +8,13 @@ Allows to get the dimensions of the buffer.
 
 <b>Return Values:</b>
 
-- <code><b>width</b></code> float
+- <code><b>width</b></code> future of float
 
   The width of this buffer
-- <code><b>height</b></code> float
+- <code><b>height</b></code> future of float
 
   The height of this buffer
-### Method <code id="set-size">setSize</code> (width, height)
+### Method <code id="set-size">setSize</code> (width, height) → result
 Allows to set the dimensions of the buffer.
 
 <b>Parameters:</b>
@@ -26,6 +26,11 @@ Allows to set the dimensions of the buffer.
 
   The height this buffer now have
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="get">get</code> (x, y) → c, foreground, background
 Allows to get a single pixel from the buffer at the given position
 
@@ -40,13 +45,13 @@ Allows to get a single pixel from the buffer at the given position
 
 <b>Return Values:</b>
 
-- <code><b>c</b></code> string
+- <code><b>c</b></code> future of string
 
   The character at the given position
-- <code><b>foreground</b></code> <a href="Color.md">Color</a>
+- <code><b>foreground</b></code> future of <a href="Color.md">Color</a>
 
   The foreground color of the pixel at the given position
-- <code><b>background</b></code> <a href="Color.md">Color</a>
+- <code><b>background</b></code> future of <a href="Color.md">Color</a>
 
   The background color of the pixel at the given position
 ### Method <code id="set">set</code> (x, y, c, foreground, background) → done
@@ -72,10 +77,10 @@ Allows to set a single pixel of the buffer at the given position
 
 <b>Return Values:</b>
 
-- <code><b>done</b></code> boolean
+- <code><b>done</b></code> future of boolean
 
   True if the pixel got set successfully
-### Method <code id="copy">copy</code> (x, y, buffer, textBlendMode, foregroundBlendMode, backgroundBlendMode)
+### Method <code id="copy">copy</code> (x, y, buffer, textBlendMode, foregroundBlendMode, backgroundBlendMode) → result
 Copies the given buffer at the given offset of the upper left corner into this buffer.
 
 <b>Parameters:</b>
@@ -123,7 +128,12 @@ Copies the given buffer at the given offset of the upper left corner into this b
 8 = Lighten Only
 9 = None
 
-### Method <code id="set-text">setText</code> (x, y, text, foreground, background)
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
+### Method <code id="set-text">setText</code> (x, y, text, foreground, background) → result
 Allows to write the given text onto the buffer and with the given offset.
 
 <b>Parameters:</b>
@@ -144,7 +154,12 @@ Allows to write the given text onto the buffer and with the given offset.
 
   The background color which will be used to write the text.
 
-### Method <code id="fill">fill</code> (x, y, width, height, character, foreground, background)
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
+### Method <code id="fill">fill</code> (x, y, width, height, character, foreground, background) → result
 Draws the given character at all given positions in the given rectangle on-to the hidden screen buffer.
 
 <b>Parameters:</b>
@@ -171,6 +186,11 @@ Draws the given character at all given positions in the given rectangle on-to th
 
   The background color which will be used to fill the rectangle.
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="set-raw">setRaw</code> (characters, foreground, background) → success
 Allows to set the internal data of the buffer more directly.
 
@@ -188,7 +208,7 @@ Allows to set the internal data of the buffer more directly.
 
 <b>Return Values:</b>
 
-- <code><b>success</b></code> boolean
+- <code><b>success</b></code> future of boolean
 
   True if the raw data was successfully written
 ### Method <code id="clone">clone</code> () → buffer

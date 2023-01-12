@@ -9,7 +9,7 @@ Direct subclasses: <a href="VehicleScanner_C.md">VehicleScanner_C</a>
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
-### Method <code id="set-color">setColor</code> (r, g, b, e)
+### Method <code id="set-color">setColor</code> (r, g, b, e) → result
 Allows to change the color and light intensity of the scanner.
 
 <b>Parameters:</b>
@@ -27,6 +27,11 @@ Allows to change the color and light intensity of the scanner.
 
   The light intensity of the scanner. (0.0 - 5.0)
 
+<b>Return Values:</b>
+
+- <code><b>result</b></code> future of nil
+
+  
 ### Method <code id="get-last-vehicle">getLastVehicle</code> () → vehicle
 Returns the last vehicle that entered the scanner.
 
