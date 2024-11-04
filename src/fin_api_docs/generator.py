@@ -8,11 +8,26 @@ import shutil
 from dataclasses import dataclass
 from functools import partial
 from pathlib import Path
-from typing import Optional, Callable, Iterator, Iterable
+from typing import Callable
+from typing import Iterable
+from typing import Iterator
+from typing import Optional
 
-from fin_api_docs.api import API, TypeRef, PrimitiveType, ArrayType, \
-    StructuredTypeID, Struct, MemberID, StructuredType, Class, Member, Field, \
-    Method, Signal, Parameter, FutureType
+from fin_api_docs.api import API
+from fin_api_docs.api import ArrayType
+from fin_api_docs.api import Class
+from fin_api_docs.api import Field
+from fin_api_docs.api import FutureType
+from fin_api_docs.api import Member
+from fin_api_docs.api import MemberID
+from fin_api_docs.api import Method
+from fin_api_docs.api import Parameter
+from fin_api_docs.api import PrimitiveType
+from fin_api_docs.api import Signal
+from fin_api_docs.api import Struct
+from fin_api_docs.api import StructuredType
+from fin_api_docs.api import StructuredTypeID
+from fin_api_docs.api import TypeRef
 from fin_api_docs.util import UserError
 
 
@@ -24,7 +39,7 @@ def get_relative_path(path: Path, relative_to: Path) -> str:
         parts_from.pop(0)
         parts_to.pop(0)
 
-    return '/'.join(['..' for _ in parts_from] + parts_to)
+    return "/".join([".." for _ in parts_from] + parts_to)
 
 
 @dataclass
@@ -37,7 +52,7 @@ class Link:
         url = get_relative_path(self.page.path, self.relative_to.path)
 
         if self.fragment is not None:
-            url = f'{url}#{self.fragment}'
+            url = f"{url}#{self.fragment}"
 
         return f'<a href="{url}">{link_text}</a>'
 
@@ -76,27 +91,29 @@ class PageContext:
         if isinstance(ref, PrimitiveType):
             return ref.value
         elif isinstance(ref, ArrayType):
-            return f'list of {self.type_ref(ref.elementType)}'
+            return f"list of {self.type_ref(ref.elementType)}"
         elif isinstance(ref, FutureType):
-            return f'future of {self.type_ref(ref.resultType)}'
+            return f"future of {self.type_ref(ref.resultType)}"
         else:
-            return self.page_link_target(ref) \
-                .render(self.api_docs.api.structured_types[ref].name)
+            return self.page_link_target(ref).render(
+                self.api_docs.api.structured_types[ref].name
+            )
 
     def page_link_target(self, id: StructuredTypeID) -> Link:
         return Link(self.page, self.api_docs.structured_type_pages[id])
 
     def member_anchor(self, id: MemberID) -> str:
-        anchor = re.sub('(?=[A-Z]+)', '-', id.member).lower()
+        anchor = re.sub("(?=[A-Z]+)", "-", id.member).lower()
 
         if id.static:
-            anchor = 's-' + anchor
+            anchor = "s-" + anchor
 
         return anchor
 
     def member_link_target(self, id: MemberID) -> Link:
-        return self.page_link_target(id.type) \
-            .with_fragment(f'user-content-{self.member_anchor(id)}')
+        return self.page_link_target(id.type).with_fragment(
+            f"user-content-{self.member_anchor(id)}"
+        )
 
 
 def member_sort_key(member: Member):
@@ -115,24 +132,24 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
         return f'<code id="{context.member_anchor(member.id)}">{member.name}</code>'
 
     def iter_parameter_descriptions(
-            heading: str, parameters: list[Parameter]) \
-            -> Iterator[str]:
+        heading: str, parameters: list[Parameter]
+    ) -> Iterator[str]:
         if parameters:
-            yield f'<b>{heading}:</b>'
-            yield ''
+            yield f"<b>{heading}:</b>"
+            yield ""
 
             for p in parameters:
-                yield f'- <code><b>{p.name}</b></code> {context.type_ref(p.type)}'
-                yield f''
-                yield f'  {p.description}'
+                yield f"- <code><b>{p.name}</b></code> {context.type_ref(p.type)}"
+                yield f""
+                yield f"  {p.description}"
 
     # TODO: Fix newlines in descriptions.
     # TODO: Also write "(no description)" when a description is missing.
     def iter_members(
-            heading: str,
-            type: StructuredType,
-            get_members: Callable[[StructuredType], Iterable[Member]]) \
-            -> Iterator[str]:
+        heading: str,
+        type: StructuredType,
+        get_members: Callable[[StructuredType], Iterable[Member]],
+    ) -> Iterator[str]:
         parents = context.api_docs.api.get_parent_chain(type.id)[1:]
 
         parent_members = list[tuple[StructuredTypeID, Iterable[Member]]]()
@@ -146,25 +163,26 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
         members = get_members(type)
 
         if members or parent_members:
-            yield f'## {heading}'
+            yield f"## {heading}"
 
             if parent_members:
-                yield f'<b>Inherited Members:</b>'
+                yield f"<b>Inherited Members:</b>"
 
             for parent_id, pm in parent_members:
                 parent = context.api_docs.api.structured_types[parent_id]
 
                 def member_link_text(member: Member):
                     if isinstance(member, Method):
-                        return f'{member.name}()'
+                        return f"{member.name}()"
                     else:
                         return member.name
 
-                members_str = ', '.join(
-                    f'{context.member_link_target(m.id).render(member_link_text(m))}'
-                    for m in sorted(pm, key=lambda i: i.name))
+                members_str = ", ".join(
+                    f"{context.member_link_target(m.id).render(member_link_text(m))}"
+                    for m in sorted(pm, key=lambda i: i.name)
+                )
 
-                yield f'- {parent.name}: {members_str}'
+                yield f"- {parent.name}: {members_str}"
 
             fields = list[Field]()
             methods = list[Method]()
@@ -179,101 +197,106 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
                     signals.append(m)
 
             if fields:
-                yield '### Fields'
+                yield "### Fields"
 
                 for f in fields:
-                    yield f'- {member_title(f)} {context.type_ref(f.type)}'
-                    yield f''
-                    yield f'  {f.description}'
+                    yield f"- {member_title(f)} {context.type_ref(f.type)}"
+                    yield f""
+                    yield f"  {f.description}"
 
             for mm in methods:
-                params_str = ', '.join(i.name for i in mm.parameters)
+                params_str = ", ".join(i.name for i in mm.parameters)
 
                 if mm.return_values:
-                    return_part = ' → ' + ', '.join(i.name for i in mm.return_values)
+                    return_part = " → " + ", ".join(i.name for i in mm.return_values)
                 else:
-                    return_part = ''
+                    return_part = ""
 
-                yield f'### Method {member_title(mm)} ({params_str}){return_part}'
-                yield f'{mm.description}'
-                yield f''
-                yield from iter_parameter_descriptions('Parameters', mm.parameters)
-                yield f''
-                yield from iter_parameter_descriptions('Return Values', mm.return_values)
+                yield f"### Method {member_title(mm)} ({params_str}){return_part}"
+                yield f"{mm.description}"
+                yield f""
+                yield from iter_parameter_descriptions("Parameters", mm.parameters)
+                yield f""
+                yield from iter_parameter_descriptions(
+                    "Return Values", mm.return_values
+                )
 
             for s in signals:
                 if s.parameters:
-                    parameters_part = ' → ' + ', '.join(i.name for i in s.parameters)
+                    parameters_part = " → " + ", ".join(i.name for i in s.parameters)
                 else:
-                    parameters_part = ''
+                    parameters_part = ""
 
-                yield f'### Signal {member_title(s)}{parameters_part}'
-                yield f'{s.description}'
-                yield f''
-                yield from iter_parameter_descriptions('Parameters', s.parameters)
+                yield f"### Signal {member_title(s)}{parameters_part}"
+                yield f"{s.description}"
+                yield f""
+                yield from iter_parameter_descriptions("Parameters", s.parameters)
 
     def iter_parts() -> Iterator[str]:
         if isinstance(type, Struct):
-            kind_str = 'Struct'
+            kind_str = "Struct"
         else:
-            kind_str = 'Class'
+            kind_str = "Class"
 
-        yield f'# {kind_str} <code>{type.name}</code>'
-        yield f''
+        yield f"# {kind_str} <code>{type.name}</code>"
+        yield f""
 
         if isinstance(type, Class):
             parents = context.api_docs.api.get_parent_chain(type.id)[1:]
             children = context.api_docs.api.get_direct_subclasses(type.id)
 
             if parents:
-                parents_str = \
-                    ' < '.join(context.type_ref(i) for i in parents)
+                parents_str = " < ".join(context.type_ref(i) for i in parents)
 
-                yield f'Superclasses: {parents_str}'
-                yield ''
+                yield f"Superclasses: {parents_str}"
+                yield ""
 
             if children:
-                children_str = ', '.join(context.type_ref(i) for i  in children)
+                children_str = ", ".join(context.type_ref(i) for i in children)
 
-                yield f'Direct subclasses: {children_str}'
-                yield ''
+                yield f"Direct subclasses: {children_str}"
+                yield ""
 
         yield type.description
 
-        yield from iter_members('Instance Members', type, lambda x: x.instance_members.values())
-        yield from iter_members('Static Members', type, lambda x: x.static_members.values())
+        yield from iter_members(
+            "Instance Members", type, lambda x: x.instance_members.values()
+        )
+        yield from iter_members(
+            "Static Members", type, lambda x: x.static_members.values()
+        )
 
-    return '\n'.join(iter_parts())
+    return "\n".join(iter_parts())
 
 
 def main(output_path: Path, clear: bool, input_json_path: Optional[Path]) -> None:
     if input_json_path is None:
-        local_app_data = os.environ.get('LOCALAPPDATA')
+        local_app_data = os.environ.get("LOCALAPPDATA")
 
         if local_app_data is None:
             raise UserError(
-                'LOCALAPPDATA environment variable is not set and '
-                'input_json_path has not been given on the command line.')
+                "LOCALAPPDATA environment variable is not set and "
+                "input_json_path has not been given on the command line."
+            )
 
-        input_json_path = \
-            Path(local_app_data) \
-            / 'FactoryGame/Saved/FINReflectionDocumentation.json'
+        input_json_path = (
+            Path(local_app_data) / "FactoryGame/Saved/FINReflectionDocumentation.json"
+        )
 
     api = API.from_json(json.loads(input_json_path.read_bytes()))
     structured_type_pages = dict[StructuredTypeID, Page]()
 
     for i in api.structured_types.values():
         if isinstance(i, Struct):
-            dir = Path('structs')
+            dir = Path("structs")
         else:
-            dir = Path('classes')
+            dir = Path("classes")
 
-        structured_type_pages[i.id] = \
-            Page(dir / f'{i.name}.md', partial(structured_type_content, i))
+        structured_type_pages[i.id] = Page(
+            dir / f"{i.name}.md", partial(structured_type_content, i)
+        )
 
-    api_docs = APIDocs(
-        api=api,
-        structured_type_pages=structured_type_pages)
+    api_docs = APIDocs(api=api, structured_type_pages=structured_type_pages)
 
     if clear and output_path.exists():
         for i in output_path.iterdir():

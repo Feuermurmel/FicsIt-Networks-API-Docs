@@ -2,27 +2,28 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import TypedDict, Literal
+from typing import Literal
+from typing import TypedDict
 
 from typing_extensions import NotRequired
 
 
 class PrimitiveTypeRefJSON(TypedDict):
-    type: Literal['Int', 'Float', 'String', 'Bool']
+    type: Literal["Int", "Float", "String", "Bool"]
 
 
 class ArrayTypeRefJSON(TypedDict):
-    type: Literal['Array']
+    type: Literal["Array"]
     inner: TypeRefJSON
 
 
 class StructRefJSON(TypedDict):
-    type: Literal['Struct']
+    type: Literal["Struct"]
     inner: str
 
 
 class ClassRefJSON(TypedDict):
-    type: Literal['Class', 'Object', 'Trace']
+    type: Literal["Class", "Object", "Trace"]
     # Sometimes this key is missing...
     subclass: NotRequired[str]
 

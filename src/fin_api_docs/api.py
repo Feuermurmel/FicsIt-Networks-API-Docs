@@ -3,18 +3,23 @@ from __future__ import annotations
 import dataclasses
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional, NewType
+from typing import NewType
+from typing import Optional
 
-from fin_api_docs.reflection_json import FileJSON, TypeRefJSON, PropertyJSON, FunctionJSON, SignalJSON
+from fin_api_docs.reflection_json import FileJSON
+from fin_api_docs.reflection_json import FunctionJSON
+from fin_api_docs.reflection_json import PropertyJSON
+from fin_api_docs.reflection_json import SignalJSON
+from fin_api_docs.reflection_json import TypeRefJSON
 
 
 class PrimitiveType(Enum):
-    nil = 'nil'
-    boolean = 'boolean'
-    integer = 'integer'
-    float = 'float'
-    string = 'string'
-    unknown = 'unknown'
+    nil = "nil"
+    boolean = "boolean"
+    integer = "integer"
+    float = "float"
+    string = "string"
+    unknown = "unknown"
 
 
 @dataclass
@@ -27,7 +32,7 @@ class FutureType:
     resultType: TypeRef
 
 
-StructuredTypeID = NewType('StructuredTypeID', str)
+StructuredTypeID = NewType("StructuredTypeID", str)
 
 TypeRef = PrimitiveType | ArrayType | FutureType | StructuredTypeID
 
@@ -97,20 +102,20 @@ StructuredType = Struct | Class
 
 
 def _type_ref_from_json(data: TypeRefJSON) -> TypeRef:
-    if data['type'] == 'Int':
+    if data["type"] == "Int":
         return PrimitiveType.integer
-    elif data['type'] == 'Float':
+    elif data["type"] == "Float":
         return PrimitiveType.float
-    elif data['type'] == 'String':
+    elif data["type"] == "String":
         return PrimitiveType.string
-    elif data['type'] == 'Bool':
+    elif data["type"] == "Bool":
         return PrimitiveType.boolean
-    elif data['type'] == 'Array':
-        return ArrayType(_type_ref_from_json(data['inner']))
-    elif data['type'] == 'Struct':
-        return StructuredTypeID(data['inner'])
+    elif data["type"] == "Array":
+        return ArrayType(_type_ref_from_json(data["inner"]))
+    elif data["type"] == "Struct":
+        return StructuredTypeID(data["inner"])
     else:
-        subclass = data.get('subclass')
+        subclass = data.get("subclass")
 
         if subclass is None:
             return PrimitiveType.unknown
@@ -125,15 +130,16 @@ class _MembersBuilder:
         self.static_members = list[Member]()
 
     def add_field(self, data: PropertyJSON):
-        member_name = data['internalName']
-        static = data['Flag_ClassProp']
+        member_name = data["internalName"]
+        static = data["Flag_ClassProp"]
 
         field = Field(
             name=member_name,
-            description=data['description'],
-            type=_type_ref_from_json(data['type']),
+            description=data["description"],
+            type=_type_ref_from_json(data["type"]),
             id=MemberID(self.type_id, member_name, static),
-            read_only=data['Flag_ReadOnly'])
+            read_only=data["Flag_ReadOnly"],
+        )
 
         if static:
             self.static_members.append(field)
@@ -141,54 +147,62 @@ class _MembersBuilder:
             self.instance_members.append(field)
 
     def add_method(self, data: FunctionJSON):
-        member_name = data['internalName']
+        member_name = data["internalName"]
         parameters = list[Parameter]()
         return_values = list[Parameter]()
-        static = data['Flag_ClassFunc']
+        static = data["Flag_ClassFunc"]
 
-        for pa in data['parameters']:
+        for pa in data["parameters"]:
             parameter = Parameter(
-                name=pa['internalName'],
-                description=pa['description'],
-                type=_type_ref_from_json(pa['type']),
-                is_var_arg=False)
+                name=pa["internalName"],
+                description=pa["description"],
+                type=_type_ref_from_json(pa["type"]),
+                is_var_arg=False,
+            )
 
-            if pa['Flag_OutParam']:
+            if pa["Flag_OutParam"]:
                 return_values.append(parameter)
             else:
                 parameters.append(parameter)
 
-        if data['Flag_VarArgs']:
+        if data["Flag_VarArgs"]:
             parameters.append(
                 Parameter(
-                    name='args',
-                    description='',
+                    name="args",
+                    description="",
                     type=PrimitiveType.unknown,
-                    is_var_arg=True))
+                    is_var_arg=True,
+                )
+            )
 
-        if data['Flag_VarRets']:
+        if data["Flag_VarRets"]:
             return_values.append(
                 Parameter(
-                    name='results',
-                    description='',
+                    name="results",
+                    description="",
                     type=PrimitiveType.unknown,
-                    is_var_arg=True))
+                    is_var_arg=True,
+                )
+            )
 
-        if data['Flag_RT_Async']:
+        if data["Flag_RT_Async"]:
             if return_values:
                 return_values = [
                     dataclasses.replace(i, type=FutureType(i.type))
-                    for i in return_values]
+                    for i in return_values
+                ]
             else:
                 return_values = [
-                    Parameter('result', '', FutureType(PrimitiveType.nil), False)]
+                    Parameter("result", "", FutureType(PrimitiveType.nil), False)
+                ]
 
         method = Method(
             name=member_name,
-            description=data['description'],
+            description=data["description"],
             id=MemberID(self.type_id, member_name, static),
             parameters=parameters,
-            return_values=return_values)
+            return_values=return_values,
+        )
 
         if static:
             self.static_members.append(method)
@@ -196,31 +210,37 @@ class _MembersBuilder:
             self.instance_members.append(method)
 
     def add_signal(self, data: SignalJSON):
-        member_name = data['internalName']
+        member_name = data["internalName"]
         parameters = list[Parameter]()
 
-        for pa in data['parameters']:
+        for pa in data["parameters"]:
             parameters.append(
                 Parameter(
-                    name=pa['internalName'],
-                    description=pa['description'],
-                    type=_type_ref_from_json(pa['type']),
-                    is_var_arg=False))
+                    name=pa["internalName"],
+                    description=pa["description"],
+                    type=_type_ref_from_json(pa["type"]),
+                    is_var_arg=False,
+                )
+            )
 
-        if data['isVarArgs']:
+        if data["isVarArgs"]:
             parameters.append(
                 Parameter(
-                    name='values',
-                    description='',
+                    name="values",
+                    description="",
                     type=PrimitiveType.unknown,
-                    is_var_arg=True))
+                    is_var_arg=True,
+                )
+            )
 
         self.instance_members.append(
             Signal(
                 name=member_name,
-                description=data['description'],
+                description=data["description"],
                 id=MemberID(self.type_id, member_name, False),
-                parameters=parameters))
+                parameters=parameters,
+            )
+        )
 
 
 @dataclass
@@ -242,9 +262,7 @@ class API:
 
         return res
 
-    def get_direct_subclasses(
-            self, id: StructuredTypeID) \
-            -> list[StructuredTypeID]:
+    def get_direct_subclasses(self, id: StructuredTypeID) -> list[StructuredTypeID]:
         res = list[StructuredTypeID]()
 
         for i in self.structured_types.values():
@@ -257,38 +275,42 @@ class API:
     def from_json(cls, data: FileJSON):
         structured_types = list[StructuredType]()
 
-        for c in data['structs']:
-            type_id = StructuredTypeID(c['internalName'])
+        for c in data["structs"]:
+            type_id = StructuredTypeID(c["internalName"])
             members_builder = _MembersBuilder(type_id)
 
-            for p in c['properties']:
+            for p in c["properties"]:
                 members_builder.add_field(p)
 
-            for f in c['functions']:
+            for f in c["functions"]:
                 members_builder.add_method(f)
 
             structured_types.append(
                 Struct(
-                    name=c['internalName'],
-                    description=c['description'],
+                    name=c["internalName"],
+                    description=c["description"],
                     id=type_id,
-                    instance_members={i.id: i for i in members_builder.instance_members},
-                    static_members={i.id: i for i in members_builder.static_members}))
+                    instance_members={
+                        i.id: i for i in members_builder.instance_members
+                    },
+                    static_members={i.id: i for i in members_builder.static_members},
+                )
+            )
 
-        for c in data['classes']:
-            type_id = StructuredTypeID(c['internalName'])
+        for c in data["classes"]:
+            type_id = StructuredTypeID(c["internalName"])
             members_builder = _MembersBuilder(type_id)
 
-            for p in c['properties']:
+            for p in c["properties"]:
                 members_builder.add_field(p)
 
-            for f in c['functions']:
+            for f in c["functions"]:
                 members_builder.add_method(f)
 
-            for s in c['signals']:
+            for s in c["signals"]:
                 members_builder.add_signal(s)
 
-            parent_class_name = c.get('parent')
+            parent_class_name = c.get("parent")
 
             if parent_class_name is None:
                 parent_class = None
@@ -297,12 +319,15 @@ class API:
 
             structured_types.append(
                 Class(
-                    name=c['internalName'],
-                    description=c['description'],
+                    name=c["internalName"],
+                    description=c["description"],
                     id=type_id,
-                    instance_members={i.id: i for i in members_builder.instance_members},
+                    instance_members={
+                        i.id: i for i in members_builder.instance_members
+                    },
                     static_members={i.id: i for i in members_builder.static_members},
-                    parent_class=parent_class))
+                    parent_class=parent_class,
+                )
+            )
 
-        return API(
-            structured_types={i.id: i for i in structured_types})
+        return API(structured_types={i.id: i for i in structured_types})
