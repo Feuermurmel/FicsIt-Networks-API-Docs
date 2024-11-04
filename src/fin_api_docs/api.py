@@ -129,7 +129,7 @@ class _MembersBuilder:
         self.instance_members = list[Member]()
         self.static_members = list[Member]()
 
-    def add_field(self, data: PropertyJSON):
+    def add_field(self, data: PropertyJSON) -> None:
         member_name = data["internalName"]
         static = data["Flag_ClassProp"]
 
@@ -146,7 +146,7 @@ class _MembersBuilder:
         else:
             self.instance_members.append(field)
 
-    def add_method(self, data: FunctionJSON):
+    def add_method(self, data: FunctionJSON) -> None:
         member_name = data["internalName"]
         parameters = list[Parameter]()
         return_values = list[Parameter]()
@@ -209,7 +209,7 @@ class _MembersBuilder:
         else:
             self.instance_members.append(method)
 
-    def add_signal(self, data: SignalJSON):
+    def add_signal(self, data: SignalJSON) -> None:
         member_name = data["internalName"]
         parameters = list[Parameter]()
 
@@ -272,7 +272,7 @@ class API:
         return res
 
     @classmethod
-    def from_json(cls, data: FileJSON):
+    def from_json(cls, data: FileJSON) -> API:
         structured_types = list[StructuredType]()
 
         for c in data["structs"]:

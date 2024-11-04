@@ -5,6 +5,7 @@ import json
 import os
 import re
 import shutil
+from collections.abc import Collection
 from dataclasses import dataclass
 from functools import partial
 from pathlib import Path
@@ -56,7 +57,7 @@ class Link:
 
         return f'<a href="{url}">{link_text}</a>'
 
-    def with_fragment(self, fragment):
+    def with_fragment(self, fragment: str) -> Link:
         return dataclasses.replace(self, fragment=fragment)
 
 
@@ -71,7 +72,7 @@ class APIDocs:
     api: API
     structured_type_pages: dict[StructuredTypeID, Page]
 
-    def write_pages(self, output_path: Path):
+    def write_pages(self, output_path: Path) -> None:
         for i in self.structured_type_pages.values():
             content = i.get_content(PageContext(i, self))
             path = output_path / i.path
@@ -116,7 +117,7 @@ class PageContext:
         )
 
 
-def member_sort_key(member: Member):
+def member_sort_key(member: Member) -> tuple[int, str]:
     if isinstance(member, Field):
         category_rank = 0
     elif isinstance(member, Method):
@@ -128,7 +129,7 @@ def member_sort_key(member: Member):
 
 
 def structured_type_content(type: StructuredType, context: PageContext) -> str:
-    def member_title(member: Member):
+    def member_title(member: Member) -> str:
         return f'<code id="{context.member_anchor(member.id)}">{member.name}</code>'
 
     def iter_parameter_descriptions(
@@ -148,7 +149,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
     def iter_members(
         heading: str,
         type: StructuredType,
-        get_members: Callable[[StructuredType], Iterable[Member]],
+        get_members: Callable[[StructuredType], Collection[Member]],
     ) -> Iterator[str]:
         parents = context.api_docs.api.get_parent_chain(type.id)[1:]
 
@@ -171,7 +172,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
             for parent_id, pm in parent_members:
                 parent = context.api_docs.api.structured_types[parent_id]
 
-                def member_link_text(member: Member):
+                def member_link_text(member: Member) -> str:
                     if isinstance(member, Method):
                         return f"{member.name}()"
                     else:
@@ -286,14 +287,14 @@ def main(output_path: Path, clear: bool, input_json_path: Optional[Path]) -> Non
     api = API.from_json(json.loads(input_json_path.read_bytes()))
     structured_type_pages = dict[StructuredTypeID, Page]()
 
-    for i in api.structured_types.values():
-        if isinstance(i, Struct):
+    for type in api.structured_types.values():
+        if isinstance(type, Struct):
             dir = Path("structs")
         else:
             dir = Path("classes")
 
-        structured_type_pages[i.id] = Page(
-            dir / f"{i.name}.md", partial(structured_type_content, i)
+        structured_type_pages[type.id] = Page(
+            dir / f"{type.name}.md", partial(structured_type_content, type)
         )
 
     api_docs = APIDocs(api=api, structured_type_pages=structured_type_pages)

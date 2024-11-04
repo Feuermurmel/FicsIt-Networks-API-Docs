@@ -94,4 +94,6 @@ class FileJSON(TypedDict):
 
 
 def load_reflection_data_from_file(path: Path) -> FileJSON:
-    return json.loads(path.read_bytes())
+    res: FileJSON = json.loads(path.read_bytes())
+
+    return res
