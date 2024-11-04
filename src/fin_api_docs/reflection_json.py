@@ -3,9 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Literal
+from typing import NotRequired
 from typing import TypedDict
-
-from typing_extensions import NotRequired
 
 
 class PrimitiveTypeRefJSON(TypedDict):

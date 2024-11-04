@@ -5,14 +5,13 @@ import json
 import os
 import re
 import shutil
+from collections.abc import Callable
 from collections.abc import Collection
+from collections.abc import Iterable
+from collections.abc import Iterator
 from dataclasses import dataclass
 from functools import partial
 from pathlib import Path
-from typing import Callable
-from typing import Iterable
-from typing import Iterator
-from typing import Optional
 
 from fin_api_docs.api import API
 from fin_api_docs.api import ArrayType
@@ -270,7 +269,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
     return "\n".join(iter_parts())
 
 
-def main(output_path: Path, clear: bool, input_json_path: Optional[Path]) -> None:
+def main(output_path: Path, clear: bool, input_json_path: Path | None) -> None:
     if input_json_path is None:
         local_app_data = os.environ.get("LOCALAPPDATA")
 

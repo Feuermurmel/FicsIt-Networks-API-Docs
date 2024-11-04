@@ -4,7 +4,6 @@ import dataclasses
 from dataclasses import dataclass
 from enum import Enum
 from typing import NewType
-from typing import Optional
 
 from fin_api_docs.reflection_json import FileJSON
 from fin_api_docs.reflection_json import FunctionJSON
@@ -95,7 +94,7 @@ class Struct(_StructuredType):
 
 @dataclass
 class Class(_StructuredType):
-    parent_class: Optional[StructuredTypeID]
+    parent_class: StructuredTypeID | None
 
 
 StructuredType = Struct | Class
