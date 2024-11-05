@@ -1,6 +1,6 @@
 # Struct <code>Rotator</code>
 
-Contains rotation information about a object in 3D spaces using 3 rotation axis in a gimbal.
+Contains rotation information about a object in 3D spaces using 3 rotation axis in a gimble.
 ## Instance Members
 ### Fields
 - <code id="pitch">pitch</code> float

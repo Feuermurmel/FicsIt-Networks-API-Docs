@@ -288,7 +288,7 @@ Bits:
 5th alt key pressed
 6th cmd key pressed
 ### Signal <code id="-on-key-char">OnKeyChar</code> → c, btn
-Triggers when a character key got 'clicked' and essentially a character got typed in, useful for text input.
+Triggers when a character key got 'clicked' and essentially a character got typed in, usful for text input.
 
 <b>Parameters:</b>
 

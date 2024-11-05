@@ -22,7 +22,7 @@ Returns the power info component of this power connection.
 
 - <code><b>power</b></code> <a href="PowerInfo.md">PowerInfo</a>
 
-  The power info component this power connection uses.
+  The power info compoent this power connection uses.
 ### Method <code id="get-circuit">getCircuit</code> () → circuit
 Returns the power circuit to which this connection component is attached to.
 

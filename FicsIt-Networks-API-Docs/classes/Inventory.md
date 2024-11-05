@@ -8,7 +8,7 @@ A actor component that can hold multiple item stacks.
 - ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Fields
-- <code id="can-rearrange">canRearrange</code> boolean
+- <code id="can-rearange">canRearange</code> boolean
 
   Is true if items can be moved between the slots freely.
 - <code id="item-count">itemCount</code> integer
@@ -50,16 +50,16 @@ Returns true of the stack at the given index can be split.
 
   True if the item stack can be split.
 ### Method <code id="split-stack-at-index">splitStackAtIndex</code> (index, itemCount)
-Splits the stack at the given index into two. The passed amount of items gets transferred to the next available slot.
+Splits the stack at the given index into two. The passed amount of items gets transfered to the next available slot.
 
 <b>Parameters:</b>
 
 - <code><b>index</b></code> integer
 
-  The index of the slot which stack you want to split.
+  The index of the slot whichs stack you want to split.
 - <code><b>itemCount</b></code> integer
 
-  The count of items that should get transferred to the next available slot.
+  The count of items that should get transfered to the next available slot.
 
 ### Method <code id="move-item-stack">moveItemStack</code> (fromIndex, toIndex, allowPartial) → count
 Moves the stack of the given slot to another given slot. If partial is allowed, only moves as much items as possible, if not allowed, and the full stack doesnt fit onto the new slot, skips the move.

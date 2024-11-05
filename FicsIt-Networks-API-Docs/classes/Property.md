@@ -18,15 +18,15 @@ A Reflection object that holds information about properties and parameters.
 
   The property bit flag register defining some behaviour of it.
 
-Bits and their meaning (least significant bit first):
+Bits and their meaing (least significant bit first):
 Is this property a member attribute.
 Is this property read only.
 Is this property a parameter.
-Is this property a output parameter.
+Is this property a output paramter.
 Is this property a return value.
-Can this property get accessed in synchronous runtime.
+Can this property get accessed in syncrounus runtime.
 Can this property can get accessed in parallel runtime.
-Can this property get accessed in asynchronous runtime.
+Can this property get accessed in asynchronus runtime.
 This property is a class attribute.
 ## Static Members
 <b>Inherited Members:</b>

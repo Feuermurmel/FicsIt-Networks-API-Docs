@@ -1,6 +1,6 @@
 # Struct <code>TrainDockingRuleSet</code>
 
-Contains information about the rules that describe when a train should depart from a station
+Contains infromation about the rules that descibe when a trian should depart from a station
 ## Instance Members
 ### Fields
 - <code id="definition">definition</code> integer

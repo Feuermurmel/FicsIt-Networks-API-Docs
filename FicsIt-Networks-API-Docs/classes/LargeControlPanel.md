@@ -4,7 +4,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 
 This large modular I/O control panel allows you to attach multiple different modules on to it and use them as I/O to control you programms.
 
-You can connect it to the FICSIT-Network.
+You can connect it to the FicsIt-Network.
 
 Important to note is that every module is it's own component, that means if you want to listen to the signals, you will need to listen to each of them individually.
 ## Instance Members

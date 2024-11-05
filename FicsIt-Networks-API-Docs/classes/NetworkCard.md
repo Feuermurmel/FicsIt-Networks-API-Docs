@@ -47,7 +47,7 @@ Closes the given port so the network card wont receive network messages on the g
   The port you want to close.
 
 ### Method <code id="broadcast">broadcast</code> (port, args)
-Sends a network message to all components in the network message network (including networks seperated by network routers) on the given port. The data you want to add can be passed as additional parameters. Max amount of such parameters is 7 and they can only be nil, booleans, numbers and strings.
+Sends a network message to all components in the network message network (including networks sepperated by network routers) on the given port. The data you want to add can be passed as additional parameters. Max amount of such parameters is 7 and they can only be nil, booleans, numbers and strings.
 
 <b>Parameters:</b>
 

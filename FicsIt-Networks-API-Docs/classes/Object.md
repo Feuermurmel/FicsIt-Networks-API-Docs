@@ -15,7 +15,7 @@ The base class of every object.
 
   The unreal engine internal path name of this object.
 ### Method <code id="get-hash">getHash</code> () → hash
-Returns the hash of this class. This is a value that nearly uniquely identifies this object.
+Returns the hash of this class. This is a value that nearly uniquely idenfies this object.
 
 
 <b>Return Values:</b>
@@ -44,7 +44,7 @@ Returns the type (aka class) of this class instance.
 
   The unreal engine internal path name of this object.
 ### Method <code id="s-get-hash">getHash</code> () → hash
-Returns the hash of this class. This is a value that nearly uniquely identifies this object.
+Returns the hash of this class. This is a value that nearly uniquely idenfies this object.
 
 
 <b>Return Values:</b>

@@ -1,10 +1,9 @@
-# Class <code>FGBuildableWalkwayLightweight</code>
+# Class <code>Build_WalkwayTrun_C</code>
 
-Superclasses: <a href="FGBuildableWalkway.md">FGBuildableWalkway</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
+Superclasses: <a href="FGBuildableWalkwayLightweight.md">FGBuildableWalkwayLightweight</a> < <a href="FGBuildableWalkway.md">FGBuildableWalkway</a> < <a href="FGBuildableFactoryBuilding.md">FGBuildableFactoryBuilding</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-Direct subclasses: <a href="Build_CatwalkCorner_C.md">Build_CatwalkCorner_C</a>, <a href="Build_CatwalkCross_C.md">Build_CatwalkCross_C</a>, <a href="Build_CatwalkRamp_C.md">Build_CatwalkRamp_C</a>, <a href="Build_CatwalkStairs_C.md">Build_CatwalkStairs_C</a>, <a href="Build_CatwalkStraight_C.md">Build_CatwalkStraight_C</a>, <a href="Build_CatwalkT_C.md">Build_CatwalkT_C</a>, <a href="Build_WalkwayCross_C.md">Build_WalkwayCross_C</a>, <a href="Build_WalkwayRamp_C.md">Build_WalkwayRamp_C</a>, <a href="Build_WalkwayStraight_C.md">Build_WalkwayStraight_C</a>, <a href="Build_WalkwayT_C.md">Build_WalkwayT_C</a>, <a href="Build_WalkwayTrun_C.md">Build_WalkwayTrun_C</a>
-
-
+Snaps to foundations and other walkways.
+Specifically made for humans to walk on.
 ## Instance Members
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>

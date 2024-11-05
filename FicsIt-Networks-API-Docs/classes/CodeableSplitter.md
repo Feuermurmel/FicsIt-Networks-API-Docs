@@ -9,7 +9,7 @@ Direct subclasses: <a href="CodeableSplitter_C.md">CodeableSplitter_C</a>
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
-### Method <code id="transfer-item">transferItem</code> (output) → transferred
+### Method <code id="transfer-item">transferItem</code> (output) → transfered
 Allows to transfer an item from the input queue to the given output queue if possible.
 
 <b>Parameters:</b>
@@ -20,7 +20,7 @@ Allows to transfer an item from the input queue to the given output queue if pos
 
 <b>Return Values:</b>
 
-- <code><b>transferred</b></code> boolean
+- <code><b>transfered</b></code> boolean
 
   true if it was able to transfer the item.
 ### Method <code id="get-input">getInput</code> () → item

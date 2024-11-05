@@ -2,7 +2,7 @@
 
 Superclasses: <a href="ModularIndicatorPole.md">ModularIndicatorPole</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The Modular FICSIT Indicator Pole allows busy pioneers to check on the status of machines, factories and much more from a long distance far away. To express the status you can stack individual modules. FICSIT invested more money to make the indicator pole suitable for every situation by allowing it to be placed on walls, floors and beams with a dynamic orientation and even dynamic height.
+The Modular FicsIt Indicator Pole allows busy pioneers to check on the status of machines, factories and much more from a long distance far away. To express the status you can stack individual modules. FicsIt invested more money to make the indicator pole suitable for every situation by allowing it to be placed on walls, floors and beams with a dynamic orientation and even dynamic height.
 ## Instance Members
 <b>Inherited Members:</b>
 - ModularIndicatorPole: <a href="ModularIndicatorPole.md#user-content-get-module">getModule()</a>, <a href="ModularIndicatorPole.md#user-content-get-next">getNext()</a>

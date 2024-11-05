@@ -12,7 +12,7 @@ A Object that represents a whole power circuit.
   The amount of power produced by the whole circuit in the last tick.
 - <code id="consumption">consumption</code> float
 
-  The power consumption of the whole circuit in thg last tick.
+  The power consumption of the whole circuit in thge last tick.
 - <code id="capacity">capacity</code> float
 
   The power capacity of the whole network in the last tick. (The max amount of power available in the last tick)
@@ -22,7 +22,7 @@ A Object that represents a whole power circuit.
 - <code id="max-power-consumption">maxPowerConsumption</code> float
 
   The maximum consumption of power in the last tick.
-- <code id="is-fuse-triggered">isFuseTriggered</code> boolean
+- <code id="is-fuesed">isFuesed</code> boolean
 
   True if the fuse in the network triggered.
 - <code id="has-batteries">hasBatteries</code> boolean
@@ -33,10 +33,10 @@ A Object that represents a whole power circuit.
   The energy capacity all batteries of the network combined provide.
 - <code id="battery-store">batteryStore</code> float
 
-  The amount of energy currently stored in all batteries of the network combined.
+  The amount of energy currently stored in all battereies of the network combined.
 - <code id="battery-store-percent">batteryStorePercent</code> float
 
-  The fill status in percent of all batteries of the network combined.
+  The fill status in percent of all battereies of the network combined.
 - <code id="battery-time-until-full">batteryTimeUntilFull</code> float
 
   The time in seconds until every battery in the network is filled.

@@ -4,7 +4,7 @@ Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Acto
 
 Direct subclasses: <a href="Build_RailroadTrack_C.md">Build_RailroadTrack_C</a>, <a href="Build_RailroadTrackIntegrated_C.md">Build_RailroadTrackIntegrated_C</a>
 
-A piece of railroad track over which trains can drive.
+A peice of railroad track over which trains can drive.
 ## Instance Members
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>

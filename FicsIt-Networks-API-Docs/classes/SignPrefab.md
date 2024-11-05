@@ -2,7 +2,7 @@
 
 Superclasses: <a href="Object.md">Object</a>
 
-Describes a layout of a sign.
+Descibes a layout of a sign.
 ## Instance Members
 <b>Inherited Members:</b>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>

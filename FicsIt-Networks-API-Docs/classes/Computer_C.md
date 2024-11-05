@@ -2,7 +2,7 @@
 
 Superclasses: <a href="ComputerCase.md">ComputerCase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Network computer case is the most important thing you will know of. This case already holds the essentials of a computer for you. Like a network connector, keyboard, mouse and screen. But most important of all, it already has a motherboard were you can place and configure the computer just like you want.
+The FicsIt-Network computer case is the most important thing you will know of. This case already holds the essentials of a computer for you. Like a network connector, keyboard, mouse and screen. But most important of all, it already has a motherboard were you can place and configure the computer just like you want.
 ## Instance Members
 <b>Inherited Members:</b>
 - ComputerCase: <a href="ComputerCase.md#user-content--file-system-update">FileSystemUpdate</a>

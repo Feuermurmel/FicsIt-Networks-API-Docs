@@ -2,11 +2,11 @@
 
 Superclasses: <a href="FINComputerProcessorLua.md">FINComputerProcessorLua</a> < <a href="FINComputerProcessor.md">FINComputerProcessor</a> < <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-This CPU is from the FICSIT-Lua series and allows you to program the PC with Lua.
+This CPU is from the FicsIt-Lua series and allows you to program the PC with Lua.
 
 You can only place one CPU per PC.
 
-You are required to have at least one CPU per PC to run it. FICSIT does not allow unused PC Cases to get build.
+You are required to have at least one CPU per PC to run it. FicsIt does not allow unused PC Cases to get build.
 ## Instance Members
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>

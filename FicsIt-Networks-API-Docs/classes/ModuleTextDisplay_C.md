@@ -2,9 +2,9 @@
 
 Superclasses: <a href="FINModuleBase.md">FINModuleBase</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Text-Display Module for the Modular Control Panel is a simple GPU and Screen combined!
+The FicsIt-Networks Text-Display Module for the Modular Control Panel is a simple GPU and Screen combined!
 
-It allows you to display any kind of text with different font sizes and you can even switch between two fonts!
+It allows you to display any kind of text with differnt font sizes and you can even switch between two fonts!
 
 But you can't interact with it, nor change the background/foreground color as you can do with a GPU.
 ## Instance Members

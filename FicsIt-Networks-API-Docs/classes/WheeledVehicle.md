@@ -17,7 +17,7 @@ The base class for all vehicles that used wheels for movement.
   The amount of fuel this vehicle burns.
 - <code id="wheels-on-ground">wheelsOnGround</code> integer
 
-  The number of wheels currently on the ground.
+  The number of wheels currenlty on the ground.
 - <code id="has-fuel">hasFuel</code> boolean
 
   True if the vehicle has currently fuel to drive.

@@ -2,7 +2,7 @@
 
 Superclasses: <a href="FINComputerScreen.md">FINComputerScreen</a> < <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Screen Driver allows you to add a screen display to the UI of the computer case you build this module into.
+The FicsIt-Networks Screen Driver allows you to add a screen display to the UI of the computer case you build this module intol.
 
 You can then use the computer API to get a reference to the screen and so you can bind the screen to a GPU.
 ## Instance Members

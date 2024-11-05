@@ -2,7 +2,7 @@
 
 Superclasses: <a href="IndicatorPole.md">IndicatorPole</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks indicator light allows you to determine by the looks of from far away the state of a machine or program.
+The FicsIt-Networks indicator light allows yout to determine by the looks of from far away the state of a machine or program.
 
 It has dynamic height, is stack able and you can control the color of it via accessing it from the computer network.
 ## Instance Members

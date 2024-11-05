@@ -1,6 +1,6 @@
 # Struct <code>Vector</code>
 
-Contains three coordinates (X, Y, Z) to describe a position or movement vector in 3D Space
+Contains three cordinates (X, Y, Z) to describe a position or movement vector in 3D Space
 ## Instance Members
 ### Fields
 - <code id="x">x</code> float

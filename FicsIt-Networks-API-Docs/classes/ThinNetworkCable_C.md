@@ -2,7 +2,7 @@
 
 Superclasses: <a href="FINNetworkCable.md">FINNetworkCable</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Thin Network Cable allows you to connect your network panels wich each other more gracefully.
+The FicsIt-Networks Thin Network Cable allows you to connect your network panels wich each other more gracefully.
 
 This cable works just like the normal network cable except it can only connect between MCP panels and Small Network Plugs.
 

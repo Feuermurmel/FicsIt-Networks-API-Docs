@@ -2,7 +2,7 @@
 
 Superclasses: <a href="NetworkRouter.md">NetworkRouter</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Network Router allows you to separate two different component network from each other.
+The FicsIt-Networks Network Router allows you to sepperate two different component network from each other.
 But it still lets network messages sent by network cards through.
 This allows for better networking capabilities, faster networking (can reduce game lag) and makes working with larger networks and multiple computer more easy.
 

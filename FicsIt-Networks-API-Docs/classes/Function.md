@@ -12,11 +12,11 @@ A reflection object representing a function.
 
   The function bit flag register defining some behaviour of it.
 
-Bits and their meaning (least significant bit first):
+Bits and their meaing (least significant bit first):
 Is this function has a variable amount of input parameters.
-Can this function get called in synchronous runtime.
+Can this function get called in syncrounus runtime.
 Can this function can get called in parallel runtime.
-Can this function get called in asynchronous runtime.
+Can this function get called in asynchronus runtime.
 Is this function a member function.
 The function is a class function.
 The function is a static function.

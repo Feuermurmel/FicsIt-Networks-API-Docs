@@ -17,7 +17,7 @@ The base class for any vehicle that drives on train tracks.
   True if this vehicle is currently docked to a platform.
 - <code id="is-reversed">isReversed</code> boolean
 
-  True if the vehicle is placed reversed on the track.
+  True if the vheicle is placed reversed on the track.
 ### Method <code id="get-train">getTrain</code> () → train
 Returns the train of which this vehicle is part of.
 

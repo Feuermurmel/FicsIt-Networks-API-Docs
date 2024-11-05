@@ -14,7 +14,7 @@ Stops the currently playing sound file.
 
 
 ### Method <code id="play-sound">playSound</code> (sound, startPoint)
-Plays a custom sound file in-game
+Plays a custom sound file ingame
 
 <b>Parameters:</b>
 

@@ -2,7 +2,7 @@
 
 Superclasses: <a href="CodeableMerger.md">CodeableMerger</a> < <a href="FGBuildableConveyorAttachment.md">FGBuildableConveyorAttachment</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Codeable Merger  is able to get connected to the component network and provides functions and signals for custom merger behaviour definition.
+The FicsIt-Networks Codeable Merger  is able to get connected to the component network and provides functions and signals for custom merger behaviour defenition.
 
 This allows you to change the merging behaviour in runtime by connected computers so it can f.e. depend on the amount of items in a storage container.
 ## Instance Members

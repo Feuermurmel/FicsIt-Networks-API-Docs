@@ -2,9 +2,9 @@
 
 Superclasses: <a href="SpeakerPole.md">SpeakerPole</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks speaker pole is a network component which allows you to use one more sense of the pioneers to give commands to them or to just make ambient better.
+The FicsIt-Networks speaker pole is a network component which allows you to use one more sense of the pioneers to give commands to them or to just make ambient better.
 
-The speaker pole can play sound files located in the Computer Folder "/Sounds" in your Satisfactory Save-Games-Folder. The FICSIT-Networks speaker pole is only able to play .ogg files cause FICSIT Inc. has the opinion other file formates are useless.
+The speaker pole can play sound files located in the Computer Folder "/Sounds" in your Satisfactory Save-Games-Folder. The FicsIt-Networks speaker pole is only able to play .ogg files cause FicsIt Inc. has the opinion other file formates are useless.
 ## Instance Members
 <b>Inherited Members:</b>
 - SpeakerPole: <a href="SpeakerPole.md#user-content--speaker-sound">SpeakerSound</a>, <a href="SpeakerPole.md#user-content-play-sound">playSound()</a>, <a href="SpeakerPole.md#user-content-stop-sound">stopSound()</a>

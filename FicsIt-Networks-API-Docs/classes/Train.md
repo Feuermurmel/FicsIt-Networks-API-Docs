@@ -48,7 +48,7 @@ Allows to set the name of this train.
 
 - <code><b>name</b></code> string
 
-  The new name of this train.
+  The new name of this trian.
 
 ### Method <code id="get-track-graph">getTrackGraph</code> () → track
 Returns the track graph of which this train is part of.
@@ -126,7 +126,7 @@ Returns a list of all the vehicles this train has.
 - <code><b>vehicles</b></code> list of <a href="RailroadVehicle.md">RailroadVehicle</a>
 
   A list of all the vehicles this train has.
-### Signal <code id="-self-driving-update">SelfDrivingUpdate</code> → enabled
+### Signal <code id="-self-drving-update">SelfDrvingUpdate</code> → enabled
 Triggers when the self driving mode of the train changes
 
 <b>Parameters:</b>

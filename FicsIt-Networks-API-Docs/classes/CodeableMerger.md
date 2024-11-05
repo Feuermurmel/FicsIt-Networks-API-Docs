@@ -13,7 +13,7 @@ Direct subclasses: <a href="CodeableMerger_C.md">CodeableMerger_C</a>
 - <code id="can-output">canOutput</code> boolean
 
   Is true if the output queue has a slot available for an item from one of the input queues.
-### Method <code id="transfer-item">transferItem</code> (input) → transferred
+### Method <code id="transfer-item">transferItem</code> (input) → transfered
 Allows to transfer an item from the given input queue to the output queue if possible.
 
 <b>Parameters:</b>
@@ -24,7 +24,7 @@ Allows to transfer an item from the given input queue to the output queue if pos
 
 <b>Return Values:</b>
 
-- <code><b>transferred</b></code> boolean
+- <code><b>transfered</b></code> boolean
 
   true if it was able to transfer the item.
 ### Method <code id="get-input">getInput</code> (input) → item

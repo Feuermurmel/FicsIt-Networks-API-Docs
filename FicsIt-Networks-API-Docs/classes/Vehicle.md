@@ -4,7 +4,7 @@ Superclasses: <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
 Direct subclasses: <a href="RailroadVehicle.md">RailroadVehicle</a>, <a href="WheeledVehicle.md">WheeledVehicle</a>
 
-A base class for all vehicles.
+A base class for all vehciles.
 ## Instance Members
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>

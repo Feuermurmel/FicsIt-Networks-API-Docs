@@ -4,7 +4,7 @@ Superclasses: <a href="Factory.md">Factory</a> < <a href="FGBuildable.md">FGBuil
 
 Direct subclasses: <a href="Build_RailroadSwitchControl_C.md">Build_RailroadSwitchControl_C</a>
 
-The controller object for a railroad switch.
+The controler object for a railroad switch.
 ## Instance Members
 <b>Inherited Members:</b>
 - Factory: <a href="Factory.md#user-content-cycle-time">cycleTime</a>, <a href="Factory.md#user-content-max-potential">maxPotential</a>, <a href="Factory.md#user-content-min-potential">minPotential</a>, <a href="Factory.md#user-content-potential">potential</a>, <a href="Factory.md#user-content-power-consum-producing">powerConsumProducing</a>, <a href="Factory.md#user-content-productivity">productivity</a>, <a href="Factory.md#user-content-progress">progress</a>, <a href="Factory.md#user-content-standby">standby</a>

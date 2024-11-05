@@ -5,7 +5,7 @@ Superclasses: <a href="FGBuildableBlueprintDesigner.md">FGBuildableBlueprintDesi
 The Blueprint Designer is used to create custom factory designs and save them as Blueprints.
 Blueprints can be accessed from the Build Menu - Blueprint tab.
 
-Note that buildings can only be placed within the Blueprint Designer if they are fully within the boundary frame.
+Note that buildings can only be placed within the Blueprint Designer if they are fully within the boundry frame.
 
 Designer Dimensions: 32m x 32m x 32m
 ## Instance Members

@@ -2,7 +2,7 @@
 
 Superclasses: <a href="FINComputerDriveHolder.md">FINComputerDriveHolder</a> < <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Drive holder allows you to add any hard drive to the computer system.
+The FicsIt-Networks Drive holder allows you to add any hard drive to the computer system.
 
 The drive will then be able to get mounted as root FS or to get added as device file to the FS, after that you wil be able to manually mount the drive to your desired location.
 ## Instance Members

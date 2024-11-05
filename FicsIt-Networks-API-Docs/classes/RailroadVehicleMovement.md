@@ -2,7 +2,7 @@
 
 Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.md">Object</a>
 
-This actor component contains all the information about the movement of a railroad vehicle.
+This actor component contains all the infomation about the movement of a railroad vehicle.
 ## Instance Members
 <b>Inherited Members:</b>
 - ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
@@ -58,7 +58,7 @@ This actor component contains all the information about the movement of a railro
   The maximum dynamic braking effort of this vehicle.
 - <code id="max-air-braking-effort">maxAirBrakingEffort</code> float
 
-  The maximum air braking effort of this vehicle.
+  The maximum air braking effort of this vehcile.
 - <code id="track-grade">trackGrade</code> float
 
   The current track grade of this vehicle.
@@ -79,7 +79,7 @@ This actor component contains all the information about the movement of a railro
   The current air resistance of this vehicle.
 - <code id="gradient-resistance">gradientResistance</code> float
 
-  The current gradient resistance of this vehicle.
+  The current gardient resistance of this vehicle.
 - <code id="wheel-rotation">wheelRotation</code> float
 
   The current wheel rotation of this vehicle.
@@ -132,14 +132,14 @@ Returns the offset of the wheelset with the given index from the start of the ve
 - <code><b>offset</b></code> float
 
   The offset of the wheelset.
-### Method <code id="get-coupler-rotation-and-extension">getCouplerRotationAndExtension</code> (coupler) → x, y, z, extension
-Returns the normal vector and the extension of the coupler with the given index.
+### Method <code id="get-coupler-rotation-and-extention">getCouplerRotationAndExtention</code> (coupler) → x, y, z, extention
+Returns the normal vector and the extention of the coupler with the given index.
 
 <b>Parameters:</b>
 
 - <code><b>coupler</b></code> integer
 
-  The index of which you want to get the normal and extension of.
+  The index of which you want to get the normal and extention of.
 
 <b>Return Values:</b>
 
@@ -152,9 +152,9 @@ Returns the normal vector and the extension of the coupler with the given index.
 - <code><b>z</b></code> float
 
   The Z component of the coupler normal.
-- <code><b>extension</b></code> float
+- <code><b>extention</b></code> float
 
-  The extension of the coupler.
+  The extention of the coupler.
 ## Static Members
 <b>Inherited Members:</b>
 - Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>

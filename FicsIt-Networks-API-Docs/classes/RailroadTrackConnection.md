@@ -2,7 +2,7 @@
 
 Superclasses: <a href="ActorComponent.md">ActorComponent</a> < <a href="Object.md">Object</a>
 
-This is a actor component for railroad tracks that allows to connect to other track connections and so to connection multiple tracks with each other so you can build a train network.
+This is a actor component for railroad tracks that allows to connecto to other track connections and so to connection multiple tracks with each eather so you can build a train network.
 ## Instance Members
 <b>Inherited Members:</b>
 - ActorComponent: <a href="ActorComponent.md#user-content-owner">owner</a>
@@ -13,7 +13,7 @@ This is a actor component for railroad tracks that allows to connect to other tr
   The world location of the the connection.
 - <code id="connector-normal">connectorNormal</code> <a href="../structs/Vector.md">Vector</a>
 
-  The normal vector of the connector.
+  The normal vecotr of the connector.
 - <code id="is-connected">isConnected</code> boolean
 
   True if the connection has any connection to other connections.
@@ -25,7 +25,7 @@ This is a actor component for railroad tracks that allows to connect to other tr
   True if this connection is pointing away from the merge/spread point of a switch.
 - <code id="num-switch-positions">numSwitchPositions</code> integer
 
-  Returns the number of different switch positions this switch can have.
+  Returns the number of different switch poisitions this switch can have.
 ### Method <code id="get-connection">getConnection</code> (index) → connection
 Returns the connected connection with the given index.
 

@@ -11,7 +11,7 @@ The type of sign that allows you to define layouts, images, texts and colors man
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>
 - Object: <a href="Object.md#user-content-get-hash">getHash()</a>, <a href="Object.md#user-content-get-type">getType()</a>, <a href="Object.md#user-content-hash">hash</a>, <a href="Object.md#user-content-internal-name">internalName</a>, <a href="Object.md#user-content-internal-path">internalPath</a>
 ### Method <code id="set-prefab-sign-data">setPrefabSignData</code> (prefabSignData)
-Sets the prefabg [?] sign data e.g. the user settings like colo [colon?] and more to define the signs content.
+Sets the prefabg sign data e.g. the user settings like colo and more to define the signs content.
 
 <b>Parameters:</b>
 
@@ -20,7 +20,7 @@ Sets the prefabg [?] sign data e.g. the user settings like colo [colon?] and mor
   The new prefab sign data for this sign.
 
 ### Method <code id="get-prefab-sign-data">getPrefabSignData</code> () → prefabSignData
-Returns the prefabg [?] sign data e.g. the user settings like colo [colon?] and more to define the signs content.
+Returns the prefabg sign data e.g. the user settings like colo and more to define the signs content.
 
 
 <b>Return Values:</b>

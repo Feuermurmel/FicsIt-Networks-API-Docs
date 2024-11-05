@@ -90,7 +90,7 @@ Copies the given buffer at the given offset of the upper left corner into this b
   The x offset of the upper left corner of the buffer relative to this buffer
 - <code><b>y</b></code> integer
 
-  The y offset of the upper left corner of the buffer relative to this buffer
+  The y offset of the upper left corener of the buffer relative to this buffer
 - <code><b>buffer</b></code> <a href="GPUT1Buffer.md">GPUT1Buffer</a>
 
   The buffer from wich you want to copy from

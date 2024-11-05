@@ -27,7 +27,7 @@ Returns the list of recipes this manufacturer can get set to and process.
 
 - <code><b>recipes</b></code> list of <a href="Recipe.md">Recipe</a>
 
-  The list of available recipes.
+  The list of avalible recipes.
 ### Method <code id="set-recipe">setRecipe</code> (recipe) → gotSet
 Sets the currently producing recipe of this manufacturer.
 

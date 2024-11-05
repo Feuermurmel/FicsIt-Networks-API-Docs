@@ -13,25 +13,25 @@ A building that can pump fluids to a higher level within a pipeline.
 ### Fields
 - <code id="max-headlift">maxHeadlift</code> float
 
-  The maximum amount of head lift this pump can provide.
+  The maximum amount of headlift this pump can provide.
 - <code id="designed-headlift">designedHeadlift</code> float
 
-  The amount of head lift this pump is designed for.
+  The amomunt of headlift this pump is designed for.
 - <code id="indicator-headlift">indicatorHeadlift</code> float
 
-  The amount of head lift the indicator shows.
+  The amount of headlift the indicator shows.
 - <code id="indicator-headlift-pct">indicatorHeadliftPct</code> float
 
-  The amount of head lift the indicator shows as percentage from max.
+  The amount of headlift the indicator shows as percantage from max.
 - <code id="user-flow-limit">userFlowLimit</code> float
 
-  The flow limit of this pump the user can specify. Use -1 for now user set limit. (in m^3/s)
+  The flow limit of this pump the user can specifiy. Use -1 for now user set limit. (in m^3/s)
 - <code id="flow-limit">flowLimit</code> float
 
-  The overall flow limit of this pump. (in m^3/s)
+  The overal flow limit of this pump. (in m^3/s)
 - <code id="flow-limit-pct">flowLimitPct</code> float
 
-  The overall flow limit of this pump. (in percent)
+  The overal flow limit of this pump. (in percent)
 - <code id="flow">flow</code> float
 
   The current flow amount. (in m^3/s)

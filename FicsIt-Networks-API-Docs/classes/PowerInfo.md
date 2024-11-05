@@ -10,13 +10,13 @@ A actor component that provides information and mainly statistics about the powe
 ### Fields
 - <code id="dyn-production">dynProduction</code> float
 
-  The production capacity this connection provided last tick.
+  The production cpacity this connection provided last tick.
 - <code id="base-production">baseProduction</code> float
 
-  The base production capacity this connection always provides.
+  The base production capactiy this connection always provides.
 - <code id="max-dyn-production">maxDynProduction</code> float
 
-  The maximum production capacity this connection could have provided to the circuit in the last tick.
+  The maximum production capactiy this connection could have provided to the circuit in the last tick.
 - <code id="target-consumption">targetConsumption</code> float
 
   The amount of energy the connection wanted to consume from the circuit in the last tick.
@@ -25,7 +25,7 @@ A actor component that provides information and mainly statistics about the powe
   The amount of energy the connection actually consumed in the last tick.
 - <code id="has-power">hasPower</code> boolean
 
-  True if the connection has satisfied power values and counts as being powered. (True if it has power)
+  True if the connection has satisfied power values and counts as beeing powered. (True if it has power)
 ### Method <code id="get-circuit">getCircuit</code> () → circuit
 Returns the power circuit this info component is part of.
 

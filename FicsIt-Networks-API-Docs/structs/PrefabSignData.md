@@ -5,7 +5,7 @@ This structure stores all data that defines what a sign displays.
 ### Fields
 - <code id="layout">layout</code> <a href="../classes/Object.md">Object</a>
 
-  The object that actually displays the layout
+  The object that actually displayes the layout
 - <code id="foreground">foreground</code> <a href="Color.md">Color</a>
 
   The foreground Color.

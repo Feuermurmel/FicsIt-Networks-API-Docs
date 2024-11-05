@@ -2,13 +2,13 @@
 
 Superclasses: <a href="NetworkCard.md">NetworkCard</a> < <a href="FINComputerModule.md">FINComputerModule</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Network Card allows you to send network messages to other network cards in the same computer network.
+The FicsIt-Networks Network Card allows yout to send network messages to other network cards in the same computer network.
 
 You can use unicast and broadcast messages to share information between multiple different computers in the same network.
 
 This is the best and easiest way for you to communicate between multiple computers.
 
-If you want to receive network messages, make sure you also open the according port, since every message is associated with a port allowing for better filtering.
+If you want to recieve network messages, make sure you also open the according port, since every message is asscociated with a port allowing for better filtering.
 ## Instance Members
 <b>Inherited Members:</b>
 - NetworkCard: <a href="NetworkCard.md#user-content--network-message">NetworkMessage</a>, <a href="NetworkCard.md#user-content-broadcast">broadcast()</a>, <a href="NetworkCard.md#user-content-close">close()</a>, <a href="NetworkCard.md#user-content-close-all">closeAll()</a>, <a href="NetworkCard.md#user-content-open">open()</a>, <a href="NetworkCard.md#user-content-send">send()</a>

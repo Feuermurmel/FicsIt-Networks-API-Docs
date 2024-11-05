@@ -19,7 +19,7 @@ The base class for all fluid tanks.
   The maximum amount of fluid this tank can hold.
 - <code id="flow-fill">flowFill</code> float
 
-  The current inflow rate of fluid.
+  The currentl inflow rate of fluid.
 - <code id="flow-drain">flowDrain</code> float
 
   The current outflow rate of fluid.
@@ -27,7 +27,7 @@ The base class for all fluid tanks.
 
   The maximum flow rate of fluid this tank can handle.
 ### Method <code id="flush">flush</code> ()
-Empties the whole fluid container.
+Emptys the whole fluid container.
 
 
 ### Method <code id="get-fluid-type">getFluidType</code> () → type

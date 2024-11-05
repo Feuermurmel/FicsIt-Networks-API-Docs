@@ -2,9 +2,9 @@
 
 Superclasses: <a href="VehicleScanner.md">VehicleScanner</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks Vehicle Scanner allows you to communicate with vehicles driving over the scanner.
+The FicsIt-Networks Vehicle Scanner allows you to communicate with vehicles driving over the scanner.
 
-You can also get notified when a vehicle enters or leaves the scanner.
+You can also get notfied when a vehicle enters or leaves the scanner.
 ## Instance Members
 <b>Inherited Members:</b>
 - VehicleScanner: <a href="VehicleScanner.md#user-content--on-vehicle-enter">OnVehicleEnter</a>, <a href="VehicleScanner.md#user-content--on-vehicle-exit">OnVehicleExit</a>, <a href="VehicleScanner.md#user-content-get-color">getColor()</a>, <a href="VehicleScanner.md#user-content-get-last-vehicle">getLastVehicle()</a>, <a href="VehicleScanner.md#user-content-set-color">setColor()</a>

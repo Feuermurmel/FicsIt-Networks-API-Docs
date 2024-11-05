@@ -2,7 +2,7 @@
 
 Superclasses: <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-This FICSIT-Networks Small Wall Plug allows you to connect the thin network cable only usable with MCH panels and other small components.
+This FicsIt-Networks Small Wall Plug allows you to connect the thin network cable only usable with MCH panels and other small components.
 
 You can then connect Normal/Large Network Cables to those Small Network Plugs to be able to connect your MCP Panels and such to a computer.
 ## Instance Members

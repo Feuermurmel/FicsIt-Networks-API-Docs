@@ -21,7 +21,7 @@ The base class of most machines you can build.
   The productivity of this factory.
 - <code id="cycle-time">cycleTime</code> float
 
-  The time that passes till one production cycle is finished.
+  The time that passes till one production cycle is finsihed.
 - <code id="max-potential">maxPotential</code> float
 
   The maximum potential this factory can be set to.

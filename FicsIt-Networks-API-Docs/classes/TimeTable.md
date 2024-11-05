@@ -24,13 +24,13 @@ Adds a stop to the time table.
   The railroad station at which the stop should happen.
 - <code><b>ruleSet</b></code> <a href="../structs/TrainDockingRuleSet.md">TrainDockingRuleSet</a>
 
-  The docking rule set that describes when the train will depart from the station.
+  The docking rule set that descibes when the train will depart from the station.
 
 <b>Return Values:</b>
 
 - <code><b>added</b></code> boolean
 
-  True if the stop got successfully added to the time table.
+  True if the stop got sucessfully added to the time table.
 ### Method <code id="remove-stop">removeStop</code> (index)
 Removes the stop with the given index from the time table.
 
@@ -57,7 +57,7 @@ Allows to empty and fill the stops of this time table with the given list of new
 
 - <code><b>gotSet</b></code> boolean
 
-  True if the stops got successfully set.
+  True if the stops got sucessfully set.
 ### Method <code id="is-valid-stop">isValidStop</code> (index) → valid
 Allows to check if the given stop index is valid.
 

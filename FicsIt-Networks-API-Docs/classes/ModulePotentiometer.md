@@ -4,7 +4,7 @@ Superclasses: <a href="FINModuleBase.md">FINModuleBase</a> < <a href="FGBuildabl
 
 The Potentiometer Module for the Modular I/O Control Panel allows you to have rotation input value for you programs.
 
-You can rotate it indefinitely into any direction where every rotation triggers a computer network signal.
+You can rotate it indefinetly into any direction where every rotation triggers a computer network signal.
 ## Instance Members
 <b>Inherited Members:</b>
 - Actor: <a href="Actor.md#user-content-get-factory-connectors">getFactoryConnectors()</a>, <a href="Actor.md#user-content-get-inventories">getInventories()</a>, <a href="Actor.md#user-content-get-network-connectors">getNetworkConnectors()</a>, <a href="Actor.md#user-content-get-pipe-connectors">getPipeConnectors()</a>, <a href="Actor.md#user-content-get-power-connectors">getPowerConnectors()</a>, <a href="Actor.md#user-content-location">location</a>, <a href="Actor.md#user-content-rotation">rotation</a>, <a href="Actor.md#user-content-scale">scale</a>

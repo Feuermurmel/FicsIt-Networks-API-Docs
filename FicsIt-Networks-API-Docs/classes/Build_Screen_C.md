@@ -2,7 +2,7 @@
 
 Superclasses: <a href="Screen.md">Screen</a> < <a href="FGBuildable.md">FGBuildable</a> < <a href="Actor.md">Actor</a> < <a href="Object.md">Object</a>
 
-The FICSIT-Networks large screen allows you to display anything a GPU can render onto a huge plane.
+The FicsIt-Networks large screen allows you to display anything a GPU can render onto a huge plane.
 
 You can also interact with the monitor by locking at it and also by clicking on it.
 ## Instance Members

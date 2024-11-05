@@ -13,7 +13,7 @@ A docking station for wheeled vehicles to transfer cargo.
 ### Fields
 - <code id="is-load-mode">isLoadMode</code> boolean
 
-  True if the docking station loads docked vehicles, false if it unloads them.
+  True if the docking station loads docked vehicles, flase if it unloads them.
 - <code id="is-load-unloading">isLoadUnloading</code> boolean
 
   True if the docking station is currently loading or unloading a docked vehicle.
@@ -27,7 +27,7 @@ Returns the fuel inventory of the docking station.
 
   The fuel inventory of the docking station.
 ### Method <code id="get-inv">getInv</code> () → inventory
-Returns the cargo inventory of the docking station.
+Returns the cargo inventory of the docking staiton.
 
 
 <b>Return Values:</b>

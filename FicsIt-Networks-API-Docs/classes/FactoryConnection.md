@@ -42,7 +42,7 @@ Triggers when the factory connection component transfers an item.
 
 - <code><b>item</b></code> <a href="../structs/Item.md">Item</a>
 
-  The transferred item
+  The transfered item
 ## Static Members
 <b>Inherited Members:</b>
 - Object: <a href="Object.md#user-content-s-get-hash">getHash()</a>, <a href="Object.md#user-content-s-get-type">getType()</a>, <a href="Object.md#user-content-s-hash">hash</a>, <a href="Object.md#user-content-s-internal-name">internalName</a>, <a href="Object.md#user-content-s-internal-path">internalPath</a>
