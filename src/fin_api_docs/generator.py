@@ -12,6 +12,8 @@ from collections.abc import Iterator
 from dataclasses import dataclass
 from functools import partial
 from pathlib import Path
+from urllib.parse import urlsplit
+from urllib.parse import urlunsplit
 
 from fin_api_docs.api import API
 from fin_api_docs.api import ArrayType
@@ -31,6 +33,17 @@ from fin_api_docs.api import TypeRef
 from fin_api_docs.util import UserError
 
 
+def url_add_fragment(url: str, fragment: str) -> str:
+    parts = urlsplit(url)
+    parts = parts._replace(fragment=fragment)
+
+    return urlunsplit(parts)
+
+
+def render_link(url: str, text: str) -> str:
+    return f'<a href="{url}">{text}</a>'
+
+
 def get_relative_path(path: Path, relative_to: Path) -> str:
     parts_from = list(relative_to.parts[:-1])
     parts_to = list(path.parts)
@@ -40,24 +53,6 @@ def get_relative_path(path: Path, relative_to: Path) -> str:
         parts_to.pop(0)
 
     return "/".join([".." for _ in parts_from] + parts_to)
-
-
-@dataclass
-class Link:
-    relative_to: Page
-    page: Page
-    fragment: str | None = None
-
-    def render(self, link_text: str) -> str:
-        url = get_relative_path(self.page.path, self.relative_to.path)
-
-        if self.fragment is not None:
-            url = f"{url}#{self.fragment}"
-
-        return f'<a href="{url}">{link_text}</a>'
-
-    def with_fragment(self, fragment: str) -> Link:
-        return dataclasses.replace(self, fragment=fragment)
 
 
 @dataclass
@@ -95,12 +90,14 @@ class PageContext:
         elif isinstance(ref, FutureType):
             return f"future of {self.type_ref(ref.resultType)}"
         else:
-            return self.page_link_target(ref).render(
-                self.api_docs.api.structured_types[ref].name
+            return render_link(
+                self.page_url(ref), self.api_docs.api.structured_types[ref].name
             )
 
-    def page_link_target(self, id: StructuredTypeID) -> Link:
-        return Link(self.page, self.api_docs.structured_type_pages[id])
+    def page_url(self, id: StructuredTypeID) -> str:
+        return get_relative_path(
+            self.api_docs.structured_type_pages[id].path, self.page.path
+        )
 
     def member_anchor(self, id: MemberID) -> str:
         anchor = re.sub("(?=[A-Z]+)", "-", id.member).lower()
@@ -110,9 +107,9 @@ class PageContext:
 
         return anchor
 
-    def member_link_target(self, id: MemberID) -> Link:
-        return self.page_link_target(id.type).with_fragment(
-            f"user-content-{self.member_anchor(id)}"
+    def member_url(self, id: MemberID) -> str:
+        return url_add_fragment(
+            self.page_url(id.type), f"user-content-{self.member_anchor(id)}"
         )
 
 
@@ -178,7 +175,7 @@ def structured_type_content(type: StructuredType, context: PageContext) -> str:
                         return member.name
 
                 members_str = ", ".join(
-                    f"{context.member_link_target(m.id).render(member_link_text(m))}"
+                    f"{render_link( context.member_url(m.id), member_link_text(m))}"
                     for m in sorted(pm, key=lambda i: i.name)
                 )
 
